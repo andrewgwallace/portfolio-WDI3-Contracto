@@ -38,3 +38,71 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+
+
+
+
+
+gem 'awesome_print'   #dev logging
+# gem 'httparty'      #used for facebook calls
+gem 'devise'      #autentication
+# gem "simple_show"
+# gem "simple_form"
+
+# gem "rails-backbone" 
+
+
+# bundle exec rake doc:rails generates the API under doc/api.
+# gem 'sdoc', '~> 0.4.0',          group: :doc
+
+
+
+group: :production  do
+  gem 'rails_12factor', #heroku
+end
+
+
+
+group :development, :test do
+  gem 'rspec-rails'#, '~> 3.0.0'
+  # gem 'factory_girl_rails'
+  gem "faker"
+  # gem 'debugger' 
+
+end
+
+
+
+
+
+group :development do
+  gem 'pry-rails'     #dev debugging
+  gem 'annotate', ">=2.6.0"
+
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'meta_request'
+
+
+  gem 'guard'                               #run this along-side the server with 'bundle exec guard'
+  gem 'guard-rspec', require: false
+  # gem 'guard-test'          #runs tests
+  # gem 'guard-reloader'    #runs tests
+
+  # gem "rack-livereload" 
+  # gem 'guard-livereload'   #reloads views
+  
+  # gem 'guard-bundler'
+  # gem 'guard-rails'         #restarts rails
+  # gem 'guard-migrate'
+  gem 'guard-annotate'
+
+  # gem 'rails_best_practices'
+  # gem 'guard-rails_best_practices'
+
+  # gem 'guard-seeds'
+  # gem 'guard-railstestdb'
+  # # gem 'guard-readme-on-github'
+  # gem 'guard-jasmine-rails'
+
+end
