@@ -20,8 +20,17 @@ RSpec.describe Job, :type => :model do
   # pending "add some examples to (or delete) #{__FILE__}"
   
   context 'accociations' do
-    pending "association tests need to be written"
-    it {should belong_to(:company) }
+    # pending "association tests need to be written"
+    it {should belong_to(:general_contractor) }
+    it {should belong_to(:client) }
+    it {should have_many(:subsctractors) }
+
+    it {should have_many(:subsctractors) }
+    it {should have_many(:entries)}
+    xit {should have_many(:attachments)}
+    xit {should have_many(:photographs)}
+    xit {should have_many(:recipts)}
+
   end
 
   context 'controllers' do
