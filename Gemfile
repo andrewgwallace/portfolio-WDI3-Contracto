@@ -57,15 +57,21 @@ gem 'devise'      #autentication
 
 
 
-group: :production  do
-  gem 'rails_12factor', #heroku
+group :production  do
+  gem 'rails_12factor' #heroku
 end
 
 
 
 group :development, :test do
-  gem 'rspec-rails'#, '~> 3.0.0'
+  gem 'rspec'
+  gem 'rspec-rails'#, '~> 2.0.0'
+  gem 'shoulda'
+  gem 'shoulda-matchers', require: false
+  # gem 'shoulda-matchers'
+  # gem 'shoulda-context'
   # gem 'factory_girl_rails'
+
   gem "faker"
   # gem 'debugger' 
 
