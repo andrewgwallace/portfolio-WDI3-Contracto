@@ -14,8 +14,8 @@ RSpec.describe Entry, :type => :model do
   # pending "add some examples to (or delete) #{__FILE__}"
   context 'accociations' do
     # pending "association tests need to be written"
-    it {should have_many(:entries) }
-    it {should belong_to(:job) }
+    it {should belong_to(:job)}
+    it {should have_many(:attachments )}
   end
 
   context 'controllers' do

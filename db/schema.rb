@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140710220810) do
+ActiveRecord::Schema.define(version: 20140711174003) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,6 +30,13 @@ ActiveRecord::Schema.define(version: 20140710220810) do
     t.datetime "updated_at"
   end
 
+  create_table "company_client_joins", force: true do |t|
+    t.integer  "general_contractor_id"
+    t.integer  "company_client_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "entries", force: true do |t|
     t.integer  "job_id"
     t.text     "text_blob"
@@ -39,13 +46,14 @@ ActiveRecord::Schema.define(version: 20140710220810) do
   end
 
   create_table "jobs", force: true do |t|
-    t.integer  "company_id"
-    t.integer  "clientable_id"
-    t.integer  "clientable"
+    t.integer  "general_contractor_id"
+    t.integer  "client_id"
+    t.integer  "client_type"
+    t.boolean  "open"
+    t.boolean  "paused"
     t.string   "contract_price"
     t.string   "start_date"
     t.string   "end_date"
-    t.string   "status"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -65,9 +73,16 @@ ActiveRecord::Schema.define(version: 20140710220810) do
     t.datetime "updated_at"
   end
 
+  create_table "sub_contractor_joins", force: true do |t|
+    t.integer  "roster_sub_contractor_id"
+    t.integer  "general_contractor_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "subcontracts", force: true do |t|
     t.integer  "job_id"
-    t.integer  "company_id"
+    t.integer  "subcontractor_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

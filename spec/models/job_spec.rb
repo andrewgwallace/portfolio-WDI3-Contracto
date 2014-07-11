@@ -22,15 +22,17 @@ RSpec.describe Job, :type => :model do
   context 'accociations' do
     # pending "association tests need to be written"
     it {should belong_to(:general_contractor) }
-    it {should belong_to(:client) }
-    it {should have_many(:subsctractors) }
 
-    it {should have_many(:subsctractors) }
+    it {should have_many(:subcontracts) }
+    it {should have_many(:subcontractors) }
+
     it {should have_many(:entries)}
-    xit {should have_many(:attachments)}
-    xit {should have_many(:photographs)}
-    xit {should have_many(:recipts)}
+    it {should have_many(:attachments)}
 
+    it {should belong_to(:client) }
+
+    # xit {should 'client_type is either customer or client') }
+  
   end
 
   context 'controllers' do
