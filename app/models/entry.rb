@@ -2,12 +2,14 @@
 #
 # Table name: entries
 #
-#  id         :integer          not null, primary key
-#  job_id     :integer
-#  text_blob  :text
-#  read       :boolean
-#  created_at :datetime
-#  updated_at :datetime
+#  id                                 :integer          not null, primary key
+#  job_id                             :integer
+#  text_blob                          :text
+#  read                               :boolean
+#  auto_generated_from_incoming_email :boolean
+#  read_status                        :boolean
+#  created_at                         :datetime
+#  updated_at                         :datetime
 #
 
 class Entry < ActiveRecord::Base
