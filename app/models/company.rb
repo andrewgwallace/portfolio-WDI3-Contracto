@@ -6,6 +6,7 @@
 #  name         :string(255)
 #  address      :string(255)
 #  office_phone :string(255)
+#  logo_url     :string(255)
 #  created_at   :datetime
 #  updated_at   :datetime
 #

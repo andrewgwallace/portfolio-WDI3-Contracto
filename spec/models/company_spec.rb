@@ -27,9 +27,9 @@ RSpec.describe Company, :type => :model do
 
       it {should have_many(:roster_sub_contractors)}
             
-      # it {should have_many(:roster_clients)}
-      #   it {should have_many(:roster_customer_clients)}
-      #   it {should have_many(:roster_company_clients)}
+      it {should have_many(:roster_clients)}
+        it {should have_many(:roster_customer_clients)}
+        it {should have_many(:roster_company_clients)}
     end
 
     describe 'ROLE: as general contractor, (relationships through job history)' do

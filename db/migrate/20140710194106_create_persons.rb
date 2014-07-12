@@ -5,7 +5,10 @@ class CreatePersons < ActiveRecord::Migration
       t.integer :company_id
       t.string :type #enables STI for subclasses (admin, user, customer)
 
-      t.string :name
+      t.string :first_name
+      t.string :last_name
+      t.string :middle_name
+
       t.string :address
 
       t.string :email   #added by devise
