@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20140711213220) do
     t.string   "name"
     t.string   "address"
     t.string   "office_phone"
+    t.string   "logo_url"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -50,10 +51,10 @@ ActiveRecord::Schema.define(version: 20140711213220) do
   create_table "jobs", force: true do |t|
     t.integer  "general_contractor_id"
     t.integer  "client_id"
-    t.integer  "client_type"
+    t.string   "client_type"
     t.boolean  "open"
     t.boolean  "paused"
-    t.string   "contract_price"
+    t.integer  "contract_price"
     t.string   "start_date"
     t.string   "end_date"
     t.datetime "created_at"
@@ -63,7 +64,9 @@ ActiveRecord::Schema.define(version: 20140711213220) do
   create_table "persons", force: true do |t|
     t.integer  "company_id"
     t.string   "type"
-    t.string   "name"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "middle_name"
     t.string   "address"
     t.string   "email_1"
     t.string   "email_2"
