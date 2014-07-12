@@ -1,5 +1,5 @@
-<p>I am Company#show.html.erb
-<p>hello world.
+<p>I am Company#show.html.erb 
+<p>hello world. 
 
 
 <p>ADMIN:<%= debug current_admin %>
@@ -7,10 +7,5 @@
 <p>@COMPANY: <%= debug @company %>
 <p>JOBS:<%= debug current_admin.company.jobs %>
 <p>@JOBS:<%= debug @jobs %>
-<p>JOB LINKS:
-<p>
-  <% @jobs.each do |job|%>
-    link_to(job.name, show_job_path)
-  <% end %>
 
 

@@ -6,10 +6,11 @@
 #  general_contractor_id :integer
 #  client_id             :integer
 #  client_type           :integer
+#  open                  :boolean
+#  paused                :boolean
 #  contract_price        :string(255)
 #  start_date            :string(255)
 #  end_date              :string(255)
-#  status                :string(255)
 #  created_at            :datetime
 #  updated_at            :datetime
 #

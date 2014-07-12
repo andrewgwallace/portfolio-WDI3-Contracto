@@ -58,7 +58,11 @@ GEM
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
     diff-lcs (1.2.5)
+    em-websocket (0.5.1)
+      eventmachine (>= 0.12.9)
+      http_parser.rb (~> 0.6.0)
     erubis (2.7.0)
+    eventmachine (1.0.3)
     execjs (2.2.1)
     faker (1.4.1)
       i18n (~> 0.5)
@@ -73,10 +77,17 @@ GEM
     guard-annotate (1.1.0)
       annotate (>= 2.4.0)
       guard (>= 0.2.2)
+    guard-livereload (2.3.0)
+      em-websocket (~> 0.5)
+      guard (~> 2.0)
+      multi_json (~> 1.8)
+    guard-rails (0.5.2)
+      guard (~> 2.0)
     guard-rspec (4.2.10)
       guard (~> 2.1)
       rspec (>= 2.14, < 4.0)
     hike (1.2.3)
+    http_parser.rb (0.6.0)
     i18n (0.6.11)
     jbuilder (2.1.2)
       activesupport (>= 3.0.0, < 5)
@@ -113,6 +124,8 @@ GEM
     rack (1.5.2)
     rack-contrib (1.1.0)
       rack (>= 0.9.1)
+    rack-livereload (0.3.15)
+      rack
     rack-test (0.6.2)
       rack (>= 1.0)
     rails (4.1.1)
@@ -217,12 +230,15 @@ DEPENDENCIES
   faker
   guard
   guard-annotate
+  guard-livereload
+  guard-rails
   guard-rspec
   jbuilder (~> 2.0)
   jquery-rails
   meta_request
   pg
   pry-rails
+  rack-livereload
   rails (= 4.1.1)
   rails_12factor
   rspec

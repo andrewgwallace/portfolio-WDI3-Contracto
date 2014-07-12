@@ -95,11 +95,11 @@ group :development do
   # gem 'guard-test'          #runs tests
   # gem 'guard-reloader'    #runs tests
 
-  # gem "rack-livereload" 
-  # gem 'guard-livereload'   #reloads views
+  gem "rack-livereload" 
+  gem 'guard-livereload'   #reloads views
   
   # gem 'guard-bundler'
-  # gem 'guard-rails'         #restarts rails
+  gem 'guard-rails'         #restarts rails
   # gem 'guard-migrate'
   gem 'guard-annotate'
 
