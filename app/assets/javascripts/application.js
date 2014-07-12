@@ -13,9 +13,29 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+
 //= require jquery-ui
 //= require jquery.dataTables
 //= require dataTables.jqueryui
+
 //= require underscore
 //= require backbone
+
+
+
+//= require backbone/backbone_application_loader
+
+// require backbone/models/company
+// require backbone/views/company_view
+
+//= require backbone/models/job
+//= require backbone/views/job_view
+//= require backbone/collections/jobs_collection
+//= require backbone/views/jobs_list_view
+
+// require backbone/models/entry
+// require backbone/views/entry_view
+// require backbone/collections/entries_collection
+// require backbone/views/entries_list_view
+
 //= require_tree .

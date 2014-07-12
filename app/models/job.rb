@@ -40,7 +40,7 @@ class Job < ActiveRecord::Base
   
   belongs_to :client, polymorphic: :true
 
-  def client_type
+  def client_klass
     client.class
   end
 
