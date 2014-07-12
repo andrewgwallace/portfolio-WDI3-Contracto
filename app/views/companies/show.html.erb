@@ -1,22 +1,8 @@
-<p>I am Company#show.html.erb 
-<p>hello world. 
+<div id="job_table"><%= render "job_table" %></div>
 
-
-<p>ADMIN:<%= debug current_admin %>
-<p>COMPANY:<%= debug current_admin.company %>
-<p>@COMPANY: <%= debug @company %>
-<p>JOBS:<%= debug current_admin.company.jobs %>
-<p>@JOBS:<%= debug @jobs %>
-<p>JOB LINKS:
 <p>
   <% @jobs.each do |job|%>
     link_to(job.name, show_job_path)
   <% end %>
 
 
-
-
-
-<!-- sign in
-log in
-new_admin_session -->

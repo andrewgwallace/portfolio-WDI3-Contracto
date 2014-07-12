@@ -13,4 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require jquery-ui
+//= require jquery.dataTables
+//= require dataTables.jqueryui
+//= require underscore
+//= require backbone
 //= require_tree .
