@@ -7,9 +7,12 @@ class CreatePersons < ActiveRecord::Migration
 
       t.string :name
       t.string :address
-      t.string :email_1
+
+      t.string :email   #added by devise
+      t.string :email_1  #these are alternates
       t.string :email_2
       t.string :email_3
+      
       t.string :home_phone
       t.string :office_phone
       t.string :mobile_phone

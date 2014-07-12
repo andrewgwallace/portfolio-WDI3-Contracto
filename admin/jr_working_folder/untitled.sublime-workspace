@@ -1,0 +1,1941 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"read",
+				"read_status"
+			],
+			[
+				"kid",
+				"kidclock"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"appointem",
+				"appointments"
+			],
+			[
+				"appoint",
+				"appointments"
+			],
+			[
+				"params",
+				"params[:id"
+			],
+			[
+				"OurDay",
+				"OurdayApp"
+			],
+			[
+				"html",
+				"html_escape"
+			],
+			[
+				"child",
+				"childcares"
+			],
+			[
+				"headh",
+				"headshot_image_url"
+			],
+			[
+				"family",
+				"family_members"
+			],
+			[
+				"appoin",
+				"appointments"
+			],
+			[
+				"in",
+				"input_hash"
+			],
+			[
+				"pers",
+				"persons_family_ids"
+			],
+			[
+				"chil",
+				"childcares"
+			],
+			[
+				"ap",
+				"Appointment"
+			],
+			[
+				"Appoin",
+				"appointments"
+			],
+			[
+				"care",
+				"caregiver_casted"
+			],
+			[
+				"klas",
+				"klass_name"
+			],
+			[
+				"ludd",
+				"luddite"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"for",
+				"foreign_key"
+			],
+			[
+				"person",
+				"person_id"
+			],
+			[
+				"collect",
+				"collection_of_persons"
+			],
+			[
+				"css",
+				"css_class_name_singular"
+			],
+			[
+				"car",
+				"caregiver"
+			],
+			[
+				"Family",
+				"FamilyMember"
+			],
+			[
+				"delete",
+				"delete_all"
+			],
+			[
+				"headshot",
+				"headshot_image_url"
+			],
+			[
+				"head",
+				"headshot_image_url"
+			],
+			[
+				"faceboo",
+				"facebook_username"
+			],
+			[
+				"paper",
+				"paperclip_headshot"
+			],
+			[
+				"calen",
+				"calendar_entries"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"percent",
+				"percentangeFromCurrentTime"
+			],
+			[
+				"da",
+				"day_start_datetime"
+			],
+			[
+				"day",
+				"dayDuration"
+			],
+			[
+				"end",
+				"end_datetime"
+			],
+			[
+				"render",
+				"renderClockFromChild"
+			],
+			[
+				"Appoint",
+				"Appointment"
+			],
+			[
+				"dynami",
+				"dynamically-positioned"
+			],
+			[
+				"app",
+				"appointments"
+			],
+			[
+				"face",
+				"facebook_username"
+			],
+			[
+				"last",
+				"last_name"
+			],
+			[
+				"param",
+				"params"
+			],
+			[
+				"current",
+				"current_user"
+			],
+			[
+				"fac",
+				"facebook_username"
+			],
+			[
+				"first",
+				"first_name"
+			],
+			[
+				"curren",
+				"current_user"
+			],
+			[
+				"chilc",
+				"childcare1"
+			],
+			[
+				"famil",
+				"families#index"
+			],
+			[
+				"fa",
+				"facebook_username"
+			],
+			[
+				"facebook_head",
+				"facebook_headshot_url"
+			],
+			[
+				"pay",
+				"payload"
+			],
+			[
+				"sin",
+				"single_item_hash"
+			],
+			[
+				"slice",
+				"slice_point"
+			],
+			[
+				"payl",
+				"payload_arr"
+			],
+			[
+				"calend",
+				"calendar_entry"
+			],
+			[
+				"Child",
+				"Childcare"
+			],
+			[
+				"happening",
+				"happenings"
+			],
+			[
+				"to_",
+				"to_json"
+			],
+			[
+				"inte",
+				"integer"
+			],
+			[
+				"start",
+				"start_datetime"
+			],
+			[
+				"len",
+				"length_in_minutes"
+			],
+			[
+				"calendar",
+				"calendar_entries"
+			],
+			[
+				"ta",
+				"tag_as_persistant"
+			],
+			[
+				"obje",
+				"object_space"
+			],
+			[
+				"test",
+				"test_string"
+			],
+			[
+				"input",
+				"input_obj"
+			],
+			[
+				"inpu",
+				"input_obj"
+			],
+			[
+				"array",
+				"array_of_persistant_objs"
+			],
+			[
+				"obj",
+				"obj_string"
+			],
+			[
+				"con",
+				"contents	.contents()"
+			],
+			[
+				"update",
+				"updateDisplay"
+			],
+			[
+				"checking",
+				"checkingAccount"
+			],
+			[
+				"with",
+				"withdraw"
+			],
+			[
+				"deposit",
+				"deposit_btn"
+			],
+			[
+				"col",
+				"col_count"
+			],
+			[
+				"row",
+				"row_count"
+			],
+			[
+				"ne",
+				"next_frame"
+			],
+			[
+				"cell",
+				"cell_colony"
+			],
+			[
+				"paren",
+				"parent_frame"
+			],
+			[
+				"parent",
+				"parent_colony"
+			],
+			[
+				"curr",
+				"current_frame"
+			],
+			[
+				"cur",
+				"current_frame"
+			],
+			[
+				"cells",
+				"cells_that_survive"
+			],
+			[
+				"cel",
+				"cell_container"
+			],
+			[
+				"out",
+				"outer_bounds"
+			],
+			[
+				"x_m",
+				"x_min"
+			],
+			[
+				"tell_",
+				"tell_blank_spaces_to_evolve"
+			],
+			[
+				"sur",
+				"surrounding_possition"
+			],
+			[
+				"curre",
+				"current_frame_cells_arr"
+			],
+			[
+				"star",
+				"starting_grid_cols"
+			],
+			[
+				"num",
+				"num_of_cells_to_seed"
+			],
+			[
+				"controller",
+				"controller_sandbox"
+			],
+			[
+				"size",
+				"font-size"
+			],
+			[
+				"ali",
+				"text-align"
+			],
+			[
+				"flo",
+				"float_left"
+			],
+			[
+				"redirec",
+				"redirect_to"
+			],
+			[
+				"token",
+				"token"
+			],
+			[
+				"toe",
+				"token_response_hash"
+			],
+			[
+				"tok",
+				"token_response_hash"
+			],
+			[
+				"access",
+				"access_token"
+			],
+			[
+				"google",
+				"google_authorization_code"
+			],
+			[
+				"redirect",
+				"redirect_URI"
+			],
+			[
+				"step",
+				"step2_url"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"paddin",
+				"padding-bottom"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"styl",
+				"font-style"
+			],
+			[
+				"border",
+				"border-collapse"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"lis",
+				"list-style-image"
+			],
+			[
+				"trips",
+				"trips_on_route"
+			],
+			[
+				"departu",
+				"departure_time"
+			],
+			[
+				"trip",
+				"trip_id"
+			],
+			[
+				"city",
+				"city_departure_times"
+			],
+			[
+				"stop",
+				"stop_time"
+			],
+			[
+				"route",
+				"route_id"
+			],
+			[
+				"user",
+				"user_routes"
+			],
+			[
+				"home",
+				"home_stop"
+			],
+			[
+				"Home",
+				"home_stop"
+			],
+			[
+				"agency",
+				"agency_id"
+			],
+			[
+				"Project",
+				"ProjectEntries"
+			],
+			[
+				"passwo",
+				"password_confirmation"
+			],
+			[
+				"rout",
+				"route_options"
+			],
+			[
+				"stoptimes",
+				"stop_times"
+			],
+			[
+				"stoptime",
+				"stop_times"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/johnrandall/code/wdi/projects/contracto/Gemfile",
+			"settings":
+			{
+				"buffer_size": 2716,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Ruby/Ruby.sublime-build",
+	"command_palette":
+	{
+		"height": 327.0,
+		"selected_items":
+		[
+			[
+				"markdown",
+				"Strapdown.js Markdown: Preview in Sublime Text"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"add fol",
+				"Project: Add Folder"
+			],
+			[
+				"whi",
+				"Whitespace: Remove Trailing Whitespace"
+			],
+			[
+				"white",
+				"Whitespace: Remove Trailing Whitespace"
+			],
+			[
+				"whit",
+				"Whitespace: Remove Trailing Whitespace"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"dup",
+				"File: Duplicate"
+			],
+			[
+				"ren",
+				"File: Rename"
+			],
+			[
+				"renam",
+				"File: Rename"
+			],
+			[
+				"rena",
+				"File: Rename"
+			],
+			[
+				"brack",
+				"BracketHighlighter: Toggle Global Enable"
+			],
+			[
+				"high",
+				"BracketHighlighter: Toggle High Visibility Mode"
+			],
+			[
+				"bracke",
+				"BracketHighlighter: Toggle Global Enable"
+			],
+			[
+				"task",
+				"Tasks: New document"
+			],
+			[
+				"brack high vis",
+				"BracketHighlighter: Toggle High Visibility Mode"
+			],
+			[
+				"high vi",
+				"BracketHighlighter: Toggle High Visibility Mode"
+			],
+			[
+				"brac",
+				"BracketHighlighter: Toggle Global Enable"
+			],
+			[
+				"snip: nbsp",
+				"Snippet: &nbsp;"
+			],
+			[
+				"snip",
+				"Snippet: img"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"delete",
+				"File: Delete"
+			],
+			[
+				"dele",
+				"File: Delete"
+			],
+			[
+				"du",
+				"File: Duplicate"
+			],
+			[
+				"dupli",
+				"File: Duplicate"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"folder",
+				"Project: Add Folder"
+			],
+			[
+				"add",
+				"Project: Add Folder"
+			],
+			[
+				"packa:d",
+				"Package Control: Disable Package"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"add ",
+				"Project: Add Folder"
+			],
+			[
+				"html rail",
+				"Set Syntax: HTML (Rails)"
+			],
+			[
+				"rails",
+				"Set Syntax: Ruby on Rails"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"form",
+				"Snippet: form_tag"
+			],
+			[
+				"linkto",
+				"Snippet: link_to (path)"
+			],
+			[
+				"",
+				"BracketHighlighter: Toggle Global Enable"
+			],
+			[
+				"link",
+				"Snippet: link_to (path)"
+			],
+			[
+				"hidden ",
+				"Snippet: form_for hidden_field"
+			],
+			[
+				"snip select",
+				"Snippet: select { |e| .. }"
+			],
+			[
+				"form rad",
+				"Snippet: form_for radio_box"
+			],
+			[
+				"label",
+				"Snippet: form_for label"
+			],
+			[
+				"snip field",
+				"Snippet: form_for file_field"
+			],
+			[
+				"form radio",
+				"Snippet: form_for radio_box"
+			],
+			[
+				"form la",
+				"Snippet: form_for label"
+			],
+			[
+				"stops",
+				"Strapdown.js Markdown: Preview in Sublime Text"
+			],
+			[
+				"git",
+				"Git: Checkout"
+			],
+			[
+				"markd",
+				"GitHub Flavored Markdown: Preview"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"packag",
+				"Package Control: Install Package"
+			],
+			[
+				"mov",
+				"File: Move"
+			],
+			[
+				"linkt",
+				"Snippet: link_to model"
+			],
+			[
+				"snip lin",
+				"Snippet: link_to (path)"
+			],
+			[
+				"Snippet: ",
+				"Snippet: form_tag"
+			],
+			[
+				"synt",
+				"Set Syntax: Ruby"
+			],
+			[
+				"floo",
+				"Floobits - Join Recent Workspace"
+			],
+			[
+				"floot",
+				"Floobits - Share Directory (Public)"
+			],
+			[
+				"new fil",
+				"File: New File Relative to Current View"
+			],
+			[
+				"leave",
+				"Floobits - Leave Workspace"
+			],
+			[
+				"join",
+				"Floobits - Join Recent Workspace"
+			],
+			[
+				"leav",
+				"Floobits - Leave Workspace"
+			],
+			[
+				"floobi",
+				"Floobits - Join Recent Workspace"
+			],
+			[
+				"floo joi",
+				"Floobits - Join Workspace"
+			],
+			[
+				"instal ",
+				"Package Control: Install Package"
+			],
+			[
+				"add fold",
+				"Project: Add Folder"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"git:commit",
+				"Git: Commit"
+			],
+			[
+				"git: comm",
+				"Git: Commit"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"git:com",
+				"Git: Commit"
+			],
+			[
+				"git:add",
+				"Git: Quick Add"
+			],
+			[
+				"git:st",
+				"Git: Status"
+			],
+			[
+				"git ini",
+				"Git: Init"
+			],
+			[
+				"git:l",
+				"Git: Log"
+			],
+			[
+				"git:stat",
+				"Git: Status"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"package control:",
+				"Package Control: List Packages"
+			],
+			[
+				"packa:in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"syn:ru",
+				"Set Syntax: Ruby"
+			],
+			[
+				"mark",
+				"Markdown Preview: Github Flavored Markdown: Preview in Browser"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"snip:if el	",
+				"Snippet: if … else … end"
+			],
+			[
+				"snipp",
+				"Snippet: if … end"
+			],
+			[
+				"syntax: ru",
+				"Set Syntax: Ruby"
+			],
+			[
+				"sidebar",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"ab",
+				"About"
+			],
+			[
+				"syn:	ruby",
+				"Set Syntax: Ruby"
+			]
+		],
+		"width": 521.0
+	},
+	"console":
+	{
+		"height": 515.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib2,os; pf='Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler( ))); open( os.path.join( ipp, pf), 'wb' ).write( urllib2.urlopen( 'http://sublime.wbond.net/' +pf.replace( ' ','%20' )).read()); print( 'Please restart Sublime Text to finish installation')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/johnrandall/code/wdi/projects/contracto/Guardfile",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/models/company.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/models/job.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/db/migrate/20140710194453_create_entries.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/models/entry.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/spec/models/entry_spec.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/config/locales/en.yml",
+		"/Users/johnrandall/code/wdi/projects/contracto/config/environment.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/config/application.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/db/migrate/20140710204453_create_jobs.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/views/layouts/application.html.erb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/controllers/application_controller.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/spec/models/job_spec.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/assets/javascripts/application.js",
+		"/Users/johnrandall/code/wdi/projects/contracto/config/initializers/inflections.rb",
+		"/Users/johnrandall/code/wdi/projects/ourday old repos/our_day_featureA/app/assets/javascripts/family_show_scripts.js",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/assets/javascripts/backbone/views/appointments_list_view.js",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/assets/javascripts/backbone/views/appointment_view.js",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/assets/javascripts/backbone/models/appointment.js",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/assets/javascripts/backbone/collections/appointments_collection.js",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/helpers/application_helper.rb",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/controllers/calendar_entries_controller.rb",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/controllers/appointments_controller.rb",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/controllers/childcares_controller.rb",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/config/environments/development.rb",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/log/development.log",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/config/database.yml",
+		"/Users/johnrandall/code/wdi/WDI_NYC_Apr14_String/w11/d02/INSTRUCTORS/penguin_pals2/public/javascripts/backbone/views/penguins/PenguinView.js",
+		"/Users/johnrandall/code/wdi/WDI_NYC_Apr14_String/w11/d02/INSTRUCTORS/penguin_pals2/config/environment.rb",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/config/environment.rb",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/assets/javascripts/calendar_kid.js",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/assets/javascripts/backbone/views/childcare_view.js",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/controllers/kids_controller.rb",
+		"/Users/johnrandall/code/wdi/WDI_NYC_Apr14_String/w11/d02/INSTRUCTORS/penguin_pals2/public/javascripts/libraries/backbone.js",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/vendor/assets/javascripts/backbone.js",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/views/kids/calendar.html.erb",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/models/calendar_entry.rb",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/views/kids/_form_childcare_new.erb",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/test/controllers/kid_controller_test.rb",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/models/kid.rb",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/views/family/_persons_section.erb",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/views/family/show.html.erb",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/assets/javascripts/application.js",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/views/devise/shared/_links.erb",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/views/family/_person.erb",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/test/helpers/family_helper_test.rb",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/spec/models/family_member_calendar_associations_spec.rb",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/controllers/family_controller.rb",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/spec/spec_helper.rb",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/db/seeds.rb",
+		"/Users/johnrandall/code/wdi/WDI_NYC_Apr14_String/w11/d02/INSTRUCTORS/penguin_pals2/public/index.html",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/assets/javascripts/backbone/views/childcares_list_view.js",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/assets/javascripts/backbone/backbone_app.js",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/config/secrets.yml",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/db/schema.rb",
+		"/Users/johnrandall/code/wdi/WDI_NYC_Apr14_String/w11/d02/INSTRUCTORS/penguin_pals2/public/javascripts/backbone/views/penguins/PenguinListView.js",
+		"/Users/johnrandall/code/wdi/WDI_NYC_Apr14_String/w11/d02/INSTRUCTORS/penguin_pals2/config/initializers/filter_parameter_logging.rb",
+		"/Users/johnrandall/code/wdi/WDI_NYC_Apr14_String/w11/d02/INSTRUCTORS/penguin_pals2/app/helpers/penguins_helper.rb",
+		"/Users/johnrandall/code/wdi/WDI_NYC_Apr14_String/w11/d02/INSTRUCTORS/penguin_pals2/test/models/penguin_test.rb",
+		"/Users/johnrandall/code/wdi/WDI_NYC_Apr14_String/w11/d02/INSTRUCTORS/penguin_pals2/app/models/penguin.rb",
+		"/Users/johnrandall/code/wdi/WDI_NYC_Apr14_String/w11/d02/INSTRUCTORS/penguin_pals2/app/controllers/penguins_controller.rb",
+		"/Users/johnrandall/code/wdi/WDI_NYC_Apr14_String/w11/d02/INSTRUCTORS/penguin_pals2/test/fixtures/penguins.yml",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/models/person.rb",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/models/childcare.rb",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/assets/javascripts/backbone/collections/childcares_collection.js",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/views/welcome/index.html.erb",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/bin/spring",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/assets/stylesheets/childcares.css.scss",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sass/344b7692658b12f7d296d1272a6962f5c486f4ab/childcares.css.scssc",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/assets/javascripts/backbone/models/childcare.js",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/spec/helpers/appointments_helper_spec.rb",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/spec/controllers/appointments_controller_spec.rb",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/assets/stylesheets/appointments.css.scss",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/helpers/appointments_helper.rb",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/assets/javascripts/backbone/views/kid_view.js",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/assets/javascripts/backbone/models/kid.js",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/config/routes.rb",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/models/family.rb",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/models/family_member.rb",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/assets/stylesheets/family.css.scss",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/test/controllers/family_controller_test.rb",
+		"/Users/johnrandall/Desktop/markdowntest.md",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/config/initializers/mime_types.rb",
+		"/Users/johnrandall/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/README.md",
+		"/Users/johnrandall/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/Markdown (Standard).sublime-settings",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/views/layouts/application.html.erb",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/change_log.md",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/050a16c21d06f37eb7fbbb3636147f4d",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/0695bd665f1329b83f9d0c74526767b2",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/0a4adabe9d8742478ba1e9406a222ff9",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/0becb4e276ab831d15725c7a5ec8a2ac",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/11469e49fa7feecc2788ab6484adbdcd",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/11b21ea9d730bbd024083fe9c886ab75",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/1e1a6379c05050ebe2ee13907658d6d8",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/21ce83ae3b07ac8192cce9eeed5f05bb",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/246ffb08aa885429bae69874eaf57719",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/2a6ca8f90afc4b108e34f4faef181137",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/2d0960e0a522cb95b9f7c056fa65e441",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/2f5173deea6c795b8fdde723bb4b63af",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/33b646c548343ebb50c5b312aa7f45a3",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/39cd47b7e732f66c17a8459ed26b5c54",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/44167cb154da4fe6032b70185dcfa5a9",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/474b39c23a2eaa45b6bc805ec207673f",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/5796c1251120be122eb0a50682d2c6c9",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/59c9822bfaa54a4ae77ff9e5cbc69e71",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/6466f631ba6019789c39948706f71f7b",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/65a10fdd375bc376da69b6b9b1f6858c",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/67591917362e3700fb1f26628c1efdbf",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/6b224e087f76b691308c4741b14ce208",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/70d925ba6e228c18e7aa1b2a4ff21069",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/71f7882e42c3a596f03fd5ba1d78b635",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/75bee0ca6e7b0cfbda71f18663939eb4",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/7e5cc1576d217b9a60609a25659a43aa",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/871bd95b78e05f672cf9fff9c0b2d197",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/890744ecf966222b049c79f6c6f56e1e",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/89757cf790e8c4d318b1fbf9e8158d31",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/8dfb87410c29cd394eca2e13b501f80f",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/91746aca090039e901c946c323d988bf",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/92066add1e97f2c09c65730b537f1752",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/9582cb6f65229aefc57421139ed843a3",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/a5bdd084a16b6c0e5b4838d8c5368f6e",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/a6a72292b71e910ce2280addba473f4c",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/b3a6cacf5468d1d5f9e3cadc132c7f37",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/b61e51850087cef3ba5a152daf626b6a",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/b830b8372c84123f66dacda82e80649b",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/ba3b7bf407caeb361e0a59949622d5a1",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/bb5d6251888db5adec7dd96a257c559c",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/bba43ed1cdf7c721e31c5a415084f295"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 118.0,
+		"where_history":
+		[
+			"<open folders>",
+			"",
+			"/Users/johnrandall/code/wdi/WDI_NYC_Apr14_String/w04/d01/John_Randall/superheroes_on_rails",
+			"<open files>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"AND",
+			"active_status",
+			"irregular",
+			"renderclo",
+			"words(3)",
+			"OurdayApp",
+			"url",
+			"I am",
+			"i am",
+			"appointment",
+			"Appointment",
+			"appointment",
+			"appointments",
+			"Appointment",
+			"appointment",
+			"appointments",
+			"image_downloader",
+			"hack",
+			"toto",
+			"Penguin",
+			"penguinListView",
+			"appointmentListView",
+			"penguin-template",
+			"template",
+			"child_show",
+			"subl",
+			"accept",
+			"penguin",
+			"Penguin",
+			"PenguinCollection",
+			"Penguinapp",
+			"PenguinView",
+			"Penguinapp",
+			"PenguinCollection",
+			"Penguinapp",
+			"loadchild",
+			"child",
+			"Child",
+			"child",
+			"toto",
+			"hack",
+			"kid",
+			"input_hash",
+			"association",
+			"puts",
+			"application.config",
+			"luddites",
+			"all.",
+			"first",
+			"}",
+			")",
+			"let(",
+			"family_members_arr",
+			"family_member_class",
+			"family_member_classes",
+			"kids.each do |kid|",
+			"end",
+			"kids.each do |kid|",
+			"rsp",
+			"family",
+			"users",
+			"simple",
+			"klass_name",
+			"person",
+			"klass",
+			"normalized_klass",
+			"Person",
+			"caregivers",
+			"user",
+			"User",
+			"user",
+			"be_an_instance_of",
+			"user",
+			"User",
+			"user",
+			"conflict",
+			"merge",
+			"conflict",
+			"Cargegiver",
+			"caregivings",
+			"caregivers",
+			"user",
+			"kid",
+			"Kid",
+			"appointments",
+			"childcares",
+			"caregiveings",
+			"it",
+			"to",
+			"SEED",
+			"seed",
+			"  ",
+			"RSpec.configure do |config|",
+			"RSpec.configure do |config|\n  config.include FactoryGirl::Syntax::Methods\nend",
+			"cashe",
+			"creating",
+			"puts \"seed: creating a childcare for kid #{kid.id} (family #{family.id})\"",
+			"deleting",
+			"puts",
+			"foreign_key",
+			"family_member_id",
+			"beginning_of_day",
+			"b",
+			"<% ",
+			"%>",
+			"<%",
+			"class_to_display",
+			"class_of_person_to_display",
+			"class_of_persons_to_display",
+			"# ",
+			"kid",
+			"child",
+			">\n",
+			"  ",
+			"    ",
+			"\",",
+			"luddite",
+			"luddites",
+			"caregiver",
+			"Caregiver",
+			"caregiver",
+			"Caregivers",
+			"caregivers",
+			"Caregivers",
+			"caregivers",
+			"kid",
+			"Kid",
+			"kid"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"app",
+			"Childcare",
+			"childcare",
+			"Appointment",
+			"AppointmentCollection",
+			"OurdayApp",
+			" ",
+			"  ",
+			"User",
+			"create!",
+			"thank_you_msg_single",
+			"transaction_confirmation",
+			"do not",
+			"thing_to_search_in",
+			"scanner",
+			"mover",
+			"$discInHand",
+			"$",
+			"parent",
+			"chosenSourceStack",
+			"stack"
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/johnrandall/code/wdi/projects/contracto/Gemfile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2716,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1196.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 33.0
+	},
+	"input":
+	{
+		"height": 131.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 345.0
+	},
+	"output.find_results":
+	{
+		"height": 160.0
+	},
+	"output.git-checkout":
+	{
+		"height": 124.0
+	},
+	"output.git-commit":
+	{
+		"height": 112.0
+	},
+	"output.git-init":
+	{
+		"height": 112.0
+	},
+	"output.markdown":
+	{
+		"height": 100.0
+	},
+	"output.sftp":
+	{
+		"height": 200.0
+	},
+	"project": "untitled.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"en",
+				"db/migrate/20140710194453_create_entries.rb"
+			],
+			[
+				"compan",
+				"app/models/company.rb"
+			],
+			[
+				"job",
+				"db/migrate/20140710204453_create_jobs.rb"
+			],
+			[
+				"dev",
+				"ourday_take4/config/environments/development.rb"
+			],
+			[
+				"backbone",
+				"ourday_take4/app/assets/javascripts/backbone/backbone_app.js"
+			],
+			[
+				"appoint",
+				"ourday_take4/app/controllers/appointments_controller.rb"
+			],
+			[
+				"_",
+				"ourday_take4/app/views/family/_persons_section.erb"
+			],
+			[
+				"familshow",
+				"ourday_take4/app/views/family/show.html.erb"
+			],
+			[
+				"seed",
+				"ourday_take4/db/seeds.rb"
+			],
+			[
+				"appoin",
+				"ourday_take4/app/assets/javascripts/backbone/views/appointment_view.js"
+			],
+			[
+				"pengui_list",
+				"penguin_pals2/public/javascripts/backbone/views/penguins/PenguinListView.js"
+			],
+			[
+				"back",
+				"ourday_take4/vendor/assets/javascripts/backbone.js"
+			],
+			[
+				"childcare_list",
+				"ourday_take4/app/assets/javascripts/backbone/views/childcares_list_view.js"
+			],
+			[
+				"vhilc",
+				"ourday_take4/app/assets/javascripts/backbone/collections/childcares_collection.js"
+			],
+			[
+				"chil_list",
+				"ourday_take4/app/assets/javascripts/backbone/views/childcares_list_view.js"
+			],
+			[
+				"sche",
+				"ourday_take4/db/schema.rb"
+			],
+			[
+				"schem",
+				"ourday_take4/db/schema.rb"
+			],
+			[
+				"calendar",
+				"ourday_take4/app/assets/javascripts/calendar_kid.js"
+			],
+			[
+				"chilcare_vie.",
+				"ourday_take4/app/assets/javascripts/backbone/views/childcare_view.js"
+			],
+			[
+				"calend",
+				"ourday_take4/app/views/kids/calendar.html.erb"
+			],
+			[
+				"appoin_vie",
+				"ourday_take4/app/assets/javascripts/backbone/views/appointment_view.js"
+			],
+			[
+				"route",
+				"ourday_take4/config/routes.rb"
+			],
+			[
+				"familysho",
+				"ourday_take4/app/views/family/show.html.erb"
+			],
+			[
+				"app",
+				"ourday_take4/app/assets/javascripts/application.js"
+			],
+			[
+				"layou",
+				"ourday_take4/app/views/layouts/application.html.erb"
+			],
+			[
+				"appointment_li",
+				"ourday_take4/app/assets/javascripts/backbone/views/appointments_list_view.js"
+			],
+			[
+				"chilcar",
+				"ourday_take4/app/models/childcare.rb"
+			],
+			[
+				"childcares_colle",
+				"ourday_take4/app/assets/javascripts/backbone/collections/childcares_collection.js"
+			],
+			[
+				"childcares",
+				"ourday_take4/app/controllers/childcares_controller.rb"
+			],
+			[
+				"appli",
+				"ourday_take4/app/assets/javascripts/application.js"
+			],
+			[
+				"application.js",
+				"ourday_take4/app/assets/javascripts/application.js"
+			],
+			[
+				"guard",
+				"ourday_take4/Guardfile"
+			],
+			[
+				"gemf",
+				"ourday_take4/Gemfile"
+			],
+			[
+				"ge",
+				"ourday_take4/Gemfile"
+			],
+			[
+				"application_con",
+				"ourday_take4/app/controllers/application_controller.rb"
+			],
+			[
+				"famil_",
+				"ourday_take4/app/controllers/family_controller.rb"
+			],
+			[
+				"perso",
+				"ourday_take4/app/models/person.rb"
+			],
+			[
+				"calen",
+				"ourday_take4/app/models/calendar_entry.rb"
+			],
+			[
+				"mime",
+				"ourday_take4/config/initializers/mime_types.rb"
+			],
+			[
+				"rout",
+				"ourday_take4/config/routes.rb"
+			],
+			[
+				"tour",
+				"ourday_take4/config/routes.rb"
+			],
+			[
+				"deve",
+				"config/environments/development.rb"
+			],
+			[
+				"per",
+				"app/models/person.rb"
+			],
+			[
+				"view/kid",
+				"app/views/kids/calendar.html.erb"
+			],
+			[
+				"kid",
+				"app/controllers/kids_controller.rb"
+			],
+			[
+				"develop",
+				"config/environments/development.rb"
+			],
+			[
+				"famil",
+				"app/models/family_member.rb"
+			],
+			[
+				"part",
+				"app/models/participation.rb"
+			],
+			[
+				"par",
+				"app/models/participation.rb"
+			],
+			[
+				"cale",
+				"app/models/calendar_entry.rb"
+			],
+			[
+				"env",
+				"config/environment.rb"
+			],
+			[
+				"d",
+				"config/database.yml"
+			],
+			[
+				"view/fami",
+				"app/views/family/show.html.erb"
+			],
+			[
+				"guar",
+				"Guardfile"
+			],
+			[
+				"viewfamil",
+				"app/views/family/show.html.erb"
+			],
+			[
+				"_form",
+				"app/views/kids/_form_childcare_new.erb"
+			],
+			[
+				"createca",
+				"db/migrate/20140613004422_create_calendar_entries.rb"
+			],
+			[
+				"createfa",
+				"db/migrate/20140612231324_create_families.rb"
+			],
+			[
+				"_chil",
+				"app/views/kids/_form_childcare_new.erb"
+			],
+			[
+				"calendhtml",
+				"app/views/kids/calendar.html.erb"
+			],
+			[
+				"familmem",
+				"app/models/family_member.rb"
+			],
+			[
+				"railsa",
+				"config/initializers/rails_assistant.rb"
+			],
+			[
+				"createper",
+				"db/migrate/20140612231713_create_persons.rb"
+			],
+			[
+				"createcale",
+				"db/migrate/20140613004422_create_calendar_entries.rb"
+			],
+			[
+				"adddevise",
+				"db/migrate/20140620144605_add_devise_to_persons.rb"
+			],
+			[
+				"_per",
+				"app/views/family/_person.erb"
+			],
+			[
+				"famil/sho",
+				"app/views/family/show_test.html.erb"
+			],
+			[
+				"family/show",
+				"app/views/family/show.html.erb"
+			],
+			[
+				"show",
+				"app/views/family/show.html.erb"
+			],
+			[
+				"showt",
+				"app/views/family/show_test.html.erb"
+			],
+			[
+				"applic",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
+				"gemfil",
+				"Gemfile"
+			],
+			[
+				"spec",
+				"spec/spec_helper.rb"
+			],
+			[
+				"lappli",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"data",
+				"config/database.yml"
+			],
+			[
+				"fami",
+				"app/models/family_member.rb"
+			],
+			[
+				"rspec",
+				"bin/rspec"
+			],
+			[
+				"see",
+				"db/seeds.rb"
+			],
+			[
+				"se",
+				"db/seeds.rb"
+			],
+			[
+				"application_h",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"ass",
+				"spec/models/associations_spec.rb"
+			],
+			[
+				"family",
+				"app/models/family_member.rb"
+			],
+			[
+				"family/sho",
+				"app/views/family/show.html.erb"
+			],
+			[
+				"layout",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"kidca",
+				"app/views/kids/calendar.html.erb"
+			],
+			[
+				"pro",
+				"config/environments/production.rb"
+			],
+			[
+				"pers",
+				"app/models/person.rb"
+			],
+			[
+				"lud",
+				"app/models/luddite.rb"
+			],
+			[
+				"asso",
+				"spec/models/associations_spec.rb"
+			],
+			[
+				"rspc",
+				"bin/rspec"
+			],
+			[
+				"as",
+				"spec/models/associations_spec.rb"
+			],
+			[
+				"fam",
+				"app/models/family_member.rb"
+			],
+			[
+				"rake",
+				"Rakefile"
+			],
+			[
+				"",
+				"app/views/family/show.html.erb"
+			],
+			[
+				"family/",
+				"app/views/family/show.html.erb"
+			],
+			[
+				"care",
+				"app/models/caregiver.rb"
+			],
+			[
+				"person",
+				"app/views/family/_person.erb"
+			],
+			[
+				"confi",
+				"config/application.rb"
+			],
+			[
+				"kids",
+				"app/controllers/kids_controller.rb"
+			],
+			[
+				"rou",
+				"config/routes.rb"
+			],
+			[
+				"application",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"read",
+				"README.md"
+			],
+			[
+				"family_",
+				"test/controllers/family_controller_test.rb"
+			],
+			[
+				"welcom/in",
+				"app/views/welcome/index.html.erb"
+			],
+			[
+				"tod",
+				"admin/issue_tracker.TODO"
+			],
+			[
+				"to",
+				"admin/issue_tracker.TODO"
+			],
+			[
+				"rea",
+				"README.md"
+			],
+			[
+				"confi/en/d",
+				"config/environments/development.rb"
+			],
+			[
+				"child",
+				"app/helpers/children_helper.rb"
+			],
+			[
+				"dat",
+				"config/database.yml"
+			],
+			[
+				"children_",
+				"app/controllers/children_controller.rb"
+			],
+			[
+				"car",
+				"app/controllers/caregivers_controller.rb"
+			],
+			[
+				"envi",
+				"config/environments/development.rb"
+			],
+			[
+				"environ",
+				"config/environment.rb"
+			],
+			[
+				"personcon",
+				"app/controllers/persons_controller.rb"
+			],
+			[
+				"config/env",
+				"config/environments/development.rb"
+			],
+			[
+				"javascrip",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"entry",
+				"app/models/calendar_entry.rb"
+			],
+			[
+				"persons",
+				"db/migrate/20140612231713_create_persons.rb"
+			],
+			[
+				"js",
+				"app/assets/javascripts/child_scripts.js"
+			],
+			[
+				"exa",
+				"example.html"
+			],
+			[
+				"childre",
+				"app/controllers/children_controller.rb"
+			],
+			[
+				"div",
+				"config/initializers/devise.rb"
+			],
+			[
+				"devise",
+				"config/locales/devise.en.yml"
+			],
+			[
+				"confi/initializer/dev",
+				"config/initializers/devise.rb"
+			],
+			[
+				"chil",
+				"app/models/child.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 387.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 261.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 3
+	}
+}

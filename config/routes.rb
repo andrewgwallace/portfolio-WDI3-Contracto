@@ -1,6 +1,29 @@
 # == Route Map
 #
 #                            Prefix Verb   URI Pattern                                                            Controller#Action
+#                            admins GET    /admins(.:format)                                                      admins#index
+#                                   POST   /admins(.:format)                                                      admins#create
+#                         new_admin GET    /admins/new(.:format)                                                  admins#new
+#                        edit_admin GET    /admins/:id/edit(.:format)                                             admins#edit
+#                             admin GET    /admins/:id(.:format)                                                  admins#show
+#                                   PATCH  /admins/:id(.:format)                                                  admins#update
+#                                   PUT    /admins/:id(.:format)                                                  admins#update
+#                                   DELETE /admins/:id(.:format)                                                  admins#destroy
+#                 new_admin_session GET    /admins/sign_in(.:format)                                              devise/sessions#new
+#                     admin_session POST   /admins/sign_in(.:format)                                              devise/sessions#create
+#             destroy_admin_session DELETE /admins/sign_out(.:format)                                             devise/sessions#destroy
+#                    admin_password POST   /admins/password(.:format)                                             devise/passwords#create
+#                new_admin_password GET    /admins/password/new(.:format)                                         devise/passwords#new
+#               edit_admin_password GET    /admins/password/edit(.:format)                                        devise/passwords#edit
+#                                   PATCH  /admins/password(.:format)                                             devise/passwords#update
+#                                   PUT    /admins/password(.:format)                                             devise/passwords#update
+#         cancel_admin_registration GET    /admins/cancel(.:format)                                               devise/registrations#cancel
+#                admin_registration POST   /admins(.:format)                                                      devise/registrations#create
+#            new_admin_registration GET    /admins/sign_up(.:format)                                              devise/registrations#new
+#           edit_admin_registration GET    /admins/edit(.:format)                                                 devise/registrations#edit
+#                                   PATCH  /admins(.:format)                                                      devise/registrations#update
+#                                   PUT    /admins(.:format)                                                      devise/registrations#update
+#                                   DELETE /admins(.:format)                                                      devise/registrations#destroy
 #        company_job_subcontractors POST   /company/jobs/:job_id/subcontractors(.:format)                         subcontractors#create
 #    new_company_job_subcontractors GET    /company/jobs/:job_id/subcontractors/new(.:format)                     subcontractors#new
 #   edit_company_job_subcontractors GET    /company/jobs/:job_id/subcontractors/edit(.:format)                    subcontractors#edit
@@ -67,11 +90,15 @@
 #                                   PATCH  /company(.:format)                                                     companies#update
 #                                   PUT    /company(.:format)                                                     companies#update
 #                                   DELETE /company(.:format)                                                     companies#destroy
-#                              root GET    /                                                                      welcome#home
+#                              root GET    /                                                                      welcome#splash
+#                        admin_root GET    /company(.:format)                                                     company#show
 #
 
 Rails.application.routes.draw do
 
+  # resource :admin
+  
+  
   resource :company do
     resources :jobs do
       resource :subcontractors#, path: :subcontractors
@@ -87,7 +114,13 @@ Rails.application.routes.draw do
     resource :companies, path: :company_clients
   end
   
-  root to: 'welcome#home'
+  devise_for :admin
+    root to: 'welcome#splash'
+    get 'company', to: 'company#show', as: :admin_root
+  
+
+  # admin_root to: 'company_path'
+  # admin_root to: company_path
   # divise_root to: company_path
 
 
