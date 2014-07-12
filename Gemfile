@@ -99,7 +99,7 @@ group :development do
   gem 'guard-livereload'   #reloads views
   
   # gem 'guard-bundler'
-  gem 'guard-rails'         #restarts rails
+  # gem 'guard-rails'         #restarts rails
   # gem 'guard-migrate'
   gem 'guard-annotate'
 
