@@ -52,7 +52,9 @@ app.Views.JobView = Backbone.View.extend({
     },
     show: function(e){
       console.log("running show job");
-      // e.preventDefault();
+      
+      // this should add class 'hidden' to all item of 'display'
+      // THEN this should unhide class "entries"
 
       console.log (this.model.attributes.id);
       // job-list-cons
