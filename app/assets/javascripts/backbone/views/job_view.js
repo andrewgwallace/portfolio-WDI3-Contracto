@@ -55,6 +55,7 @@ app.Views.JobView = Backbone.View.extend({
       // e.preventDefault();
 
       console.log (this.model.attributes.id);
+      // job-list-cons
     },
   
   // renderEditForm: function(){

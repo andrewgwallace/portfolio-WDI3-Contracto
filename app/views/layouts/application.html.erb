@@ -9,8 +9,11 @@
 <body>
 
   <%= render "layouts/header" %>
-
-<%= yield %>
+  <!-- <div> -->
+    <%= render "layouts/sidebar_left" %>
+    <%= render "layouts/sidebar_right" %>
+      <%= yield %> <!-- This is yeilding a 1 page app at companies/show -->
+  <!-- </div> -->
 
 </body>
 </html>

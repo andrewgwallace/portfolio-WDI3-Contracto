@@ -1,9 +1,29 @@
+
 <p>
 <p>[I am server-side view companies SHOW.]
 <p>
-<%= render "jobs_table" %>
 
 
-  
+<!-- This is the guts of the 1 page app -->
+<div class="content-box">
+  I am server-side view companies SHOW.
+  <div class="display jobs jobs-display">   <!-- visable by default. -->
+    <%= render "jobs/new" %>                <!-- visable by default. -->
+    <%= render "jobs/index" %>              <!-- visible by default. -->
+  </div>
+
+  <div class="display entries-display" class="hidden"> <!-- hidden by default -->
+    <%#= render "entries/index" %>                      <!-- hidden by default -->
+  </div>
+
+  <div class="display entries-display" class="hidden"> <!-- hidden by default -->
+    <%#= render "customers/index" %>                    <!-- Hidden by default -->
+  </div>
+
+  <div class="display entries-display" class="hidden"> <!-- hidden by default -->
+    <%#= render "subcontractors/index" %>               <!-- Hidden by default -->
+  </div>
+
+</div>
 
 
