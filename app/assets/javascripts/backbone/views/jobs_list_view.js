@@ -6,6 +6,8 @@ app.Views.JobListView = Backbone.View.extend({
   initialize: function(){
     console.log("running app.Views.JobsListView.initialize")
     this.listenTo(this.collection, 'add', this.render);
+    this.listenTo(this.collection, 'change', this.render);
+    // this.listenTo(this.collection, 'all', this.render);
   },
   render: function(){
     console.log("running app.Views.JobsListView.render")

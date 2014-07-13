@@ -1,12 +1,14 @@
-<table class="display" cellspacing="0" width="90%">
+
+
+<table class="jobs-list" cellspacing="0" width="90%">
     <thead>
         <tr>
             <th>Customer</th>
             <th>Job</th>
-            <th>Start Date:</th>
+            <th>Start Date</th>
             <th>End Date</th>
-            <th>Job Amount:</th>
-            <th>Status</th>
+            <th>Contract Price</th>
+            <th colspan='3'>Status</th>
         </tr>
     </thead>
 
@@ -14,29 +16,25 @@
         <tr>
             <th>Customer</th>
             <th>Job</th>
-            <th>Start Date:</th>
+            <th>Start Date</th>
             <th>End Date</th>
-            <th>Job Amount:</th>
-            <th>Status</th>
+            <th>Contract Price</th>
+            <th colspan='3'>Status</th>
         </tr>
     </tfoot>
 
     <tbody id="jobs-table-body" >
-        <!-- <tr>
-            <td id="customer"></td>
-            <td id="job_title"></td>
-            <td id="start_date"></td>
-            <td id="end_date"></td>
-            <td id="job_amount"></td>
-            <td id="status"></td>
-        </tr> -->
     </tbody>
         <script type="text/template" id="job-show-template">
-            <tr>
-                <td>I am a job</td>
-                <td> JobName: <%%= name %> </td>
-                <td> JobID: <%%= id %> </td>
-            <tr>
+                <td data-action='show'> [customer name] (id:<%%= id %>)</td>
+                <td data-action='show' class='job-name'> <%%= name %> </td>
+                <td data-action='show' class='job-start-date'> <%%= start_date %> </td>
+                <td data-action='show' class='job-end-date'> <%%= end_date %> </td>
+                <td data-action='show' class='job-contract-price'> $<%%= contract_price %> </td>
+                <td class='job-closed'> <%%= closed %> </td>
+                <td class='job-paused'> <%%= paused %> </td>
+                <td data-action='destroy'> [del_graphic] </td>
+                    // #FIX NOT SURE IF ID NEEDS TO BE HARD CODED HERE, PERHAPS 'THIS' will work
         </script>
 </table>
 

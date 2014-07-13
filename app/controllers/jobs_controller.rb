@@ -19,7 +19,12 @@ class JobsController < AuthenticatedController
     @company = current_admin.company
     # @jobs = current_admin.company.jobs
     # @job = Job.find(params[:id])
+  end
 
+  def destroy
+    job = Job.find(params[:id])
+    job.delete
+    respond_with job
   end
 
 

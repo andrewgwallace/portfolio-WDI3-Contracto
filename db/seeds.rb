@@ -72,13 +72,13 @@ puts "adding 4 customers to each company"
 Company.all.each do |company|
   4.times do
     company.roster_customer_clients.create({
-    email: Faker::Internet.email,
-    # password: '12341234',
-    first_name: Faker::Name.first_name,
-    last_name: Faker::Name.last_name,
-    address: "#{Faker::Address.street_address}\n#{Faker::Address.city},#{Faker::Address.state} #{Faker::Address.zip}",
-    mobile_phone: Faker::PhoneNumber.cell_phone
-      })
+      email: Faker::Internet.email,
+      # password: '12341234',
+      first_name: Faker::Name.first_name,
+      last_name: Faker::Name.last_name,
+      address: "#{Faker::Address.street_address}\n#{Faker::Address.city},#{Faker::Address.state} #{Faker::Address.zip}",
+      mobile_phone: Faker::PhoneNumber.cell_phone
+    })
   end
 end
 
@@ -87,6 +87,9 @@ puts "adding 10 jobs to each company"
 Company.all.each do |company|
   10.times do
     company.jobs.create({
+      name: Faker::Lorem.sentence(3),
+      start_date: Faker::Business.credit_card_expiry_date,
+      end_date: Faker::Business.credit_card_expiry_date,
       open: [true, true, true, false].sample,
       paused: [false, false, false, true].sample, 
       contract_price: rand(1000...30000),

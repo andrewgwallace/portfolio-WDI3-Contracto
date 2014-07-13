@@ -17,16 +17,24 @@ app.initialize = function(){
 
 
   //Setup jobs
-  jobsCollection = new app.Collections.JobsCollection();
+    jobsCollection = new app.Collections.JobsCollection();
+    var jobListView = new app.Views.JobListView({
+      collection: jobsCollection,
+      el: $('#jobs-table-body')
+    });
+    jobsCollection.fetch();
 
 
-  var jobListView = new app.Views.JobListView({
-    collection: jobsCollection,
-    el: $('#jobs-table-body')
-  });
-  
-  jobsCollection.fetch();
 
+
+  // backboneGobalHoverOn = function(){
+  //   this.$el.css("color", "#2ecc71");
+  //   return this;
+  // }
+  // backboneGobalHoverOff = function(){
+  //   this.$el.css("color", "#34495e");
+  //   return this;
+  // }
 
 }
 
