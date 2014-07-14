@@ -90,8 +90,8 @@ Company.all.each do |company|
       name: Faker::Lorem.sentence(3),
       start_date: Faker::Business.credit_card_expiry_date,
       end_date: Faker::Business.credit_card_expiry_date,
-      open: [true, true, true, false].sample,
-      paused: [false, false, false, true].sample, 
+      closed_status: [true, true, false, false].sample,
+      paused_status: [false, false, false, true].sample, 
       contract_price: rand(1000...30000),
       client_type: 'Customer',
       client_id: company.roster_customer_clients.sample.id

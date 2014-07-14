@@ -5,33 +5,41 @@ var app = app || { Models: {}, Collections: {}, Views: {} };
 app.Views.JobView = Backbone.View.extend({
 
   initialize: function(){
-    console.log("running app.Views.JobView.initialize");
+    // console.log("running app.Views.JobView.initialize");
     this.listenTo( this.model, "change", this.render );
     this.listenTo( this.model, "destroy", this.remove );
   },
 
 
   // RENDERING
-    tagName: "tr class='job'",
+    
+    getId: function(){
+      // console.log("running app.Views.JobView.getID");
+      return this.model.id;
+    },
     showJobTemplateHolder: function(){
+      // console.log("running app.Views.JobView.showJobTemplateHolder");
       return _.template( $('#job-show-template').html() );
     },
 
     render: function(){
-      console.log("running app.Views.JobView.render");
+      // console.log("running app.Views.JobView.render");
       this.$el.empty();
       this.$el.html(this.showJobTemplateHolder()( this.model.attributes ));
       return this;
     },
-
+    tagName: "tr",
+    className: 'job',
+    
+    // data-id=",//+this.getId(),
 
   // ????
     hoverOn: function(){
-      this.$el.css("color", "#2ecc71");
+      this.$el.addClass('highlighted');
       return this;
     },
     hoverOff: function(){
-      this.$el.css("color", "#34495e");
+      this.$el.removeClass('highlighted');
       return this;
     },
 
@@ -40,26 +48,35 @@ app.Views.JobView = Backbone.View.extend({
     events: {
       'click [data-action="destroy"]' : 'destroy',
       'click [data-action="show"]' : 'show',
-      // 'click [data-action="edit"]' : 'renderEditForm',
+      'click [data-action="toggleClosedStatus"]' : 'toggleClosedStatus',
+      'click [data-action="togglePausedStatus"]' : 'togglePausedStatus',
+      
+      // 'click class= HasDataAction'
+
       'mouseenter' : 'hoverOn',
       'mouseleave' : 'hoverOff'
     },
 
     destroy: function(e){
-      console.log("running destory job")
+      console.log("running destroy job")
       // e.preventDefault();
       this.model.destroy();
     },
-    show: function(e){
-      console.log("running show job");
-      
-      // this should add class 'hidden' to all item of 'display'
-      // THEN this should unhide class "entries"
-
-      console.log (this.model.attributes.id);
-      // job-list-cons
+    toggleClosedStatus: function(event){
+      // console.log("running jobview.toggleClosed");
+      this.model.toggleClosedStatus();
     },
-  
+    togglePausedStatus: function(event){
+      // console.log("running jobview.togglePaused");
+      this.model.togglePausedStatus();
+    },
+    // show: function(e){
+    //   console.log("running show job");      
+    //   console.log (this.model.attributes.id);
+    //   // this should add class 'hidden' to all item of 'display'
+    //   // THEN this should unhide class "entries"
+    // }
+    
   // renderEditForm: function(){
   //   var self = this;
   //   this.$el.html(this.editTemplate( this.model.attributes ));

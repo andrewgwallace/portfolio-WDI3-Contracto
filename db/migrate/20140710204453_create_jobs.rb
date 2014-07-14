@@ -14,8 +14,8 @@ class CreateJobs < ActiveRecord::Migration
       t.date :start_date
       t.date :end_date
 
-      t.boolean :closed
-      t.boolean :paused
+      t.boolean :closed_status
+      t.boolean :paused_status
 
       
 

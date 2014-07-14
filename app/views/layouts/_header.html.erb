@@ -1,32 +1,41 @@
-<div id="header">
-  <div class="main_logo">
-    Main Logo Here
-  </div>
-  <div id="title">
-    <h1>Contracto</h1>
-  </div>
-  <div id="section_header">
-    Section Header
-  </div>
-  <div id="search_box">
-    Search Box
-  </div>
-  <div id="hamburger">
-    Hamburger
-  </div>
-  <div class="flash-messages">
-  <% if admin_signed_in? %>
-    Logged in as <strong><%= current_admin.email %></strong>.
-    <%= link_to 'Edit profile', edit_admin_registration_path %> |
-    <%= link_to "Logout", destroy_admin_session_path, method: :delete %>
-  <% else %>
-    <%= link_to "Sign up", new_admin_registration_path %> |
-    <%= link_to "Login", new_admin_session_path %>
-  <% end %>
+<header>
+  iamHeader 
+  <ul class='header-list'>
 
+    <li class="header-menu-item" id="main-logo">
+      Main Logo Here
+    </li>
+    
+    <li class="header-menu-item" id="application-name">
+      Contracto
+    </li>
+    
+    <li class="header-menu-item" id="section-header">
+      Section Header
+    </li>
+    
+    <li class="header-menu-item" id="search-box">
+      Search Box
+    </li>
+    
+    <li class="header-menu-item" id="hamburger">
+      Hamburger
+    </li>
 
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+    <li class="flash-messages">
+      <% if admin_signed_in? %>
+        Logged in as <strong><%= current_admin.email %></strong>.
+        <%= link_to 'Edit profile', edit_admin_registration_path %> |
+        <%= link_to "Logout", destroy_admin_session_path, method: :delete %>
+      <% else %>
+        <%= link_to "Sign up", new_admin_registration_path %> |
+        <%= link_to "Login", new_admin_session_path %>
+      <% end %>
 
-</div>
-</div>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+    </li>
+  </ul>
+  /iamHeader 
+</header>
+

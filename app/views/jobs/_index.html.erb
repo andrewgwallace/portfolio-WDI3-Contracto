@@ -1,4 +1,4 @@
-
+iamJobsIndex
 <table class="jobs-index" cellspacing="0" width="90%">
     <thead>
         <tr>
@@ -30,12 +30,23 @@
                 <td data-action='show' class='job-start-date'> <%%= start_date %> </td>
                 <td data-action='show' class='job-end-date'> <%%= end_date %> </td>
                 <td data-action='show' class='job-contract-price'> $<%%= contract_price %> </td>
-                <td class='job-closed'> <%%= closed %> </td>
-                <td class='job-paused'> <%%= paused %> </td>
+                
+                <td data-action='toggleClosedStatus' class='job-closed-status'> 
+                    <%%= closed_status %> 
+                    <input type=checkbox <%%= checkboxify(closed_status)  %> >
+                </td>
+
+                <td data-action='togglePausedStatus' class='job-paused-status'> 
+                    <%%= paused_status %>
+                    <input type=checkbox <%%= checkboxify(paused_status) %> >
+                </td>
+
+
                 <td data-action='destroy'> [del_graphic] </td>
                     // #FIX NOT SURE IF ID NEEDS TO BE HARD CODED HERE, PERHAPS 'THIS' will work
         </script>
 </table>
+/iamJobsIndex
 
 
 

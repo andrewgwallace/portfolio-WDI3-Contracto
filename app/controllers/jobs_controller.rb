@@ -27,6 +27,17 @@ class JobsController < AuthenticatedController
     respond_with job
   end
 
+  def update
+    job = Job.find(params[:id])
+    job.update_attributes!(sanatized_params)
+    # ap job
+    respond_with job
+  end
 
+  def sanatized_params 
+    params.require(:job).permit(:closed_status, :paused_status)
+    # return params.require(:id).permit(:closed, :paused)
+
+  end
 
 end

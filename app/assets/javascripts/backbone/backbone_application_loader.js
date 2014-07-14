@@ -3,9 +3,30 @@ console.log ("reading backbone_app_loader.js");
 var app = app || { Models: {}, Collections: {}, Views: {} };
 
 
+
+
+
+
+// Global helper functions
+var checkboxify = function(input){
+  if(input === true){
+    return 'checked'
+  }
+  return 'output from checkboxify'
+}
+
+
+
+
+
+
+
+
 app.initialize = function(){
   console.log("running app.initialize (backbone_app.js)");
-  
+ 
+  //helpers 
+    
 
   // //Setup clock
   // kid = new app.Models.Kid({name:'Max'});
@@ -23,18 +44,38 @@ app.initialize = function(){
       el: $('#jobs-table-body')
     });
     jobsCollection.fetch();
+    //set event listener for jobs-new-btn
+
+    
+  // runs when any button is clicked
+    $('button').on('click', function() {
+      console.log('button clicked')
+    });
+
+  // TABS
+    // runs when any tab is clicked. slideToggles its sibling slider
+      $('.tab').on('click', function(event) {
+        console.log('a .tab was clicked');
+        event.preventDefault();
+        $(this).closest('.container').children('.slider')
+          .slideToggle();
+      });
+
+    // $('.new-tab').on('click', function(e) {
+    //   console.log('a .new-tab was clicked');
+    //   $(this).closest('.container').children('.slider').slideToggle();
+    // });
+
+
+  // FILTER BUTTONS
+    // $('#filters').on('click', '.buttton-name-with-same-name-as-datapoint', function() {
+    //   $('.job').addClass('.hidden').
+    //   $('.DATAPOINT').removeClass('.hidden').
+    // });
 
 
 
 
-  // backboneGobalHoverOn = function(){
-  //   this.$el.css("color", "#2ecc71");
-  //   return this;
-  // }
-  // backboneGobalHoverOff = function(){
-  //   this.$el.css("color", "#34495e");
-  //   return this;
-  // }
 
 }
 
