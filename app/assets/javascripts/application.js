@@ -10,35 +10,37 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require jquery_ujs
-//= require turbolinks
 
-//= require moment
+// FRAMEWORKS
+  //= require jquery
+  //= require jquery_ujs
+  //= require turbolinks
 
-//= require jquery-ui
-//= require jquery.dataTables
-//= require dataTables.jqueryui
-//= require sidebar
-//= require underscore
-//= require backbone
+  //= require moment
+
+  //= require jquery-ui
+  //= require jquery.dataTables
+  //= require dataTables.jqueryui
+  //= require sidebar
+  //= require underscore
+  //= require backbone
 
 
+// BackBone App
+  //= require backbone_init
 
-//= require backbone/backbone_application_loader
+  // require backbone/models/company
+  // require backbone/views/company_view
 
-// require backbone/models/company
-// require backbone/views/company_view
+  //= require backbone/models/job
+  //= require backbone/views/job_view
+  //= require backbone/collections/job_collection
+  //= require backbone/views/job_list_view
 
-//= require backbone/models/job
-//= require backbone/views/job_view
-//= require backbone/collections/job_collection
-//= require backbone/views/job_list_view
-
-//= require backbone/models/entry
-//= require backbone/views/entry_view
-//= require backbone/collections/entry_collection
-//= require backbone/views/entry_list_view
+  //= require backbone/models/entry
+  //= require backbone/views/entry_view
+  //= require backbone/collections/entry_collection
+  //= require backbone/views/entry_list_view
 
 
 // require_tree .

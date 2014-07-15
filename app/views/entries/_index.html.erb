@@ -1,37 +1,43 @@
-<!-- iamEntrysIndex -->
-<!-- SINGLE LINE -->
-<table class="entry-index" cellspacing="0" width="90%">
+<div class="container index-container" id="entries-index-container">
+
+  <div class="utility_bar index-utility_bar" id="entries-index-utility">
+    I am entries-Index-utility_bar
+  </div>
+
+  <table class="index index_table" id="entries-index" cellspacing="0" width="90%">
     <thead>
-        <tr>
-            <th>Entry</th>
-            <th>Date</th>
-            <th colspan='3'>Attachments</th>
-        </tr>
+      <tr>
+        <th>Entry</th>
+        <th>Date</th>
+        <th colspan='3'>Attachments</th>
+      </tr>
     </thead>
 
     <tfoot>
-        <tr>
-            <th>Entry</th>
-            <th>Date</th>
-            <th colspan='3'>Attachments</th>
-        </tr>
+      <tr>
+        <th>Entry</th>
+        <th>Date</th>
+        <th colspan='3'>Attachments</th>
+      </tr>
     </tfoot>
 
-    <tbody id="entry-table-body" >
+    <tbody class="index-table_body" id="entries-index-table_body">
         <!-- the following template will be rendered here -->
     </tbody>
     
-        <script type="text/template" id="entry-show-template">
-                <td data-action='toggleEntrySkin'> <%%= id %> <%%= text_blob %></td>
-                <td>                               <%%= created_at %> </td>
-                <td>photo_icon, num</td>
-                <td>file_icon, num</td>
-                <td>file_icon, num</td>
-                <td>audio_icon, num</td>
-                
-        </script>
-</table>
-<!-- /iamEntrysIndex -->
+      <script type="text/template" id="entry-template">
+        <td> <%%= id %> <%%= text_blob %></td>
+        <td>                               <%%= created_at %> </td>
+        <td>photo_icon, num</td>
+        <td>file_icon, num</td>
+        <td>file_icon, num</td>
+        <td>audio_icon, num</td>          
+      </script>
+
+  </table>
+
+</div>
+
 
 
 
