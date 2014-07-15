@@ -1,28 +1,21 @@
 <header>
-  iamHeader 
-  <ul class='header-list'>
+  <div class="header-menu-item" id="main-logo">
+    Main Logo Here
+  </div>
 
-    <li class="header-menu-item" id="main-logo">
-      Main Logo Here
-    </li>
-    
-    <li class="header-menu-item" id="application-name">
-      Contracto
-    </li>
-    
-    <li class="header-menu-item" id="section-header">
-      Section Header
-    </li>
-    
-    <li class="header-menu-item" id="search-box">
-      Search Box
-    </li>
-    
-    <li class="header-menu-item" id="hamburger">
-      Hamburger
-    </li>
+  <div class="header-menu-item" id="section-header">
+    Section Header
+  </div>
 
-    <li class="flash-messages">
+  <div class="header-menu-item" id="application-name">
+    Contracto
+  </div>
+
+  <div class="header-menu-item" id="hamburger">
+    Hamburger
+  </div>
+  <div id="sidebar-right" class="hidden">
+    <div class="flash-messages header-menu-item" id="devise">
       <% if admin_signed_in? %>
         Logged in as <strong><%= current_admin.email %></strong>.
         <%= link_to 'Edit profile', edit_admin_registration_path %> |
@@ -34,8 +27,7 @@
 
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
-    </li>
-  </ul>
-  /iamHeader 
+    </div>
+  </div>
 </header>
 

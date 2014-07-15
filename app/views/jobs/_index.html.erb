@@ -1,4 +1,3 @@
-iamJobsIndex
 <table class="jobs-index" cellspacing="0" width="90%">
     <thead>
         <tr>
@@ -26,17 +25,17 @@ iamJobsIndex
     </tbody>
         <script type="text/template" id="job-show-template">
                 <td data-action='show'> [customer name] (id:<%%= id %>)</td>
-                <td data-action='show' class='job-name'> <%%= name %> </td>
-                <td data-action='show' class='job-start-date'> <%%= start_date %> </td>
-                <td data-action='show' class='job-end-date'> <%%= end_date %> </td>
-                <td data-action='show' class='job-contract-price'> $<%%= contract_price %> </td>
-                
-                <td data-action='toggleClosedStatus' class='job-closed-status'> 
-                    <%%= closed_status %> 
+                <td data-action='show' class='job-name hasHighlight'> <%%= name %> </td>
+                <td data-action='show' class='job-start-date hasHighlight'> <%%= start_date %> </td>
+                <td data-action='show' class='job-end-date hasHighlight' > <%%= end_date %> </td>
+                <td data-action='show' class='job-contract-price hasHighlight'> $<%%= contract_price %> </td>
+
+                <td data-action='toggleClosedStatus' class='job-closed-status'>
+                    <%%= closed_status %>
                     <input type=checkbox <%%= checkboxify(closed_status)  %> >
                 </td>
 
-                <td data-action='togglePausedStatus' class='job-paused-status'> 
+                <td data-action='togglePausedStatus' class='job-paused-status'>
                     <%%= paused_status %>
                     <input type=checkbox <%%= checkboxify(paused_status) %> >
                 </td>
@@ -46,7 +45,6 @@ iamJobsIndex
                     // #FIX NOT SURE IF ID NEEDS TO BE HARD CODED HERE, PERHAPS 'THIS' will work
         </script>
 </table>
-/iamJobsIndex
 
 
 

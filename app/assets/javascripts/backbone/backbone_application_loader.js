@@ -4,15 +4,33 @@ var app = app || { Models: {}, Collections: {}, Views: {} };
 
 
 
-
-
-
 // Global helper functions
+
+// var currentTime = function(){
+//   return Time.now()
+// }
+
+// var currentTimeClock = function(){
+//   return Time.now()
+// }
+
+
 var checkboxify = function(input){
   if(input === true){
     return 'checked'
   }
   return 'output from checkboxify'
+}
+
+
+var changeDisplayTo = function(modelName){
+  displayName = modelName+'-display';
+  // console.log(displayName)
+  $('.display').hide();
+  $('.'+displayName).show();
+
+  // $('.creation-date').text(currentTime());
+  // $('.modified-date').text(currentTime());
 }
 
 
@@ -24,14 +42,29 @@ var checkboxify = function(input){
 
 app.initialize = function(){
   console.log("running app.initialize (backbone_app.js)");
- 
-  //helpers 
-    
+
+
+  //setup data actions
+    // $('body').on('click', '[data-action]', function(event) {
+    //     var action = $(this).data('action');
+    //     // if (action in actions) {
+    //         // actions[action].apply(this, arguments);
+    //     // }
+    //   console.log(action);
+    //   console.log(event);
+    //   // console.log(this);
+    //   // console.log(self);
+    //   debugger
+    // });
+
+
+  //helpers
+
 
   // //Setup clock
   // kid = new app.Models.Kid({name:'Max'});
   // kidClockView = new app.Views.KidView({
-  //   model: kid, 
+  //   model: kid,
   //   el: $('#kid-clock-column')
   // })
   // kidClockView.render()
@@ -44,9 +77,19 @@ app.initialize = function(){
       el: $('#jobs-table-body')
     });
     jobsCollection.fetch();
+
+  //Setup entrys
+    // entryCollection = new app.Collections.EntryCollection();
+    // var entryListView = new app.Views.EntryListView({
+      // collection: entryCollection,
+      // el: $('#entry-table-body')
+    // });
+    // entryCollection.fetch();
     //set event listener for jobs-new-btn
 
-    
+
+
+
   // runs when any button is clicked
     $('button').on('click', function() {
       console.log('button clicked')
@@ -84,7 +127,7 @@ app.initialize = function(){
 
 $(function(){
   console.log("DOM ready from backbone_app_loader.js");
-  
+
   // var oldSync = Backbone.sync;
   // Backbone.sync = function(method, model, options){
   //   options.beforeSend = function(xhr){

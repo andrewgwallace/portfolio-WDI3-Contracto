@@ -17,11 +17,8 @@
 //= require jquery-ui
 //= require jquery.dataTables
 //= require dataTables.jqueryui
-
 //= require underscore
 //= require backbone
-
-
 
 //= require backbone/backbone_application_loader
 
@@ -37,5 +34,6 @@
 // require backbone/views/entry_view
 // require backbone/collections/entries_collection
 // require backbone/views/entries_list_view
+
 
 //= require_tree .
