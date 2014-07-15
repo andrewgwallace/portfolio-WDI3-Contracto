@@ -21,18 +21,22 @@ app.Models.Entry = Backbone.Model.extend({
   toggleVisibleToClientStatus: function(){
     console.log('running entry.toggleVisibleToClientStatus');
     if (this.attributes.visible_to_client_status == true){
-      this.save({visible_to_client_status: false}, {patch: true});
+      // this.save({visible_to_client_status: false}, {patch: true}); #FIX
+      this.save({visible_to_client_status: false});
     }else{
-      this.save({visible_to_client_status: true}, {patch: true});
+      // this.save({visible_to_client_status: true}, {patch: true});
+      this.save({visible_to_client_status: true});
     }
     
   },
   toggleVisibleToSubcontractorsStatus: function(){
     console.log('running entry.toggleVisibleToSubcontractorsStatus');
     if (this.attributes.visible_to_subcontractors_status == true){
-      this.save({visible_to_subcontractors_status: false}, {patch: true});
+      // this.save({visible_to_subcontractors_status: false}, {patch: true});
+      this.save({visible_to_subcontractors_status: false});
     }else{
-      this.save({visible_to_subcontractors_status: true}, {patch: true});
+      // this.save({visible_to_subcontractors_status: true}, {patch: true});
+      this.save({visible_to_subcontractors_status: true});
     }
   }
 });

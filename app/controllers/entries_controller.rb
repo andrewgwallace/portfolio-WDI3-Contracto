@@ -37,7 +37,7 @@ class EntriesController < AuthenticatedController
     @entry = Entry.find(params[:id])
     @entry.update_attributes!(sanatized_params)
     # ap job
-    respond_with entry
+    respond_with @entry
   end
 
 
