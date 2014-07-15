@@ -1,4 +1,4 @@
-console.log ("reading backbone_app_loader.js");
+// console.log("reading backbone_app_loader.js");
 
 var app = app || { Models: {}, Collections: {}, Views: {} };
 
@@ -6,35 +6,40 @@ var app = app || { Models: {}, Collections: {}, Views: {} };
 
 // Global helper functions
 
-// var currentTime = function(){
-//   return Time.now()
-// }
-
-// var currentTimeClock = function(){
-//   return Time.now()
-// }
-
+var currentTime = function(){
+  return moment().format('YY-MM-DD hh:mm');
+}
 
 var checkboxify = function(input){
   if(input === true){
-    return 'checked'
+    return 'checked';
   }
-  return 'output from checkboxify'
+  return 'output from checkboxify';
 }
 
 
-var changeDisplayTo = function(modelName){
+var changeDisplayTo = function(modelName, model){
+  console.log('running changeDisplayTo');
   displayName = modelName+'-display';
+  collectionName = modelName+'Collection';
   // console.log(displayName)
   $('.display').hide();
   $('.'+displayName).show();
+  $('.created-at').text(currentTime());
+  $('.updated_at').text(currentTime());
+  // entryCollection.fetch();
 
-  // $('.creation-date').text(currentTime());
-  // $('.modified-date').text(currentTime());
+  // entryCollection = new app.Collections.EntryCollection({url:'hello'});
+  // entryCollection.url = 'hello';
+  entryCollection.url = '/company/jobs/'+model.id+'/entries';
+    // var entryListView = new app.Views.EntryListView({
+      // collection: entryCollection,
+      // el: $('#entries-table-body')
+    // });
+  entryCollection.fetch();
+
+
 }
-
-
-
 
 
 
@@ -71,23 +76,26 @@ app.initialize = function(){
 
 
   //Setup jobs
-    jobsCollection = new app.Collections.JobsCollection();
+    jobCollection = new app.Collections.JobCollection();
     var jobListView = new app.Views.JobListView({
-      collection: jobsCollection,
-      el: $('#jobs-table-body')
+      collection: jobCollection,
+      el: $('#job-table-body')
     });
-    jobsCollection.fetch();
-
-  //Setup entrys
-    // entryCollection = new app.Collections.EntryCollection();
-    // var entryListView = new app.Views.EntryListView({
-      // collection: entryCollection,
-      // el: $('#entry-table-body')
-    // });
-    // entryCollection.fetch();
-    //set event listener for jobs-new-btn
+    jobCollection.fetch();
 
 
+    
+  // Setup entrys
+    entryCollection = new app.Collections.EntryCollection();
+    // entryCollection.url = 'hello';
+    // entryCollection.url = '/company/jobs/'+model.id+'/entries';
+    var entryListView = new app.Views.EntryListView({
+      collection: entryCollection,
+      el: $('#entry-table-body')
+    });
+  // entryCollection.fetch();
+
+    
 
 
   // runs when any button is clicked

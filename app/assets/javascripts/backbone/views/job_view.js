@@ -46,30 +46,67 @@ app.Views.JobView = Backbone.View.extend({
 
   // DATA ACTIONS
     events: {
-      'click [data-action="destroy"]' : 'destroy',
-      'click [data-action="show"]' : 'show',
-      'click [data-action="toggleClosedStatus"]' : 'toggleClosedStatus',
-      'click [data-action="togglePausedStatus"]' : 'togglePausedStatus',
-
-      // 'click class= HasDataAction'
+      // 'click [data-action="destroy"]' : 'destroy',
+      // 'click [data-action="show"]' : 'show',
+      // 'click [data-action="toggleClosedStatus"]' : 'toggleClosedStatus',
+      // 'click [data-action="togglePausedStatus"]' : 'togglePausedStatus',
 
       // 'mouseenter' : 'hoverOn',
       // 'mouseleave' : 'hoverOff'
+      'click [data-action]' : 'processDataAction',
     },
 
-    destroy: function(e){
-      console.log("running destroy job")
-      // e.preventDefault();
-      this.model.destroy();
+
+    processDataAction: function(event){
+      console.log('running processDataAction');
+      console.log('action is ' +event.target.dataset.action);
+      // console.log(event.target.dataset.action);
+      // console.log(this.model.attributes.id);
+      this.model['hello']();
+      this.model[event.target.dataset.action]();
+
+      // event.target.dataset.action
+      // console.log(event);
+      // this.model['actionhere']();
+      
+
+
+      // console.log(this);
+      // // console.log($(this));
+
+      // console.log(this.model);
+      // // console.log($(this).model);
+
+      // console.log(this.model.attributes.id);
+
+      // console.log($(this).html())
+
+
+      // console.log(event);
+      // console.log($(event);
+      // console.log(event.model);
+      // debugger
+      // 
+      
+      // console.log(this.model.target);
+      // console.log(this.target);
+      // console.log(this.event);
+
     },
-    toggleClosedStatus: function(event){
-      // console.log("running jobview.toggleClosed");
-      this.model.toggleClosedStatus();
-    },
-    togglePausedStatus: function(event){
-      // console.log("running jobview.togglePaused");
-      this.model.togglePausedStatus();
-    },
+
+    // destroy: function(e){
+    //   console.log("running destroy job")
+    //   // e.preventDefault();
+    //   this.model.destroy();
+    // },
+    // toggleClosedStatus: function(event){
+    //   // console.log("running jobview.toggleClosed");
+    //   this.model.toggleClosedStatus();
+    // },
+    // togglePausedStatus: function(event){
+    //   // console.log("running jobview.togglePaused");
+    //   this.model.togglePausedStatus();
+    // },
     // show: function(e){
     //   console.log("running show job");
     //   console.log (this.model.attributes.id);
