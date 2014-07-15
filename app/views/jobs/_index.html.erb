@@ -1,5 +1,5 @@
 iamJobsIndex
-<table class="jobs-index" cellspacing="0" width="90%">
+<table class="job-index" cellspacing="0" width="90%">
     <thead>
         <tr>
             <th>Customer</th>
@@ -22,28 +22,25 @@ iamJobsIndex
         </tr>
     </tfoot>
 
-    <tbody id="jobs-table-body" >
+    <tbody id="job-table-body" >
+        <!-- the following template will be rendered here -->
     </tbody>
+    
         <script type="text/template" id="job-show-template">
-                <td data-action='show'> [customer name] (id:<%%= id %>)</td>
-                <td data-action='show' class='job-name'> <%%= name %> </td>
-                <td data-action='show' class='job-start-date'> <%%= start_date %> </td>
-                <td data-action='show' class='job-end-date'> <%%= end_date %> </td>
-                <td data-action='show' class='job-contract-price'> $<%%= contract_price %> </td>
-                
+                <td data-action='showCustomerDisplay'> [customer name here] (id:<%%= id %>)</td>
+                <td data-action='showJob' class='job-name'> <%%= name %> </td>
+                <td data-action='' class='job-start-date'> <%%= start_date %> </td>
+                <td data-action='' class='job-end-date'> <%%= end_date %> </td>
+                <td data-action='' class='job-contract-price'> $<%%= contract_price %> </td>
                 <td data-action='toggleClosedStatus' class='job-closed-status'> 
                     <%%= closed_status %> 
                     <input type=checkbox <%%= checkboxify(closed_status)  %> >
                 </td>
-
                 <td data-action='togglePausedStatus' class='job-paused-status'> 
                     <%%= paused_status %>
                     <input type=checkbox <%%= checkboxify(paused_status) %> >
                 </td>
-
-
-                <td data-action='destroy'> [del_graphic] </td>
-                    // #FIX NOT SURE IF ID NEEDS TO BE HARD CODED HERE, PERHAPS 'THIS' will work
+                <td data-action='destroy' class='has-data-action'> [del_graphic] </td>
         </script>
 </table>
 /iamJobsIndex

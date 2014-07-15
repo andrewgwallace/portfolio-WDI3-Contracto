@@ -13,8 +13,8 @@ app.Views.JobListView = Backbone.View.extend({
     console.log("running app.Views.JobsListView.render")
     var self = this;
     this.$el.empty();
-    _.each(this.collection.models, function(Job){
-      var JobView = new app.Views.JobView({model: Job})
+    _.each(this.collection.models, function(job){
+      var JobView = new app.Views.JobView({model: job})
       self.$el.append( JobView.render().el );
     })
   }

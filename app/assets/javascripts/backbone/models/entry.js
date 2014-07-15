@@ -1,30 +1,21 @@
-console.log("reading job.js");
+console.log("reading entry.js");
 
 var app = app || { Models: {}, Collections: {}, Views: {} };
 
-app.Models.Job = Backbone.Model.extend({
+app.Models.Entry = Backbone.Model.extend({
   initialize: function(){
-    console.log("running app.Models.Job.initialize");
+    console.log("running app.Models.Entry.initialize");
   },
   defaults:{
     // closedCheckbox: checkboxify()
-    // title: "Enter Job Title",
+    // title: "Enter Entry Title",
     // client_id: "Enter client name",
-    // description: 'Enter a brief job description'//,
+    // description: 'Enter a brief entry description'//,
     // start_date: '',// #FIX HOW TO POPULATE WITH CURRENT DATE,
     // end_date: // #FIX HOW TO POPULATE WITH CURRENT DATE
   },
-  hello: function(){
-    console.log('hello')
-  },
-  showJob: function(){
-    console.log('running showJob');
-    $('.display').hide();
-    $('.entries-display').show();
-  },
-
   toggleClosedStatus: function(){
-    console.log('running job.toggleClosedStatus');
+    // console.log('running entry.toggleClosed');
     if (this.attributes.closed_status == true){
       this.save({closed_status: false}, {patch: true});
     }else{
@@ -33,7 +24,7 @@ app.Models.Job = Backbone.Model.extend({
     
   },
   togglePausedStatus: function(){
-    console.log('running job.togglePausedStatus');
+    // console.log('running entry.togglePaused');
     // console.log('pre-save paused status is now'+ this.attributes.paused);
     if (this.attributes.paused_status == true){
       this.save({paused_status: false}, {patch: true});
@@ -41,8 +32,7 @@ app.Models.Job = Backbone.Model.extend({
       this.save({paused_status: true}, {patch: true});
     }
     // console.log('post-save paused status is now'+ this.attributes.paused)
-  },
- 
+  }
 });
 
 // How to call this variable within the app name space
