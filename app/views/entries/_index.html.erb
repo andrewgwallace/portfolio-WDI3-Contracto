@@ -27,7 +27,15 @@
     
       <script type="text/template" id="entry-template">
         <td> <%%= id %> <%%= text_blob %></td>
-        <td>                               <%%= created_at %> </td>
+        <td> <%%= created_at %> </td>
+        <td data-action='toggleVisibleToClientStatus' class='entry-visible-to-client-status'> 
+                            <%%= visable_to_job_client_status %> 
+                            <input type=checkbox <%%= checkboxify(visable_to_job_client_status)  %> >
+        </td>
+        <td data-action='toggleVisibleToSubcontractorsStatus' class='entry-visible-to-subcontractors-status'> 
+            <%%= visable_to_job_subcontractors_status %> 
+            <input type=checkbox <%%= checkboxify(visable_to_job_subcontractors_status)  %> >
+        </td>
         <td>photo_icon, num</td>
         <td>file_icon, num</td>
         <td>file_icon, num</td>

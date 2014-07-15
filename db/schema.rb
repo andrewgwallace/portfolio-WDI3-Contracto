@@ -44,6 +44,8 @@ ActiveRecord::Schema.define(version: 20140711213220) do
     t.boolean  "read"
     t.boolean  "auto_generated_from_incoming_email"
     t.boolean  "read_status"
+    t.boolean  "visable_to_job_client_status"
+    t.boolean  "visable_to_job_subcontractors_status"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

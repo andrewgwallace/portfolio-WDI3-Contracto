@@ -113,7 +113,10 @@ Job.all.each do |job|
   10.times do
     job.entries.create({
       text_blob: Faker::Lorem.sentence(3),
-
+      auto_generated_from_incoming_email: false, 
+      read_status: nil,
+      visable_to_job_client_status: [true, false].sample,
+      visable_to_job_subcontractors_status: [true, false].sample
       })
   end
 end

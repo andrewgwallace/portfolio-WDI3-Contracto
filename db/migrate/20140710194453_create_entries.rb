@@ -9,6 +9,9 @@ class CreateEntries < ActiveRecord::Migration
 
       t.boolean :auto_generated_from_incoming_email
       t.boolean :read_status
+      
+      t.boolean :visable_to_job_client_status
+      t.boolean :visable_to_job_subcontractors_status
 
       t.timestamps
     end

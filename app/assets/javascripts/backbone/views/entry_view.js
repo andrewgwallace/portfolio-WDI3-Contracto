@@ -31,74 +31,21 @@ app.Views.EntryView = Backbone.View.extend({
     tagName: "tr",
     className: 'entry',
     
-    // data-id=",//+this.getId(),
 
-  // ????
-    hoverOn: function(){
-      this.$el.addClass('highlighted');
-      return this;
-    },
-    hoverOff: function(){
-      this.$el.removeClass('highlighted');
-      return this;
-    },
-
-
-  // DATA ACTIONS
+  // EVENTS AND DATA ACTIONS
     events: {
-      'click [data-action="destroy"]' : 'destroy',
-      'click [data-action="show"]' : 'show',
-      'click [data-action="toggleClosedStatus"]' : 'toggleClosedStatus',
-      'click [data-action="togglePausedStatus"]' : 'togglePausedStatus',
-      
-      // 'click class= HasDataAction'
-
-      'mouseenter' : 'hoverOn',
-      'mouseleave' : 'hoverOff'
+      'click [data-action]' : 'processDataAction',
     },
 
-    destroy: function(e){
-      console.log("running destroy entry")
-      // e.preventDefault();
-      this.model.destroy();
-    },
-    toggleClosedStatus: function(event){
-      // console.log("running entryview.toggleClosed");
-      this.model.toggleClosedStatus();
-    },
-    togglePausedStatus: function(event){
-      // console.log("running entryview.togglePaused");
-      this.model.togglePausedStatus();
-    },
-    // show: function(e){
-    //   console.log("running show entry");      
-    //   console.log (this.model.attributes.id);
-    //   // this should add class 'hidden' to all item of 'display'
-    //   // THEN this should unhide class "entries"
-    // }
-    
-  // renderEditForm: function(){
-  //   var self = this;
-  //   this.$el.html(this.editTemplate( this.model.attributes ));
+    processDataAction: function(event){
+      console.log('running processDataAction');
+      console.log('action is ' +event.target.dataset.action);
+      // console.log(event.target.dataset.action);
+      // console.log(this.model.attributes.id);
+      // this.model['hello']();
+      this.model[event.target.dataset.action]();
 
-  //   //Event listeners for the form and cancel button
-  //   this.$el.find('form').on("submit", function(e){
-  //     e.preventDefault();
-  //     var nameField = self.$el.find('input');
-  //     var newName = nameField.val();
-  //     // nameField.val('');
-  //     // to test what 'this' is in the current scope
-  //     // console.log(this);
-  //     self.model.set('name', newName);
-  //     self.model.save();
-  //   })
-
-  //   this.$el.find('button').on('click', function(e){
-  //     e.preventDefault;
-  //     self.render();
-  //   })
-  // },
-
+    },
 
 
 });

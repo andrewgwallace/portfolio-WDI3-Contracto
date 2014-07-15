@@ -1,12 +1,15 @@
 class EntriesController < AuthenticatedController
 
-    respond_to :html, :json
+  respond_to :html, :json
+
+  before_action :set_instance_variables  
+
+  
 
   def index
-    job = Job.find(params[:job_id])
-    entries = job.entries
-    puts entries.length 
-    respond_with entries
+    @entries = @job.entries
+    # puts entries.length 
+    respond_with @entries
   end
 
 
@@ -19,34 +22,36 @@ class EntriesController < AuthenticatedController
 
     # puts "current_admin.company is #{current_admin.company}"
 
-    @company = current_admin.company
+    
     # @jobs = current_admin.company.jobs
     # @job = Job.find(params[:id])
   end
 
   def destroy
-    job = Job.find(params[:id])
-    job.delete
-    respond_with job
+    @entry = Entry.find(params[:id])
+    @entry.delete
+    respond_with @entry
   end
 
   def update
-    job = Job.find(params[:id])
-    job.update_attributes!(sanatized_ruby_params)
+    @entry = Entry.find(params[:id])
+    @entry.update_attributes!(sanatized_params)
     # ap job
-    respond_with job
+    respond_with entry
   end
 
 
 
+  private
 
-  def sanatized_ruby_params 
-    params.require(:job).permit(:closed_status, :paused_status);
+  def sanatized_params 
+    params.require(:entry).permit(:text_blob, :auto_generated_from_incoming_email, :read_status, :visable_to_job_client_status, :visable_to_job_subcontractors_status)
     # return params.require(:id).permit(:closed, :paused)
   end
 
-  def sanatized_jaon
-    params.require(:entry).permit();
+  def set_instance_variables
+    @company = current_admin.company
+    @job = Job.find(params[:job_id])
   end
 
 end

@@ -1,6 +1,10 @@
 class JobsController < AuthenticatedController
 
-    respond_to :html, :json
+  respond_to :html, :json
+
+  
+
+
 
   def index
     jobs = current_admin.company.jobs
@@ -34,10 +38,13 @@ class JobsController < AuthenticatedController
     respond_with job
   end
 
+
+  private 
+
   def sanatized_params 
     params.require(:job).permit(:closed_status, :paused_status)
     # return params.require(:id).permit(:closed, :paused)
-
   end
+
 
 end

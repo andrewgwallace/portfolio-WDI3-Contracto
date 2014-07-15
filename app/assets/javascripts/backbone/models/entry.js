@@ -18,24 +18,22 @@ app.Models.Entry = Backbone.Model.extend({
     // start_date: '',// #FIX HOW TO POPULATE WITH CURRENT DATE,
     // end_date: // #FIX HOW TO POPULATE WITH CURRENT DATE
   },
-  toggleClosedStatus: function(){
-    // console.log('running entry.toggleClosed');
-    if (this.attributes.closed_status == true){
-      this.save({closed_status: false}, {patch: true});
+  toggleVisibleToClientStatus: function(){
+    console.log('running entry.toggleVisibleToClientStatus');
+    if (this.attributes.visible_to_client_status == true){
+      this.save({visible_to_client_status: false}, {patch: true});
     }else{
-      this.save({closed_status: true}, {patch: true});
+      this.save({visible_to_client_status: true}, {patch: true});
     }
     
   },
-  togglePausedStatus: function(){
-    // console.log('running entry.togglePaused');
-    // console.log('pre-save paused status is now'+ this.attributes.paused);
-    if (this.attributes.paused_status == true){
-      this.save({paused_status: false}, {patch: true});
+  toggleVisibleToSubcontractorsStatus: function(){
+    console.log('running entry.toggleVisibleToSubcontractorsStatus');
+    if (this.attributes.visible_to_subcontractors_status == true){
+      this.save({visible_to_subcontractors_status: false}, {patch: true});
     }else{
-      this.save({paused_status: true}, {patch: true});
+      this.save({visible_to_subcontractors_status: true}, {patch: true});
     }
-    // console.log('post-save paused status is now'+ this.attributes.paused)
   }
 });
 
