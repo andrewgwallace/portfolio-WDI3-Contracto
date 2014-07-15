@@ -1,52 +1,55 @@
-<!-- iamJobsIndex -->
-<table class="job-index" cellspacing="0" width="90%">
-<!-- <table class="jobs-index" cellspacing="0" width="90%"> -->
-    <thead>
-        <tr>
-            <th>Customer</th>
-            <th>Job</th>
-            <th>Start Date</th>
-            <th>End Date</th>
-            <th>Contract Price</th>
-            <th colspan='3'>Status</th>
-        </tr>
-    </thead>
+<div class="container index-container" id="jobs-index-container">
 
-    <tfoot>
-        <tr>
-            <th>Customer</th>
-            <th>Job</th>
-            <th>Start Date</th>
-            <th>End Date</th>
-            <th>Contract Price</th>
-            <th colspan='3'>Status</th>
-        </tr>
-    </tfoot>
+    <div class="utility_bar index-utility_bar" id="jobs-index-utility">
+        I am Jobs-Index-utility_bar
+    </div>
 
-    <tbody id="job-table-body" >
-        <!-- the following template will be rendered here -->
-    </tbody>
-        <script type="text/template" id="job-show-template">
-                <td data-action='showCustomerDisplay'> [customer name here] (id:<%%= id %>)</td>
-                <td data-action='showJob' class='job-name'> <%%= name %> </td>
-                <td data-action='' class='job-start-date'> <%%= start_date %> </td>
-                <td data-action='' class='job-end-date'> <%%= end_date %> </td>
-                <td data-action='' class='job-contract-price'> $<%%= contract_price %> </td>
-                <td data-action='toggleClosedStatus' class='job-closed-status'> 
-                    <%%= closed_status %> 
-                    <input type=checkbox <%%= checkboxify(closed_status)  %> >
-                </td>
-                <td data-action='togglePausedStatus' class='job-paused-status'> 
-                    <%%= paused_status %>
-                    <input type=checkbox <%%= checkboxify(paused_status) %> >
-                </td>
+        <table class="index index_table" id="jobs-index" cellspacing="0" width="90%">
+        <!-- <table class="jobs-index" cellspacing="0" width="90%"> -->
+            <thead>
+                <tr>
+                    <th>Customer</th>
+                    <th>Job</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Contract Price</th>
+                    <th colspan='3'>Status</th>
+                </tr>
+            </thead>
 
+            <tfoot>
+                <tr>
+                    <th>Customer</th>
+                    <th>Job</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Contract Price</th>
+                    <th colspan='3'>Status</th>
+                </tr>
+            </tfoot>
 
-                <td data-action='destroy'> [del_graphic] </td>
-                    // #FIX NOT SURE IF ID NEEDS TO BE HARD CODED HERE, PERHAPS 'THIS' will work
-        </script>
-</table>
-<!-- /iamJobsIndex -->
+            <tbody class="index-table_body" id="jobs-index-table_body">
+                <!-- the template will be rendered here -->
+            </tbody>
+                <script type="text/template" id="job-template">
+                        <td data-action='showCustomerDisplay'> [customer name here] (id:<%%= id %>)</td>
+                        <td data-action='showJob' class='job-name'> <%%= name %> </td>
+                        <td data-action='' class='job-start-date'> <%%= start_date %> </td>
+                        <td data-action='' class='job-end-date'> <%%= end_date %> </td>
+                        <td data-action='' class='job-contract-price'> $<%%= contract_price %> </td>
+                        <td data-action='toggleClosedStatus' class='job-closed-status'> 
+                            <%%= closed_status %> 
+                            <input type=checkbox <%%= checkboxify(closed_status)  %> >
+                        </td>
+                        <td data-action='togglePausedStatus' class='job-paused-status'> 
+                            <%%= paused_status %>
+                            <input type=checkbox <%%= checkboxify(paused_status) %> >
+                        </td>
+                        <td data-action='destroy'> [del_graphic] </td>
+                </script>
+        </table>
+
+</div>
 
 
 

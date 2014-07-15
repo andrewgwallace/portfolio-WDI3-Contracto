@@ -19,7 +19,7 @@ app.Views.EntryView = Backbone.View.extend({
     },
     showEntryTemplateHolder: function(){
       // console.log("running app.Views.EntryView.showEntryTemplateHolder");
-      return _.template( $('#entry-show-template').html() );
+      return _.template( $('#entry-template').html() );
     },
 
     render: function(){
