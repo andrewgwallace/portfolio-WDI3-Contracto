@@ -6,6 +6,10 @@ app.Models.Company = Backbone.Model.extend({
     // console.log("running app.Models.Company.initialize");
   initialize: function(){
   },
+
+  singularName: 'company',
+  pluralName: 'companies',
+
   defaults:{
     // name: ''
   }

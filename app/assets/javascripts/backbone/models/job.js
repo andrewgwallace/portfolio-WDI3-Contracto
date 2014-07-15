@@ -8,7 +8,8 @@ app.Models.Job = Backbone.Model.extend({
   },
   defaults:{
   },
-
+  singularName:'job',
+  pluralName:'jobs',
 
   //DataAction Responders
 

@@ -20,8 +20,11 @@ var app = app || { Models: {}, Collections: {}, Views: {} };
   var changeFocusTo = function(modelName, model){
     console.log('running changeFocusTo to '+modelName+" with "+ model.attributes.id);
 
+
+    // THIS NEEDS TO BE DRYED OUT AN MADE MODULAR
+    
     //Start Fetching New Data
-      collectionName = modelName+'Collection';
+      // collectionName = modelName+'Collection';
       entryCollection.url = '/company/jobs/'+model.id+'/entries';
       console.log ("url is "+ entryCollection.url)
       entryCollection.fetch();

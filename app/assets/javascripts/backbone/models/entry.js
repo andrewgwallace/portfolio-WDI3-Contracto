@@ -6,6 +6,10 @@ app.Models.Entry = Backbone.Model.extend({
   initialize: function(){
     console.log("running app.Models.Entry.initialize");
   },
+
+  singularName:'entry',
+  pluralName:'entries',
+
   defaults:{
     // closedCheckbox: checkboxify()
     // title: "Enter Entry Title",
