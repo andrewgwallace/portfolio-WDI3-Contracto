@@ -5,6 +5,8 @@
 //     For all details and documentation:
 //     http://backbonejs.org
 
+console.log("reading backbone.js");
+
 (function(root, factory) {
 
   // Set up Backbone appropriately for the environment. Start with AMD.

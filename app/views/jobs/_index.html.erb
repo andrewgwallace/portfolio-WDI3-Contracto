@@ -36,7 +36,7 @@
                         <td data-action='showJob' class='job-name'> <%%= name %> </td>
                         <td data-action='' class='job-start-date'> <%%= start_date %> </td>
                         <td data-action='' class='job-end-date'> <%%= end_date %> </td>
-                        <td data-action='' class='job-contract-price'> $<%%= contract_price %> </td>
+                        <td data-action='' class='job-contract-price'> $<%%= accounting.formatMoney(contract_price) %> </td>
                         <td data-action='toggleClosedStatus' class='job-closed-status'> 
                             <%%= closed_status %> 
                             <input type=checkbox <%%= checkboxify(closed_status)  %> >

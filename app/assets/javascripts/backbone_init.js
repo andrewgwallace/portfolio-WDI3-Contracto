@@ -1,4 +1,4 @@
-// console.log("reading backbone_app_loader.js");
+console.log("reading backbone_init.js");
 
 var app = app || { Models: {}, Collections: {}, Views: {} };
 
@@ -40,10 +40,6 @@ var app = app || { Models: {}, Collections: {}, Views: {} };
       $('.focus-area').hide();
       $('#'+newFocusName).show();
 
-      
-
-    
-    
   }
 
 
