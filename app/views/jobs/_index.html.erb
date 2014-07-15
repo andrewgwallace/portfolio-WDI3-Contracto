@@ -1,5 +1,6 @@
 iamJobsIndex
 <table class="job-index" cellspacing="0" width="90%">
+<table class="jobs-index" cellspacing="0" width="90%">
     <thead>
         <tr>
             <th>Customer</th>
@@ -25,7 +26,6 @@ iamJobsIndex
     <tbody id="job-table-body" >
         <!-- the following template will be rendered here -->
     </tbody>
-    
         <script type="text/template" id="job-show-template">
                 <td data-action='showCustomerDisplay'> [customer name here] (id:<%%= id %>)</td>
                 <td data-action='showJob' class='job-name'> <%%= name %> </td>
@@ -40,7 +40,10 @@ iamJobsIndex
                     <%%= paused_status %>
                     <input type=checkbox <%%= checkboxify(paused_status) %> >
                 </td>
-                <td data-action='destroy' class='has-data-action'> [del_graphic] </td>
+
+
+                <td data-action='destroy'> [del_graphic] </td>
+                    // #FIX NOT SURE IF ID NEEDS TO BE HARD CODED HERE, PERHAPS 'THIS' will work
         </script>
 </table>
 /iamJobsIndex

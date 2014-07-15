@@ -1,0 +1,107 @@
+/*TEMP*/
+/*  div {
+    border: 1px solid green;
+  }
+
+  td {
+    border: 1px solid blue;
+  }*/
+
+
+/*STRUCTURE OF THE PAGE*/
+
+/* ---- HEADER ---- */
+
+  header {
+    color: white;
+    background-color: rgba(33, 33, 33, 1);
+    width: 100%;
+
+  }
+
+.header-menu-item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+  #main-logo {
+    height: 75px;
+    width: 75px;
+    background-color: green;
+  }
+
+  #section-header {
+    height: 75px;
+    width: 250px;
+    background-color: red;
+    color: white;
+  }
+
+  #application-name {
+    text-align: center;
+    font-size: 18px;
+  }
+
+
+
+  .header-list li{
+    display: inline;
+  }
+
+  #job_list {
+    margin: auto;
+    height: 80%;
+  }
+
+  .btn {
+    background-color: gray;
+    border: black 1px solid;
+    text-decoration: none;
+    outline: none;
+  }
+  .tab{
+    margin: auto;
+    width: 100px;
+    text-decoration: none;
+    outline: none;
+  }
+
+  .new-tab{
+    /*faces down*/
+    text-align: center;
+    height: 30px;
+    width: 10%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-decoration: none;
+    outline: none;
+  }
+
+  table{
+    background-color: #fff;
+  }
+
+ tbody tr:hover {
+    background-color: rgba(0, 118, 255, 0.4);
+  }
+
+  thead, tfoot{
+    background-color: orange;
+  }
+
+  .new{
+    background-color: blue;
+  }
+
+a:active { outline: none }
+
+
+
+/*JQUERY / BACKBONE STUFF*/
+  .hidden{
+    display: none;
+  }
+
+  .hasHighlight:hover {
+    color: #2ecc71;
+  }

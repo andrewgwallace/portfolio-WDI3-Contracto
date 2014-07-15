@@ -45,6 +45,14 @@ admin2 = Admin.create({
   mobile_phone: "973.454.1015"
 })
 
+admin3 = Admin.create({
+  email: "andrew.g.wallace@gmail.com",
+  password: 'password',
+  first_name: 'Andrew',
+  last_name: 'Wallace',
+  address: "244 Monroe Ave.\n River Edge, NJ 07661",
+  mobile_phone: "201.477.8256"
+  })
 
 3.times do
   admin = Admin.create({
@@ -91,7 +99,7 @@ Company.all.each do |company|
       start_date: Faker::Business.credit_card_expiry_date,
       end_date: Faker::Business.credit_card_expiry_date,
       closed_status: [true, true, false, false].sample,
-      paused_status: [false, false, false, true].sample, 
+      paused_status: [false, false, false, true].sample,
       contract_price: rand(1000...30000),
       client_type: 'Customer',
       client_id: company.roster_customer_clients.sample.id

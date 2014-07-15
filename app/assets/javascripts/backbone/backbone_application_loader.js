@@ -39,8 +39,6 @@ var changeDisplayTo = function(modelName, model){
     // });
   entryCollection.fetch();
 
-}
-
 
 
 
@@ -50,7 +48,7 @@ var changeDisplayTo = function(modelName, model){
 
 app.initialize = function(){
   console.log("running app.initialize (backbone_app.js)");
- 
+
 
   //setup data actions
     // $('body').on('click', '[data-action]', function(event) {
@@ -66,13 +64,13 @@ app.initialize = function(){
     // });
 
 
-  //helpers 
-    
+  //helpers
+
 
   // //Setup clock
   // kid = new app.Models.Kid({name:'Max'});
   // kidClockView = new app.Views.KidView({
-  //   model: kid, 
+  //   model: kid,
   //   el: $('#kid-clock-column')
   // })
   // kidClockView.render()
@@ -138,7 +136,7 @@ app.initialize = function(){
 
 $(function(){
   console.log("DOM ready from backbone_app_loader.js");
-  
+
   // var oldSync = Backbone.sync;
   // Backbone.sync = function(method, model, options){
   //   options.beforeSend = function(xhr){

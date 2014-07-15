@@ -12,7 +12,7 @@ app.Views.JobView = Backbone.View.extend({
 
 
   // RENDERING
-    
+
     getId: function(){
       // console.log("running app.Views.JobView.getID");
       return this.model.id;
@@ -30,18 +30,18 @@ app.Views.JobView = Backbone.View.extend({
     },
     tagName: "tr",
     className: 'job',
-    
+
     // data-id=",//+this.getId(),
 
   // ????
-    hoverOn: function(){
-      this.$el.addClass('highlighted');
-      return this;
-    },
-    hoverOff: function(){
-      this.$el.removeClass('highlighted');
-      return this;
-    },
+    // hoverOn: function(){
+    //   this.$el.addClass('highlighted');
+    //   return this;
+    // },
+    // hoverOff: function(){
+    //   this.$el.removeClass('highlighted');
+    //   return this;
+    // },
 
 
   // DATA ACTIONS
@@ -51,10 +51,8 @@ app.Views.JobView = Backbone.View.extend({
       // 'click [data-action="toggleClosedStatus"]' : 'toggleClosedStatus',
       // 'click [data-action="togglePausedStatus"]' : 'togglePausedStatus',
 
-      'mouseenter' : 'hoverOn',
-      'mouseleave' : 'hoverOff',
-
-      "click [data-action]" : 'processDataAction'
+      // 'mouseenter' : 'hoverOn',
+      // 'mouseleave' : 'hoverOff'
     },
 
 
@@ -109,12 +107,12 @@ app.Views.JobView = Backbone.View.extend({
     //   this.model.togglePausedStatus();
     // },
     // show: function(e){
-    //   console.log("running show job");      
+    //   console.log("running show job");
     //   console.log (this.model.attributes.id);
     //   // this should add class 'hidden' to all item of 'display'
     //   // THEN this should unhide class "entries"
     // }
-    
+
   // renderEditForm: function(){
   //   var self = this;
   //   this.$el.html(this.editTemplate( this.model.attributes ));
