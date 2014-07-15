@@ -19,6 +19,7 @@
 //= require jquery-ui
 //= require jquery.dataTables
 //= require dataTables.jqueryui
+//= require sidebar
 //= require underscore
 //= require backbone
 

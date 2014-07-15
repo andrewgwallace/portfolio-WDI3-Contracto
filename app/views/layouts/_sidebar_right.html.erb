@@ -1,8 +1,8 @@
-<div id="sidebar-right" class="hidden">
-    <p>Jobs</p>
-    <p>Clients</p>
-    <p>Employees</p>
-    <p>Suppliers</p>
+<nav class="sidebar-right" id="sidebar-right">
+    <a href="#">Jobs</a>
+    <a href="#">Clients</a>
+    <a href="#">Employees</a>
+    <a href="#">Suppliers</a>
     <div class="flash-messages header-menu-item" id="devise">
       <% if admin_signed_in? %>
         Logged in as <strong><%= current_admin.email %></strong>.
@@ -16,4 +16,5 @@
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
   </div>
-</div>
+</nav>
+
