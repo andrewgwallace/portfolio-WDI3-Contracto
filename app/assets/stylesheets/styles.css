@@ -6,7 +6,12 @@
   td {
     border: 1px solid blue;
   }*/
+a {
+  color: white;
+  text-decoration: none;
+}
 
+a:active { outline: none }
 
 /*STRUCTURE OF THE PAGE*/
 
@@ -42,21 +47,40 @@
     font-size: 18px;
   }
 
-
-
   .header-list li{
     display: inline;
+  }
+
+  #hamburger {
+    font-size: 25px;
+    float: right;
+    right: 20px;
+    top: 25px;
+    position: relative;
   }
 
 /*---- SIDEBAR MENU ----*/
 
 #sidebar-right {
-  width: 20%;
-  float: right;
-  height: 100%;
   background-color: rgba(33, 33, 33, 1);
   color: white;
 }
+
+#sidebar-main-links {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  text-align: left;
+
+}
+
+#devise-sidebar {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
 
   #job_list {
     margin: auto;
@@ -102,11 +126,8 @@
 
   .new{
     border-bottom: solid black 1px;
-
-    /*background-color: blue;*/
   }
 
-a:active { outline: none }
 
 
 

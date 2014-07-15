@@ -1,12 +1,13 @@
-<nav class="sidebar-right" id="sidebar-right">
-    <a href="#">Jobs</a>
-    <a href="#">Clients</a>
-    <a href="#">Employees</a>
-    <a href="#">Suppliers</a>
-    <div class="flash-messages header-menu-item" id="devise">
+<div class=" ui right thin sidebar sidebar-right" id="sidebar-right">
+  <div id="sidebar-main-links">
+    <a class="item" href="#">JOBS</a></br>
+    <a class="item" href="#">CLIENTS</a></br>
+    <a class="item" href="#">EMPLOYEES</a></br>
+    <a class="item" href="#">SUPPLIERS</a></br>
+  </div>
+    <div class="flash-messages header-menu-item item" id="devise-sidebar">
       <% if admin_signed_in? %>
-        Logged in as <strong><%= current_admin.email %></strong>.
-        <%= link_to 'Edit profile', edit_admin_registration_path %> |
+        <%= link_to 'Profile Settings', edit_admin_registration_path %> |
         <%= link_to "Logout", destroy_admin_session_path, method: :delete %>
       <% else %>
         <%= link_to "Sign up", new_admin_registration_path %> |
@@ -16,8 +17,4 @@
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
   </div>
-</nav>
-<<<<<<< HEAD
-=======
-
->>>>>>> dev
+</div>

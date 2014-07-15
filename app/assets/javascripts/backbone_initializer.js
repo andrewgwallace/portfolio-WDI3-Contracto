@@ -84,7 +84,7 @@ app.initialize = function(){
     jobCollection.fetch();
 
 
-    
+
   // Setup entrys
     entryCollection = new app.Collections.EntryCollection();
     // entryCollection.url = 'hello';
@@ -95,7 +95,7 @@ app.initialize = function(){
     });
   // entryCollection.fetch();
 
-    
+
 
 
   // runs when any button is clicked

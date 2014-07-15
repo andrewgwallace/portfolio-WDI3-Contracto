@@ -24,8 +24,8 @@
 //= require backbone
 
 
-
-//= require backbone/backbone_application_loader
+//= require sidebar_initializer
+//= require backbone_initializer
 
 // require backbone/models/company
 // require backbone/views/company_view
