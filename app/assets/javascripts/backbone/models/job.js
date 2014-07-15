@@ -19,7 +19,8 @@ app.Models.Job = Backbone.Model.extend({
   },
   showJob: function(){
     console.log('running showJob');
-    changeDisplayTo('entries');
+    changeDisplayTo('entries', this);
+    // debug
     // $('.display').hide();
     // $('.entries-display').show();
   },

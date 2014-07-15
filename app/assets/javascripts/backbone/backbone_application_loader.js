@@ -19,7 +19,8 @@ var checkboxify = function(input){
 }
 
 
-var changeDisplayTo = function(modelName){
+var changeDisplayTo = function(modelName, model){
+  console.log('running changeDisplayTo');
   displayName = modelName+'-display';
   collectionName = modelName+'Collection';
   // console.log(displayName)
@@ -27,7 +28,17 @@ var changeDisplayTo = function(modelName){
   $('.'+displayName).show();
   $('.created-at').text(currentTime());
   $('.updated_at').text(currentTime());
-  collectionName.fetch();
+  // entryCollection.fetch();
+
+  // entryCollection = new app.Collections.EntryCollection({url:'hello'});
+  // entryCollection.url = 'hello';
+  entryCollection.url = '/company/jobs/'+model.id+'/entries';
+    // var entryListView = new app.Views.EntryListView({
+      // collection: entryCollection,
+      // el: $('#entries-table-body')
+    // });
+  entryCollection.fetch();
+
 }
 
 
@@ -74,15 +85,18 @@ app.initialize = function(){
       el: $('#job-table-body')
     });
     jobCollection.fetch();
+
+
     
-  //Setup entrys
-    // entryCollection = new app.Collections.EntryCollection();
-    // var entryListView = new app.Views.EntryListView({
-      // collection: entryCollection,
-      // el: $('#entry-table-body')
-    // });
-    // entryCollection.fetch();
-    //set event listener for jobs-new-btn
+  // Setup entrys
+    entryCollection = new app.Collections.EntryCollection();
+    // entryCollection.url = 'hello';
+    // entryCollection.url = '/company/jobs/'+model.id+'/entries';
+    var entryListView = new app.Views.EntryListView({
+      collection: entryCollection,
+      el: $('#entry-table-body')
+    });
+  // entryCollection.fetch();
 
     
 

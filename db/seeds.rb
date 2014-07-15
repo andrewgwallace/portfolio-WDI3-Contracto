@@ -99,6 +99,16 @@ Company.all.each do |company|
   end
 end
 
+5.times {puts ""}
+puts "adding 10 entries jobs to each job"
+Job.all.each do |job|
+  10.times do
+    job.entries.create({
+      text_blob: Faker::Lorem.sentence(3),
+
+      })
+  end
+end
 
 
 
