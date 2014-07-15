@@ -48,6 +48,16 @@
     display: inline;
   }
 
+/*---- SIDEBAR MENU ----*/
+
+#sidebar-right {
+  width: 20%;
+  float: right;
+  height: 100%;
+  background-color: rgba(33, 33, 33, 1);
+  color: white;
+}
+
   #job_list {
     margin: auto;
     height: 80%;
@@ -90,7 +100,9 @@
   }
 
   .new{
-    background-color: blue;
+    border-bottom: solid black 1px;
+
+    /*background-color: blue;*/
   }
 
 a:active { outline: none }
