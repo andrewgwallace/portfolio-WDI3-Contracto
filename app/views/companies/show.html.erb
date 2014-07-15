@@ -13,17 +13,12 @@ iamCompanies/_Show.erb
   <div class="display entries entries-display" class="hidden"> <!-- hidden by default -->
     iam entries-display
     <%= render "entries/new" %>                      <!-- hidden by default -->
-    <%= render "entries/index" %>                      <!-- hidden by default -->
+    <%#= render "entries/utility_bar" %>
+    <%= render "entries/index" %>                     <!-- hidden by default -->
     /iam entries-display
   </div>
 
-  <div class="display entries-display" class="hidden"> <!-- hidden by default -->
-    <%#= render "customers/index" %>                    <!-- Hidden by default -->
-  </div>
 
-  <div class="display entries-display" class="hidden"> <!-- hidden by default -->
-    <%#= render "subcontractors/index" %>               <!-- Hidden by default -->
-  </div>
   /iam content-box
 </div>
 /iamCompanies/_Show.erb

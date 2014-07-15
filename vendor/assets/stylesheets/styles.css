@@ -27,7 +27,6 @@
   }
 
 
-
   .btn {
     background-color: gray;
     border: black 1px solid;
@@ -54,6 +53,13 @@
     background-color: blue;
   }
 
+  .big-text-box{
+    width: 70%;
+    height: 100px;
+  }
+  .big-text-box-partner{
+    width: 25%;
+  }
 
 
 
@@ -64,4 +70,12 @@
 
   .highlighted {
     color: #2ecc71;
+  }
+
+
+  .float_right {
+    float: right;
+  }
+  .float_left {
+    float: right;
   }

@@ -4,8 +4,19 @@
   iam new-container
 
   <div class="slider new-slider  new new-form entries entries-new entries-new-form hidden">
+    I am a new entry form.
     <form>
-      I am a new entry form.
+      
+      <input class='big-text-box FIXTHISNAME' type="text" id="text_blob" placeholder="entry note here...">
+      
+      <div class='big-text-box-partner float_right'>
+        <button id="attach_file" type="submit">attach</button>
+        <button id="save_entry" type="submit">save</button>
+        <p class="timestamp">created: <span class='created-at'></span>
+        <p class="timestamp">modified: <span class='updated_at'></span>
+          <!-- #FIX timestamps are hidden by default (maybe...?), spans should be updated with current record's account info updated with -->
+      </div>
+
       <!-- <input type="text" id="entry_name" placeholder="Job Name">
       <input type="text" id="client" placeholder="Customer">
       <label>Start date:</label>

@@ -14,14 +14,14 @@
 //= require jquery_ujs
 //= require turbolinks
 
+//= require moment
+
 //= require jquery-ui
 //= require jquery.dataTables
 //= require dataTables.jqueryui
 
 //= require underscore
 //= require backbone
-
-
 
 //= require backbone/backbone_application_loader
 

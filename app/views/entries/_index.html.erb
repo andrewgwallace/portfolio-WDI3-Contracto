@@ -1,24 +1,19 @@
 iamEntrysIndex
+SINGLE LINE
 <table class="entry-index" cellspacing="0" width="90%">
     <thead>
         <tr>
-            <th>Customer</th>
             <th>Entry</th>
-            <th>Start Date</th>
-            <th>End Date</th>
-            <th>Contract Price</th>
-            <th colspan='3'>Status</th>
+            <th>Date</th>
+            <th colspan='3'>Attachments</th>
         </tr>
     </thead>
 
     <tfoot>
         <tr>
-            <th>Customer</th>
             <th>Entry</th>
-            <th>Start Date</th>
-            <th>End Date</th>
-            <th>Contract Price</th>
-            <th colspan='3'>Status</th>
+            <th>Date</th>
+            <th colspan='3'>Attachments</th>
         </tr>
     </tfoot>
 
@@ -27,20 +22,13 @@ iamEntrysIndex
     </tbody>
     
         <script type="text/template" id="entry-show-template">
-                <td data-action='showCustomerDisplay'> [customer name here] (id:<%%= id %>)</td>
-                <td data-action='showEntry' class='entry-name'> <%%= name %> </td>
-                <td data-action='' class='entry-start-date'> <%%= start_date %> </td>
-                <td data-action='' class='entry-end-date'> <%%= end_date %> </td>
-                <td data-action='' class='entry-contract-price'> $<%%= contract_price %> </td>
-                <td data-action='toggleClosedStatus' class='entry-closed-status'> 
-                    <%%= closed_status %> 
-                    <input type=checkbox <%%= checkboxify(closed_status)  %> >
-                </td>
-                <td data-action='togglePausedStatus' class='entry-paused-status'> 
-                    <%%= paused_status %>
-                    <input type=checkbox <%%= checkboxify(paused_status) %> >
-                </td>
-                <td data-action='destroy' class='has-data-action'> [del_graphic] </td>
+                <td data-action='toggleEntrySkin'> <%%= id %> <%%= text_blob %></td>
+                <td>                               <%%= created_at %> </td>
+                <td>photo_icon, num</td>
+                <td>file_icon, num</td>
+                <td>file_icon, num</td>
+                <td>audio_icon, num</td>
+                
         </script>
 </table>
 /iamEntrysIndex

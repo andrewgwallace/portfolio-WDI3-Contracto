@@ -4,15 +4,30 @@ var app = app || { Models: {}, Collections: {}, Views: {} };
 
 
 
-
-
-
 // Global helper functions
+
+var currentTime = function(){
+  return moment().format('YY-MM-DD hh:mm');
+}
+
+
 var checkboxify = function(input){
   if(input === true){
     return 'checked'
   }
   return 'output from checkboxify'
+}
+
+
+var changeDisplayTo = function(modelName){
+  displayName = modelName+'-display';
+  collectionName = modelName+'Collection';
+  // console.log(displayName)
+  $('.display').hide();
+  $('.'+displayName).show();
+  $('.created-at').text(currentTime());
+  $('.updated_at').text(currentTime());
+  collectionName.fetch();
 }
 
 
