@@ -25,6 +25,21 @@ var checkboxify = function(input){
 app.initialize = function(){
   console.log("running app.initialize (backbone_app.js)");
  
+
+  //setup data actions
+    // $('body').on('click', '[data-action]', function(event) {
+    //     var action = $(this).data('action');
+    //     // if (action in actions) {
+    //         // actions[action].apply(this, arguments);
+    //     // }
+    //   console.log(action);
+    //   console.log(event);
+    //   // console.log(this);
+    //   // console.log(self);
+    //   debugger
+    // });
+
+
   //helpers 
     
 
@@ -38,15 +53,25 @@ app.initialize = function(){
 
 
   //Setup jobs
-    jobsCollection = new app.Collections.JobsCollection();
+    jobCollection = new app.Collections.JobCollection();
     var jobListView = new app.Views.JobListView({
-      collection: jobsCollection,
-      el: $('#jobs-table-body')
+      collection: jobCollection,
+      el: $('#job-table-body')
     });
-    jobsCollection.fetch();
+    jobCollection.fetch();
+    
+  //Setup entrys
+    // entryCollection = new app.Collections.EntryCollection();
+    // var entryListView = new app.Views.EntryListView({
+      // collection: entryCollection,
+      // el: $('#entry-table-body')
+    // });
+    // entryCollection.fetch();
     //set event listener for jobs-new-btn
 
     
+
+
   // runs when any button is clicked
     $('button').on('click', function() {
       console.log('button clicked')

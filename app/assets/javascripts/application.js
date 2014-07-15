@@ -30,12 +30,12 @@
 
 //= require backbone/models/job
 //= require backbone/views/job_view
-//= require backbone/collections/jobs_collection
-//= require backbone/views/jobs_list_view
+//= require backbone/collections/job_collection
+//= require backbone/views/job_list_view
 
-// require backbone/models/entry
-// require backbone/views/entry_view
-// require backbone/collections/entries_collection
-// require backbone/views/entries_list_view
+//= require backbone/models/entry
+//= require backbone/views/entry_view
+//= require backbone/collections/entry_collection
+//= require backbone/views/entry_list_view
 
 //= require_tree .
