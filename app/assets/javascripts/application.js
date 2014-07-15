@@ -22,6 +22,8 @@
 //= require underscore
 //= require backbone
 
+
+
 //= require backbone/backbone_application_loader
 
 // require backbone/models/company
@@ -38,4 +40,5 @@
 //= require backbone/views/entry_list_view
 
 
-//= require_tree .
+// require_tree .
+// require_self .

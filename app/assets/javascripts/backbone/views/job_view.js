@@ -53,6 +53,7 @@ app.Views.JobView = Backbone.View.extend({
 
       // 'mouseenter' : 'hoverOn',
       // 'mouseleave' : 'hoverOff'
+      'click [data-action]' : 'processDataAction',
     },
 
 

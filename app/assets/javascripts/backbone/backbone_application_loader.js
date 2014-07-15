@@ -1,4 +1,4 @@
-console.log ("reading backbone_app_loader.js");
+// console.log("reading backbone_app_loader.js");
 
 var app = app || { Models: {}, Collections: {}, Views: {} };
 
@@ -10,12 +10,11 @@ var currentTime = function(){
   return moment().format('YY-MM-DD hh:mm');
 }
 
-
 var checkboxify = function(input){
   if(input === true){
-    return 'checked'
+    return 'checked';
   }
-  return 'output from checkboxify'
+  return 'output from checkboxify';
 }
 
 
@@ -40,7 +39,7 @@ var changeDisplayTo = function(modelName, model){
   entryCollection.fetch();
 
 
-
+}
 
 
 
