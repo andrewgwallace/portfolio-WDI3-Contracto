@@ -132,6 +132,9 @@ a:active { outline: none }
   .new{
     border-bottom: solid black 1px;
   }
+  .new-tab-plus{
+    margin: auto;
+  }
 
 
   /*attachement icons*/
@@ -158,4 +161,9 @@ a:active { outline: none }
 
   .hasHighlight:hover {
     color: #2ecc71;
+  }
+
+
+  .temp-border{
+    border:blue 2px solid;
   }

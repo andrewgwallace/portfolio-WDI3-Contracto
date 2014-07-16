@@ -24,7 +24,9 @@
                     <th>Start Date</th>
                     <th>End Date</th>
                     <th>Contract Price</th>
-                    <th colspan='3'>Status</th>
+                    <th>CLOSED?</th>
+                    <th>PAUSED?</th>
+                    <th>Trash?</th>
                 </tr>
             </tfoot>
 
@@ -39,13 +41,16 @@
                         <td data-action='' class='job-contract-price'> <%%= accounting.formatMoney(contract_price, {precision: 0}) %> </td>
                         <td data-action='toggleClosedStatus' class='job-closed-status'> 
                             <%%= closed_status %> 
-                            <input type=checkbox <%%= checkboxify(closed_status)  %> >
-                        </td>
+                            <input type=checkbox <%%= checkboxify(closed_status)  %> >  
+                            <%%= conditionalInserter(closed_status, 'CLOSED-ICON-HERE', 'OPEN-ICON-HERE') %>
+
+
+
+                            </td>
                         <td data-action='togglePausedStatus' class='job-paused-status'> 
-                            <%%= paused_status %>
-                            <input type=checkbox <%%= checkboxify(paused_status) %> >
-                        </td>
-                        <td data-action='destroy'> [del_img] </td>
+                            <%%= conditionalInserter(paused_status, "<span class='ui-icon ui-icon-pause temp-border #FIX-REMOVE-TEMP-BORDER'> </span>", 'NOT PAUSED ICON') %> <%%= paused_status %>
+                            <input data-action='togglePausedStatus' type=checkbox <%%= checkboxify(paused_status) %> >  </td>
+                        <td data-action='destroy'> <span data-action='destroy' class='ui-icon ui-icon-trash temp-border #FIX-REMOVE-TEMP-BORDER'></span></td>
                 </script>
         </table>
 
