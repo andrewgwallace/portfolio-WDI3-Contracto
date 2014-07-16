@@ -137,10 +137,28 @@ a:active { outline: none }
   }
 
   tbody tr:hover {
-    background-color: rgba(0, 118, 255, 0.4);
+    /*background-color: rgba(0, 118, 255, 0.4);*/
+    /*color: green;*/
+    /*font-weight: bold;*/
+    border: 2px solid red;
   }
 
-  tr{}
+  tr{
+
+  }
+  tr.paused{
+    background-color: #B1B464;
+    /*background-color: red;*/
+    /*color: gray;*/
+    /*font-style: italic;*/
+  }
+  tr.closed{
+    /*closed must come AFTER paused*/
+    background-color: rgba(131, 148, 148, 0.4);
+    color: gray;
+    font-style: italic;
+  }
+
   td{
     white-space: nowrap
   }

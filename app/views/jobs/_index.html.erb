@@ -41,7 +41,7 @@
                         <td data-action='' class='job-contract_price'> <%%= accounting.formatMoney(contract_price, {precision: 0}) %> </td>
                         
                         <td data-action='toggleClosedStatus' class='job-closed_status td-contains-icon'>
-                            <%%= conditionalInserter( closed_status , "<span class='icon-in-cell ui-state-default ui-corner-all ui-icon ui-icon-folder-open'></span>", "<span class='icon-in-cell ui-state-default ui-corner-all ui-icon ui-icon-folder-collapsed'></span>") %> </td>
+                            <%%= conditionalInserter( closed_status , "<span class='icon-in-cell ui-state-default ui-corner-all ui-icon ui-icon-folder-collapsed'></span>", "<span class='icon-in-cell ui-state-default ui-corner-all ui-icon ui-icon-folder-open'></span>") %> </td>
                         
                         <td data-action='togglePausedStatus' class='job-paused_status td-contains-icon'>
                             <%%= conditionalInserter(paused_status,  "<span class='icon-in-cell ui-state-default ui-corner-all ui-icon ui-icon-pause'></span>", "<span class='icon-in-cell ui-state-default ui-corner-all ui-icon ui-icon-circle-arrow-e'></span>") %> </td>            

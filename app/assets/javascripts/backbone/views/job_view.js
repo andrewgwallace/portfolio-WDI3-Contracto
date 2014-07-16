@@ -27,9 +27,25 @@ app.Views.JobView = Backbone.View.extend({
 
     render: function(){
       console.log("running app.Views.JobView.render");
+      console.log(this)
+
+      // debugger
+       if(this.model.attributes.paused_status == true){
+        this.el.className= this.el.className+' paused';
+      };
+      
+      if(this.model.attributes.closed_status == true){
+        this.el.className= this.el.className+' closed';
+      };
+     
+
       this.$el.empty();
       this.$el.html(this.showJobTemplateHolder()( this.model.attributes ));
+    
       return this;
+
+      // this.className= 'job table_row closed-table_row';
+
     },
     tagName: "tr",
     className: 'job table_row',
