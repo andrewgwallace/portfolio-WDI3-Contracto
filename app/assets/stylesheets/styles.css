@@ -1,11 +1,11 @@
 /*TEMP*/
-/*  div {
+  div {
     border: 1px solid green;
   }
 
   td {
     border: 1px solid blue;
-  }*/
+  }
 a {
   color: white;
   text-decoration: none;
@@ -133,6 +133,8 @@ a:active { outline: none }
     border-bottom: solid black 1px;
   }
 
+/*---- ENTRY PAGE ----*/
+
 
   /*attachement icons*/
     .attachment-icon-img{
@@ -149,6 +151,12 @@ a:active { outline: none }
       top:3px;
       border:solid red 1px;
     }
+
+#text_blob {
+  height: 100px;
+  width: 80%;
+}
+
 
 
 /*JQUERY / BACKBONE STUFF*/

@@ -1,3 +1,4 @@
+console.log("reading jquery.datatables.js");
 /*! DataTables 1.10.0
  * ©2008-2014 SpryMedia Ltd - datatables.net/license
  */
