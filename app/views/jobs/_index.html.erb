@@ -37,15 +37,17 @@
                         <td data-action='' class='job-start-date'> <%%= start_date %> </td>
                         <td data-action='' class='job-end-date'> <%%= end_date %> </td>
                         <td data-action='' class='job-contract-price'> <%%= accounting.formatMoney(contract_price, {precision: 0}) %> </td>
-                        <td data-action='toggleClosedStatus' class='job-closed-status'> 
-                            <%%= closed_status %> 
+                        <td data-action='toggleClosedStatus' class='job-closed-status'>
+                            <li class="ui-state-default ui-corner-all" title=".ui-icon-check"><span class="ui-icon ui-icon-check"></span></li>
+                            <%%= closed_status %>
                             <input type=checkbox <%%= checkboxify(closed_status)  %> >
                         </td>
-                        <td data-action='togglePausedStatus' class='job-paused-status'> 
+                        <td data-action='togglePausedStatus' class='job-paused-status'>
+                        <li class="ui-state-default ui-corner-all" title=".ui-icon-pause"><span class="ui-icon ui-icon-pause"></span></li>
                             <%%= paused_status %>
                             <input type=checkbox <%%= checkboxify(paused_status) %> >
                         </td>
-                        <td data-action='destroy'> [del_img] </td>
+                        <td data-action='destroy'><li class="ui-state-default ui-corner-all" title=".ui-icon-check"><span class="ui-icon ui-icon-close"></span></li></td>
                 </script>
         </table>
 

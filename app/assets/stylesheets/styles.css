@@ -1,11 +1,11 @@
 /*TEMP*/
-  div {
+/*  div {
     border: 1px solid green;
   }
 
   td {
     border: 1px solid blue;
-  }
+  }*/
 a {
   color: white;
   text-decoration: none;
@@ -104,7 +104,7 @@ a:active { outline: none }
     /*faces down*/
     text-align: center;
     height: 30px;
-    width: 10%;
+    width: 200px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     text-decoration: none;
@@ -124,7 +124,7 @@ a:active { outline: none }
     background-color: orange;
   }
 
-  .new{
+  .new-slider {
     border-bottom: solid black 1px;
   }
 
@@ -135,6 +135,9 @@ a:active { outline: none }
   width: 80%;
 }
 
+.new-container {
+  text-align: center;
+}
 
 /*JQUERY / BACKBONE STUFF*/
   .hidden{
