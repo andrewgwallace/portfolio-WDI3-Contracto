@@ -6,6 +6,13 @@
   td {
     border: 1px solid blue;
   }*/
+
+
+  .test-blue{
+    background-color: blue;
+  }
+
+
 a {
   color: white;
   text-decoration: none;
@@ -85,12 +92,14 @@ a:active { outline: none }
 }
 
 
-/*---- INDEXS ---- */
 
-  #job_list {
+
+/*---- INDEX ---- */
+
+/*  #job_list {
     margin: auto;
     height: 80%;
-  }
+  }*/
 
   .btn {
     background-color: gray;
@@ -119,15 +128,40 @@ a:active { outline: none }
 
   table{
     background-color: #fff;
-  }
-
- tbody tr:hover {
-    background-color: rgba(0, 118, 255, 0.4);
+    /*cellspacing: 0px;*/
+    /*width:90px*/
   }
 
   thead, tfoot{
     background-color: orange;
   }
+
+  tbody tr:hover {
+    background-color: rgba(0, 118, 255, 0.4);
+  }
+
+  tr{}
+  td{
+    white-space: nowrap
+  }
+  tbody td:hover {
+    /*background-color: rgba(0, 118, 255, 0.4);*/
+  }
+
+  /*#FIX THIS ISN'T WORKING - WE NEED TO MAKE THE ICON COLUMNS SKINNY
+  .td-contains-icon{
+    margin:0px;
+    padding:0px;
+    width:5px;
+    background-color: blue;
+  }
+  .icon-in-cell{
+    margin:0px;
+    padding:0px;
+  }*/
+  
+
+
 
   .new-slider {
     border-bottom: solid black 1px;
@@ -170,9 +204,9 @@ a:active { outline: none }
     display: none;
   }
 
-  .hasHighlight:hover {
+/*  .hasHighlight:hover {
     color: #2ecc71;
-  }
+  }*/
 
 
   .temp-border{

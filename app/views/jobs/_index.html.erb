@@ -4,7 +4,7 @@
         I am Jobs-Index-utility_bar
     </div>
 
-        <table class="index index_table" id="jobs-index" cellspacing="0" width="90%">
+        <table class="index index_table" id="jobs-index">
         <!-- <table class="jobs-index" cellspacing="0" width="90%"> -->
             <thead>
                 <tr>
@@ -34,24 +34,20 @@
                 <!-- the template will be rendered here -->
             </tbody>
                 <script type="text/template" id="job-template">
-                        <td data-action='showCustomerDisplay'> [customer name here] (id:<%%= id %>)</td>
+                        <td data-action='showCustomerDisplay' class='job-customer'> [customer name here] (id:<%%= id %>)</td>
                         <td data-action='showJob' class='job-name'> <%%= name %> </td>
-                        <td data-action='' class='job-start-date'> <%%= start_date %> </td>
-                        <td data-action='' class='job-end-date'> <%%= end_date %> </td>
-                        <td data-action='' class='job-contract-price'> <%%= accounting.formatMoney(contract_price, {precision: 0}) %> </td>
-                        <td data-action='toggleClosedStatus' class='job-closed-status'>
-                            <li class="ui-state-default ui-corner-all" title=".ui-icon-check"><span class="ui-icon ui-icon-check"></span></li>
-                            1<%%= closed_status %> 
-                            2<input type=checkbox <%%= checkboxify(closed_status)  %> >  
-                        </td>
-                        <td data-action='togglePausedStatus' class='job-paused-status'>
-                            3<%%= conditionalInserter(closed_status, 'CLOSED-ICON-HERE', 'OPEN-ICON-HERE') %>
-                        </td>
-                        <td data-action='destroy'><li class="ui-state-default ui-corner-all" title=".ui-icon-check"><span class="ui-icon ui-icon-close"></span></li></td>
-                            <input data-action='togglePausedStatus' type=checkbox <%%= checkboxify(paused_status) %> >  </td>
-                            <%%= conditionalInserter(paused_status, "<span class='ui-icon ui-icon-pause temp-border #FIX-REMOVE-TEMP-BORDER'>bleh </span>", 'NOT PAUSED ICON') %> <%%= paused_status %>
-                            
-                        <td data-action='destroy'> <span data-action='destroy' class='ui-icon ui-icon-trash temp-border #FIX-REMOVE-TEMP-BORDER'></span></td>
+                        <td data-action='' class='job-start_date'> <%%= start_date %> </td>
+                        <td data-action='' class='job-end_date'> <%%= end_date %> </td>
+                        <td data-action='' class='job-contract_price'> <%%= accounting.formatMoney(contract_price, {precision: 0}) %> </td>
+                        
+                        <td data-action='toggleClosedStatus' class='job-closed_status td-contains-icon'>
+                            <%%= conditionalInserter( closed_status , "<span class='icon-in-cell ui-state-default ui-corner-all ui-icon ui-icon-folder-open'></span>", "<span class='icon-in-cell ui-state-default ui-corner-all ui-icon ui-icon-folder-collapsed'></span>") %> </td>
+                        
+                        <td data-action='togglePausedStatus' class='job-paused_status td-contains-icon'>
+                            <%%= conditionalInserter(paused_status,  "<span class='icon-in-cell ui-state-default ui-corner-all ui-icon ui-icon-pause'></span>", "<span class='icon-in-cell ui-state-default ui-corner-all ui-icon ui-icon-circle-arrow-e'></span>") %> </td>            
+                        
+                        <td data-action='destroy'           class='job-delete td-contains-icon'> 
+                                                                    <span class='icon-in-cell ui-state-default ui-corner-all ui-icon ui-icon-trash'></span></td>
                 </script>
         </table>
 
