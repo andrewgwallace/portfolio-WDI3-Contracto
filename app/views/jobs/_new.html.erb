@@ -1,22 +1,20 @@
 <div class="container new-container" id="new-job-container">
 
   <div class="hidden slider new-slider new-job-slider" id="new-job">
-    
+
     <form>
       <!-- I am a new job form. -->
-      <input type="text" id="job_name" placeholder="Job Name">
-      <input type="text" id="client" placeholder="Customer">
-      <label>Start date:</label>
-      <input type="datepicker" id="start_date"></input
-       <label>End date:</label>
-      <input type="datepicker" id="end_date"></input>
+      <input type="text" id="new-job-name" placeholder="Job Name">
+      <input type="text" id="new-job-client" placeholder="Customer">
+      <input type="text" class="datepicker" id="new-job-start_date" placeholder="start date"></input>
+      <input type="text" class="datepicker" id="new-job-end_date" placeholder="end date"></input>
       <input type="text" id="job_cost" placeholder="Job Cost">
-      <input type="textarea" id="job_description" placeholder="Description"
-      <button id="submit_job" type="submit">Add Job</button>
+      <input type="textarea" id="job_description" placeholder="Description">
+      <button type="submit" id="submit_job">Add Job</button>
     </form>
 
   </div>
 
-  <button class="tab new-tab" id="new-job-tab">Add a Job<span class='ui-icon ui-icon-circle-plus new-tab-plus temp-border'></span> </button> <!-- visable by default -->
+  <button class="tab new-tab ui-state-default ui-corner-all" id="new-job-tab">Add a Job</button>
 
 </div>

@@ -109,7 +109,7 @@ a:active { outline: none }
     /*faces down*/
     text-align: center;
     height: 30px;
-    width: 10%;
+    width: 200px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     text-decoration: none;
@@ -129,12 +129,14 @@ a:active { outline: none }
     background-color: orange;
   }
 
-  .new{
+  .new-slider {
     border-bottom: solid black 1px;
   }
   .new-tab-plus{
     margin: auto;
   }
+
+/*---- ENTRY PAGE ----*/
 
 
   /*attachement icons*/
@@ -152,6 +154,15 @@ a:active { outline: none }
       top:3px;
       border:solid red 1px;
     }
+
+#text_blob {
+  height: 100px;
+  width: 80%;
+}
+
+.new-container {
+  text-align: center;
+}
 
 
 /*JQUERY / BACKBONE STUFF*/

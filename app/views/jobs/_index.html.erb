@@ -39,12 +39,15 @@
                         <td data-action='' class='job-start-date'> <%%= start_date %> </td>
                         <td data-action='' class='job-end-date'> <%%= end_date %> </td>
                         <td data-action='' class='job-contract-price'> <%%= accounting.formatMoney(contract_price, {precision: 0}) %> </td>
-                        <td data-action='toggleClosedStatus' class='job-closed-status'> 
+                        <td data-action='toggleClosedStatus' class='job-closed-status'>
+                            <li class="ui-state-default ui-corner-all" title=".ui-icon-check"><span class="ui-icon ui-icon-check"></span></li>
                             1<%%= closed_status %> 
                             2<input type=checkbox <%%= checkboxify(closed_status)  %> >  
+                        </td>
+                        <td data-action='togglePausedStatus' class='job-paused-status'>
                             3<%%= conditionalInserter(closed_status, 'CLOSED-ICON-HERE', 'OPEN-ICON-HERE') %>
                         </td>
-                        <td data-action='togglePausedStatus' class='job-paused-status'> 
+                        <td data-action='destroy'><li class="ui-state-default ui-corner-all" title=".ui-icon-check"><span class="ui-icon ui-icon-close"></span></li></td>
                             <input data-action='togglePausedStatus' type=checkbox <%%= checkboxify(paused_status) %> >  </td>
                             <%%= conditionalInserter(paused_status, "<span class='ui-icon ui-icon-pause temp-border #FIX-REMOVE-TEMP-BORDER'>bleh </span>", 'NOT PAUSED ICON') %> <%%= paused_status %>
                             
