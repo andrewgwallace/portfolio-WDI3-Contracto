@@ -1,9 +1,14 @@
-<div class="container index-container" id="entries-index-container">
+<div class="entries-content-window container index-container" id="entries-index-container">
 
   <div class="utility_bar index-utility_bar" id="entries-index-utility">
-    I am entries-Index-utility_bar
+    <!-- I am entries-Index-utility_bar -->
   </div>
 
+<ul>
+  <li><a href="#log_list">LOGS</a></li>
+  <li><a href="#file_list">FILES</a></li>
+</ul>
+<div id="log_list">
   <table class="index index_table" id="entries-index" cellspacing="0" width="90%">
     <thead>
       <tr>
@@ -24,21 +29,21 @@
     <tbody class="index-table_body" id="entries-index-table_body">
         <!-- the following template will be rendered here -->
     </tbody>
-    
+
       <script type="text/template" id="entry-template">
         <td> <%%= id %> <%%= text_blob %></td>
         <td> <%%= created_at %> </td>
-        <td data-action='toggleVisibleToClientStatus' class='entry-visible-to-client-status'> 
-                            <%%= visable_to_job_client_status %> 
+        <td data-action='toggleVisibleToClientStatus' class='entry-visible-to-client-status'>
+                            <%%= visable_to_job_client_status %>
                             <input type=checkbox <%%= checkboxify(visable_to_job_client_status)  %> >
         </td>
-        <td data-action='toggleVisibleToSubcontractorsStatus' class='entry-visible-to-subcontractors-status'> 
-            <%%= visable_to_job_subcontractors_status %> 
+        <td data-action='toggleVisibleToSubcontractorsStatus' class='entry-visible-to-subcontractors-status'>
+            <%%= visable_to_job_subcontractors_status %>
             <input type=checkbox <%%= checkboxify(visable_to_job_subcontractors_status)  %> >
         </td>
-        
+
         <td data-action='focusOnAttachments'><%= image_tag('jpeg_icon.png', width: '30px', class: 'attachment-icon-img') %> <span class='text-over-previous-image'><%%= attachments.length %></span></td>
-        <td class="fileupload-btn attachment-fileupload-btn"> click here to attach 
+        <td class="fileupload-btn attachment-fileupload-btn"> click here to attach
           <form>
               <input type="hidden" name="entry_id" value="<%%= id %>">
               <input class="fileupload-btn" id="entry-<%%= id %>-file-upload" multiple="multiple" name="attachment[file]" type="file" />
@@ -50,6 +55,10 @@
       </script>
 
   </table>
+</div> <!-- End of log tab div -->
+<div id="file_list">
+  <!-- INSERT CODE TO SHOW FILES LIST/GRID HERE -->
+</div>
 
 </div>
 

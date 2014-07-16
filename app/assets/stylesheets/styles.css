@@ -55,36 +55,6 @@ a:active { outline: none }
     display: inline;
   }
 
-/*  #hamburger {
-    font-size: 25px;
-    float: right;
-    right: 20px;
-    top: 25px;
-    position: relative;
-  }
-*/
-/*---- SIDEBAR MENU ----*/
-
-#sidebar-right {
-  background-color: rgba(33, 33, 33, 1);
-  color: white;
-}
-
-#sidebar-main-links {
-  position: absolute;
-  top: 100px;
-  left: 30px;
-  text-align: left;
-
-}
-
-#devise-sidebar {
-  position: absolute;
-  bottom: 20px;
-  text-align: center;
-  width: 100%;
-}
-
 
 /*---- INDEXS ---- */
 
@@ -130,27 +100,37 @@ a:active { outline: none }
     background-color: orange;
   }
 
+.index_table {
+  margin: auto;
+  cellspacing: 0;
+  width: 90%;
+}
+
 
 /*---- ENTRY PAGE ----*/
 
 
-  /*attachement icons*/
-    .attachment-icon-img{
-      position:relative;
-    }
+/*attachement icons*/
+.attachment-icon-img {
+  position:relative;
+}
 
-    .text-over-previous-image{
-      z-index:100;
-      position:relative;
-      /*color:green;*/
-      font-size:16px;
-      font-weight:bold;
-      left:-12px;
-      top:3px;
-      border:solid red 1px;
-    }
+.text-over-previous-image {
+  z-index:100;
+  position:relative;
+  /*color:green;*/
+  font-size:16px;
+  font-weight:bold;
+  left:-12px;
+  top:3px;
+  border:solid red 1px;
+}
 
 #text_blob {
+  vertical-align: center;
+  font-size: 14px;
+  margin: 20px, 0, 20px, 15px;
+  float: left;
   height: 100px;
   width: 80%;
 }
@@ -161,6 +141,7 @@ a:active { outline: none }
 
 
 .new-container form{
+  border: 1px solid black;
   height: 150px;
   background-image: -webkit-gradient(
   linear,
@@ -179,11 +160,6 @@ background-image: linear-gradient(to bottom, #FFFFFF 0%, #ABABAB 89%);
   margin: auto;
 }
 
-input {
-  width: 50px;
-  padding: 5px;
-  font-size: 12px;
-}
 
 /*---- BUTTONS -----*/
 .save_button {
@@ -216,22 +192,59 @@ background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #20
   text-decoration:none;
   text-align:center;
 }
-.classname:hover {
+.save_button:hover {
   background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #20b025), color-stop(1, #20b025) );
   background:-moz-linear-gradient( center top, #20b025 5%, #20b025 100% );
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#20b025', endColorstr='#20b025');
   background-color:#20b025;
-}.classname:active {
+}.save_button:active {
+  position:relative;
+  top:1px;
+}
+
+.attach_button {
+background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #085394), color-stop(1, #085394) );
+  background:-moz-linear-gradient( center top, #085394 5%, #085394 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#085394', endColorstr='#085394');
+  background-color:#085394;
+  -webkit-border-top-left-radius:4px;
+  -moz-border-radius-topleft:4px;
+  border-top-left-radius:4px;
+  -webkit-border-top-right-radius:4px;
+  -moz-border-radius-topright:4px;
+  border-top-right-radius:4px;
+  -webkit-border-bottom-right-radius:4px;
+  -moz-border-radius-bottomright:4px;
+  border-bottom-right-radius:4px;
+  -webkit-border-bottom-left-radius:4px;
+  -moz-border-radius-bottomleft:4px;
+  border-bottom-left-radius:4px;
+  text-indent:0;
+  display:inline-block;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  font-style:normal;
+  height:36px;
+  line-height:36px;
+  width:100px;
+  text-decoration:none;
+  text-align:center;
+}
+.attach_button:hover {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #20b025), color-stop(1, #20b025) );
+  background:-moz-linear-gradient( center top, #085394 5%, #085394 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#085394', endColorstr='#085394');
+  background-color:#085394;
+}.attach_button:active {
   position:relative;
   top:1px;
 }
 
 
-input[type="submit"] {
-  background: red;
-  color: white;
-}
 
+/*---- TABLE ----*/
 
 /*JQUERY / BACKBONE STUFF*/
   .hidden{
