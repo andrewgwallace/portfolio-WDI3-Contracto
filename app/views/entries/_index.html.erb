@@ -36,10 +36,10 @@
             <%%= visable_to_job_subcontractors_status %> 
             <input type=checkbox <%%= checkboxify(visable_to_job_subcontractors_status)  %> >
         </td>
-        <td>AtchNum: <%%= attachments.length %></td>
-        <td>PhotosNum: <%%= photos.length %></td>
-        <td>DocsNum: <%%= docs.length %></td>
-        <td>AudiosNum: <%%= audios.length %></td>
+        
+        <td data-action='focusOnPhotos'><%= image_tag('jpeg_icon.png', width: '30px', class: 'attachment-icon-img') %> <span class='text-over-previous-image'><%%= photos.length %></span></td>
+        <td data-action='focusOnDocs'><%= image_tag('docx_icon.png', width: '30px', class: 'attachment-icon-img') %> <span class='text-over-previous-image'><%%= docs.length %></span></td>
+        <td data-action='focusOnAudios'> [MIC_IMG] <span class='text-over-previous-image'> <%%= audios.length %></span></td>
         
       </script>
 

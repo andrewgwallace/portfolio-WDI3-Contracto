@@ -13,6 +13,9 @@ a {
 
 a:active { outline: none }
 
+
+
+
 /*STRUCTURE OF THE PAGE*/
 
 /* ---- HEADER ---- */
@@ -82,6 +85,8 @@ a:active { outline: none }
 }
 
 
+/*---- INDEXS ---- */
+
   #job_list {
     margin: auto;
     height: 80%;
@@ -129,6 +134,21 @@ a:active { outline: none }
   }
 
 
+  /*attachement icons*/
+    .attachment-icon-img{
+      position:relative; 
+    }
+
+    .text-over-previous-image{
+      z-index:100;
+      position:relative;    
+      /*color:green;*/
+      font-size:16px;
+      font-weight:bold;
+      left:-12px;
+      top:3px;
+      border:solid red 1px;
+    }
 
 
 /*JQUERY / BACKBONE STUFF*/
