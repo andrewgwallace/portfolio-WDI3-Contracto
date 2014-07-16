@@ -16,6 +16,9 @@ class Entry < ActiveRecord::Base
 
   belongs_to :job
   has_many :attachments
+    has_many :photos
+    has_many :docs
+    has_many :audios
 
   scope :emails, -> { where(auto_generated_from_incoming_email: 'true') }
   # scope :unread_email, -> { where(auto_generated_from_incoming_email: 'true' && read_status: 'false') }
