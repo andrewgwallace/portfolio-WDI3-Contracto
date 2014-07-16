@@ -16,6 +16,16 @@ var app = app || { Models: {}, Collections: {}, Views: {} };
     return 'output from checkboxify';
   }
 
+  var conditionalInserter = function(conditionalBoolean, substitutionForTrue, substitutionForFalse ){
+    if(conditionalBoolean === true){
+      return substitutionForTrue;}
+    else if (conditionalBoolean == false){
+      return substitutionForFalse;}
+    else {
+      // return nothing
+    }
+  }
+
 
   var changeFocusTo = function(modelName, model){
     console.log('running changeFocusTo to '+modelName+" with "+ model.attributes.id);
