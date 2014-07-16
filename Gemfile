@@ -111,6 +111,6 @@ group :development do
   # # gem 'guard-readme-on-github'
   # gem 'guard-jasmine-rails'
 
-  gem 'jquery-ui-rails'
+  # gem 'jquery-ui-rails'
 
 end

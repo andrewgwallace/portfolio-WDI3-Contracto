@@ -1,3 +1,5 @@
+console.log("reading backbone.js");
+
 //     Backbone.js 1.1.2
 
 //     (c) 2010-2014 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
@@ -5,7 +7,7 @@
 //     For all details and documentation:
 //     http://backbonejs.org
 
-console.log("reading backbone.js");
+
 
 (function(root, factory) {
 

@@ -11,45 +11,33 @@
 // about supported directives.
 //
 
+
 // RAILS
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
 
-// HELPERS
-//= require moment
-//= require accounting
 
 
 // FRAMEWORKS
-//= require jquery-ui
-//= require jquery.dataTables
-//= require dataTables.jqueryui
-//= require sidebar
-
-//= require underscore
-//= require backbone
+//= require vendor.js
 
 
-// CUSTOM INITIALIZERS
-//= require backbone_init
-//= require sidebar_initializer
-//= require jqueryui_initializer
 
 
-// BACKBONE APP
-// require backbone/models/company
-// require backbone/views/company_view
 
-//= require backbone/models/job
-//= require backbone/views/job_view
-//= require backbone/collections/job_collection
-//= require backbone/views/job_list_view
+// APPLICATION
+  // CUSTOM INITIALIZERS
+    //= require backbone_init
+    //= require jqueryui_initializer
+    //= require sidebar_initializer
+    
 
-//= require backbone/models/entry
-//= require backbone/views/entry_view
-//= require backbone/collections/entry_collection
-//= require backbone/views/entry_list_view
+
+  // BACKBONE APP
+    //= require_tree ./backbone/models/.
+    //= require_tree ./backbone/collections/.
+    //= require_tree ./backbone/views/.
 
 // require_tree .
 // require_self .
