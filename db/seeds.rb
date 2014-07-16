@@ -123,4 +123,46 @@ end
 
 
 
+# 5.times {puts ""}
+# puts "adding 3 attachments to each entry"
+# Entry.all.each do |entry|
+#   [1,2,3].sample.times do
+#     entry.attachments.create({
+#       # entries stuff
+#       })
+#   end
+# end
+
+5.times {puts ""}
+puts "adding 3 photos to each entry"
+Entry.all.each do |entry|
+  [1,2,3].sample.times do
+    entry.photos.create({
+      # entries stuff
+      })
+  end
+end
+
+5.times {puts ""}
+puts "adding 3 docs to each entry"
+Entry.all.each do |entry|
+  [1,2,3].sample.times do
+    entry.docs.create({
+      # entries stuff
+      })
+  end
+end
+
+5.times {puts ""}
+puts "adding 3 audios to each entry"
+Entry.all.each do |entry|
+  [1,2,3].sample.times do
+    entry.audios.create({
+      # entries stuff
+      })
+  end
+end
+
+
+
 

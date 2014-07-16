@@ -31,6 +31,9 @@
     //= require backbone_init
     //= require jqueryui_initializer
     //= require sidebar_initializer
+
+  // HELPERS
+    //= require attachments.fileupload
     
 
 

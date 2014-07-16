@@ -16,6 +16,7 @@ app.Views.EntryListView = Backbone.View.extend({
     _.each(this.collection.models, function(Entry){
       var EntryView = new app.Views.EntryView({model: Entry})
       self.$el.append( EntryView.render().el );
-    })
+    });
+    attachFileupload();
   }
 })

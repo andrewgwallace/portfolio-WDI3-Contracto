@@ -10,8 +10,10 @@
 
 class Attachment < ActiveRecord::Base
 
+  attr_accessor :file, :remote_file_url
+
   belongs_to :entry
 
-  #Too soon? Wait for paperclip?
+  mount_uploader :file, FileUploader
 
 end

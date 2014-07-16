@@ -7,9 +7,12 @@ class EntriesController < AuthenticatedController
   
 
   def index
-    @entries = @job.entries
+    @entries = @job.entries#.includes(:attachments)
+    # @entries = @entries
     # puts entries.length 
-    respond_with @entries
+    respond_with @entries.to_json(include: {attachments:{}, photos:{}, docs:{}, audios:{} })
+
+    # format.json  { render :json => @birds.to_json(:include => {:bird_colorations => {:include => :color}, :seasons => {}, :habitats => {}, :image_holders => {}}) }
   end
 
 
