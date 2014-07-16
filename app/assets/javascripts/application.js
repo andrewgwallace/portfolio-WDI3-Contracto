@@ -34,6 +34,7 @@
 // CUSTOM INITIALIZERS
 //= require backbone_init
 //= require sidebar_initializer
+//= require jqueryui_initializer
 
 
 // BACKBONE APP

@@ -49,7 +49,7 @@ gem 'devise'      #autentication
 # gem "simple_show"
 # gem "simple_form"
 
-# gem "rails-backbone" 
+# gem "rails-backbone"
 
 
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -73,7 +73,7 @@ group :development, :test do
   # gem 'factory_girl_rails'
 
   gem "faker"
-  # gem 'debugger' 
+  # gem 'debugger'
 
 end
 
@@ -95,9 +95,9 @@ group :development do
   # gem 'guard-test'          #runs tests
   # gem 'guard-reloader'    #runs tests
 
-  gem "rack-livereload" 
+  gem "rack-livereload"
   gem 'guard-livereload'   #reloads views
-  
+
   # gem 'guard-bundler'
   # gem 'guard-rails'         #restarts rails
   # gem 'guard-migrate'
@@ -110,5 +110,7 @@ group :development do
   # gem 'guard-railstestdb'
   # # gem 'guard-readme-on-github'
   # gem 'guard-jasmine-rails'
+
+  gem 'jquery-ui-rails'
 
 end

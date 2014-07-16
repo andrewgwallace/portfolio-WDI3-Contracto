@@ -1,11 +1,11 @@
 /*TEMP*/
-/*  div {
+  div {
     border: 1px solid green;
   }
 
   td {
     border: 1px solid blue;
-  }*/
+  }
 a {
   color: white;
   text-decoration: none;
@@ -128,7 +128,12 @@ a:active { outline: none }
     border-bottom: solid black 1px;
   }
 
+/*---- ENTRY PAGE ----*/
 
+#text_blob {
+  height: 100px;
+  width: 80%;
+}
 
 
 /*JQUERY / BACKBONE STUFF*/
