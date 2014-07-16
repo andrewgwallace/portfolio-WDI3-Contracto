@@ -136,6 +136,10 @@ a:active { outline: none }
     background-color: orange;
   }
 
+  tr{
+
+  }
+
   tbody tr:hover {
     /*background-color: rgba(0, 118, 255, 0.4);*/
     /*color: green;*/
@@ -143,16 +147,14 @@ a:active { outline: none }
     border: 2px solid red;
   }
 
-  tr{
-
-  }
-  tr.paused{
+  
+  tbody tr.paused{
     background-color: #B1B464;
     /*background-color: red;*/
     /*color: gray;*/
     /*font-style: italic;*/
   }
-  tr.closed{
+  tbody tr.closed{
     /*closed must come AFTER paused*/
     background-color: rgba(131, 148, 148, 0.4);
     color: gray;
