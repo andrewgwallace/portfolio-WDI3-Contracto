@@ -11,6 +11,7 @@
 class Attachment < ActiveRecord::Base
 
   belongs_to :entry
+  
 
   #Too soon? Wait for paperclip?
 

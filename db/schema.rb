@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20140711213220) do
 
   create_table "attachments", force: true do |t|
     t.integer  "entry_id"
+    t.string   "type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
