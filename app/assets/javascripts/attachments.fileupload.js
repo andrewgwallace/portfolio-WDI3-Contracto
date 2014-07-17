@@ -12,6 +12,20 @@ attachFileupload= function(){
       url: '/attachments'
   });
 
+  $('fileupload-btn').fileupload({
+    drop: function (e, data) {
+        $.each(data.files, function (index, file) {
+            // alert('Dropped file: ' + file.name);
+            changeFocusTo(entry, this)
+        });
+    },
+    change: function (e, data) {
+        $.each(data.files, function (index, file) {
+            // alert('Selected file: ' + file.name);
+            // entriesCollection.fetch
+        });
+    }
+});
 
 
 }

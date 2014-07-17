@@ -19,8 +19,8 @@ class Entry < ActiveRecord::Base
   scope :visable_to_job_client_status_scope, -> { where(visable_to_job_client_status: true) }    #'open is a reserved word'
   scope :hidden_from_job_client_status_scope, -> { where(visable_to_job_client_status: false) }    #'open is a reserved word'
 
-  scope :visable_to_job_subscontractors_status_scope, -> { where(visable_to_job_subscontractors_status_scope: true) }
-  scope :hidden_from_job_subscontractors_status_scope, -> { where(visable_to_job_subscontractors_status_scope: false) }
+  scope :visable_to_job_subcontractors_status_scope, -> { where(visable_to_job_subcontractors_status: true) }
+  scope :hidden_to_job_subcontractors_status_scope, -> { where(visable_to_job_subcontractors_status: false) }
 
   
   belongs_to :job

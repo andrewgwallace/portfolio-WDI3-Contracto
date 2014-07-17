@@ -55,7 +55,11 @@ var app = app || { Models: {}, Collections: {}, Views: {} };
   var dataActions = {
     filter: function(event){
       console.log('running dataAction.filter');
-      jobCollection.fetch({data: {scope: event.currentTarget.dataset.scope, reset: true} });
+      if (event.currentTarget.dataset.collection == 'jobCollection'){
+        jobCollection.fetch({data: {scope: event.currentTarget.dataset.scope, reset: true} });
+      }else if (event.currentTarget.dataset.collection == 'entryCollection'){
+        entryCollection.fetch({data: {scope: event.currentTarget.dataset.scope, reset: true} });
+      }
     }
   }
 
@@ -111,9 +115,9 @@ app.initialize = function(){
     $('[data-action]').on('click', function(event) {
       console.log("processing data-action, action:");
       console.log(event.currentTarget.dataset.action);
-      console.log(event.currentTarget.dataset.model);
+      // console.log(event.currentTarget.dataset.model);
       console.log(event.currentTarget.dataset.collection);
-      console.log(event.currentTarget.dataset.filter);
+      console.log(event.currentTarget.dataset.scope);
       dataActions[event.currentTarget.dataset.action](event);   
     });
     
