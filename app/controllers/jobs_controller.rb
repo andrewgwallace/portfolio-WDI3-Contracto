@@ -7,8 +7,12 @@ class JobsController < AuthenticatedController
 
 
   def index
-    jobs = current_admin.company.jobs
-    puts jobs
+    # binding.pry
+
+    my_scope = params[:scope] || 'all'
+    
+    jobs = current_admin.company.jobs.send(my_scope)
+    # puts jobs
     respond_with jobs
   end
 

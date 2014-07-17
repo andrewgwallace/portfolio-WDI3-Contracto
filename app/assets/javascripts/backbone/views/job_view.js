@@ -26,8 +26,8 @@ app.Views.JobView = Backbone.View.extend({
   // RENDERING
 
     render: function(){
-      console.log("running app.Views.JobView.render");
-      console.log(this)
+      // console.log("running app.Views.JobView.render");
+      // console.log(this)
 
       // debugger
        if(this.model.attributes.paused_status == true){

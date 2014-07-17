@@ -1,7 +1,11 @@
 <div class="container index-container" id="jobs-index-container">
 
     <div class="utility_bar index-utility_bar" id="jobs-index-utility">
-        <!-- I am Jobs-Index-utility_bar -->
+        Filters:
+        <button data-action='filter' data-collection='jobCollection' data-scope='all'>clear filters</button> ||
+        <button data-action='filter' data-collection='jobCollection' data-scope='open_scope'>open</button> / <button data-action='filter' data-collection='app.jobCollection' data-scope='closed_scope'>closed</button> ||
+
+        <button data-action='filter' data-collection='jobCollection' data-scope='active_scope'>active</button> / <button data-action='filter' data-collection='app.jobCollection' data-scope='paused_scope'>paused</button>
     </div>
 
         <table class="index index_table" id="jobs-index">
