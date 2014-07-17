@@ -1,13 +1,13 @@
 <div class="container index-container" id="jobs-index-container">
 
     <div class="utility_bar index-utility_bar" id="jobs-index-utility">
-        Filters:
-        <button data-action='filter' data-collection='jobCollection' data-scope='all'>clear filters</button> ||
-        <button data-action='filter' data-collection='jobCollection' data-scope='open_scope'>open</button> / <button data-action='filter' data-collection='app.jobCollection' data-scope='closed_scope'>closed</button> ||
+        <button data-action='filter' data-collection='jobCollection' data-scope='all'>ALL</button> |
+        <button data-action='filter' data-collection='jobCollection' data-scope='open_scope'>Open</button>
+        <button data-action='filter' data-collection='app.jobCollection' data-scope='closed_scope'>Closed</button>  |
 
-        <button data-action='filter' data-collection='jobCollection' data-scope='active_scope'>active</button> / <button data-action='filter' data-collection='app.jobCollection' data-scope='paused_scope'>paused</button>
+        <button data-action='filter' data-collection='jobCollection' data-scope='active_scope'>Active</button>
+        <button data-action='filter' data-collection='app.jobCollection' data-scope='paused_scope'>Paused</button>
     </div>
-
         <table class="index index_table" id="jobs-index">
         <!-- <table class="jobs-index" cellspacing="0" width="90%"> -->
             <thead>
@@ -45,18 +45,17 @@
                         <td data-action='' class='job-start_date'> <%%= start_date %> </td>
                         <td data-action='' class='job-end_date'> <%%= end_date %> </td>
                         <td data-action='' class='job-contract_price'> <%%= accounting.formatMoney(contract_price, {precision: 0}) %> </td>
-                        
+
                         <td data-action='toggleClosedStatus' class='job-closed_status td-contains-icon'>
                             <%%= conditionalInserter( closed_status , "<span class='icon-in-cell ui-state-default ui-corner-all ui-icon ui-icon-folder-collapsed'></span>", "<span class='icon-in-cell ui-state-default ui-corner-all ui-icon ui-icon-folder-open'></span>") %> </td>
-                        
+
                         <td data-action='togglePausedStatus' class='job-paused_status td-contains-icon'>
-                            <%%= conditionalInserter(paused_status,  "<span class='icon-in-cell ui-state-default ui-corner-all ui-icon ui-icon-pause'></span>", "<span class='icon-in-cell ui-state-default ui-corner-all ui-icon ui-icon-circle-arrow-e'></span>") %> </td>            
-                        
-                        <td data-action='destroy'           class='job-delete td-contains-icon'> 
+                            <%%= conditionalInserter(paused_status,  "<span class='icon-in-cell ui-state-default ui-corner-all ui-icon ui-icon-pause'></span>", "<span class='icon-in-cell ui-state-default ui-corner-all ui-icon ui-icon-circle-arrow-e'></span>") %> </td>
+
+                        <td data-action='destroy'           class='job-delete td-contains-icon'>
                                                                     <span class='icon-in-cell ui-state-default ui-corner-all ui-icon ui-icon-trash'></span></td>
                 </script>
         </table>
-
 </div>
 
 
