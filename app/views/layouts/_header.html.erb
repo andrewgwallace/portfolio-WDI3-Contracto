@@ -10,23 +10,29 @@
   <h1 class="header-menu-item" id="application-name">
     Contracto</h1>
 
+    <span class="notice"><%= notice %></span>
+    <span class="alert"><%= alert %></span>
+
   <div id="menu">
-      <%= link_to "Jobs", company_path, class: 'header-menu-item' %>
-      <a class="header-menu-item item" id="header-customers-link" href="#">Customers</a>
-      <a class="header-menu-item item" id="header-sub-contractors-link" href="#">Sub-Contractors</a>
-      <a class="header-menu-item item" id="header-employees-link" href="#">Employees</a>
-      <a class="header-menu-item flash-messages">
+      <span class="header-menu-item item" id="header-jobs-link">Jobs</span>
+      <span class="header-menu-item item" id="header-customers-link">Customers</span>
+      <span class="header-menu-item item" id="header-sub-contractors-link">Sub-Contractors</span>
+      <span class="header-menu-item item" id="header-employees-link">Employees</span>
+      
         <% if admin_signed_in? %>
-          <%= link_to 'Settings', edit_admin_registration_path %>
-          <%= link_to "Logout", destroy_admin_session_path, method: :delete %>
+          <span class="header-menu-item item">
+            <%= link_to 'Settings', edit_admin_registration_path %></span>
+          <span class="header-menu-item item">
+            <%= link_to "Logout", destroy_admin_session_path, method: :delete %></span>
         <% else %>
-          <%= link_to "Sign up", new_admin_registration_path %>
-          <%= link_to "Login", new_admin_session_path %>
+          <span class="header-menu-item item">
+            <%= link_to "Sign up", new_admin_registration_path %></span>
+          <span class="header-menu-item item">
+            <%= link_to "Login", new_admin_session_path %></span>
         <% end %>
   </div>
 
-<!--     <p class="notice"><#%= notice %></p>
-    <p class="alert"><#%= alert %></p> -->
+    
 </div>
 
 </header>
