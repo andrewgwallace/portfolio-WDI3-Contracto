@@ -1,15 +1,21 @@
 class EntriesController < AuthenticatedController
 
-  respond_to :html, :json
+  # respond_to :html, :json
+  respond_to :json
 
   before_action :set_instance_variables  
 
   
 
   def index
-    @entries = @job.entries
+    my_scope = params[:scope] || 'all'
+
+    @entries = @job.entries.send(my_scope)#.includes(:attachments)
+    # @entries = @entries
     # puts entries.length 
-    respond_with @entries
+    respond_with @entries.to_json(include: {attachments:{}, photos:{}, docs:{}, audios:{} })
+
+    # format.json  { render :json => @birds.to_json(:include => {:bird_colorations => {:include => :color}, :seasons => {}, :habitats => {}, :image_holders => {}}) }
   end
 
 

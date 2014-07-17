@@ -1,15 +1,39 @@
-<div class="container index-container" id="entries-index-container">
+<div class="entries-content-window container index-container" id="entries-index-container">
 
-  <div class="utility_bar index-utility_bar" id="entries-index-utility">
-    I am entries-Index-utility_bar
-  </div>
+  <ul>
+    <li><a href="#log_list">LOGS</a></li>
+    <li><a href="#file_list">FILES</a></li>
+  </ul>
 
-  <table class="index index_table" id="entries-index" cellspacing="0" width="90%">
+
+  <div id="log_list">
+
+    <div class="utility_bar index-utility_bar" id="entries-index-utility">
+        Filters:
+          <button data-action='filter' data-collection='entriesCollection' data-scope='all'>clear filters</button> ||
+          To Client:
+              <button data-action='filter' data-collection='entriesCollection' data-scope='visable_to_job_client_status_scope'>visable</button> / 
+              <button data-action='filter' data-collection='entriesCollection' data-scope='hidden_from_job_client_status_scope'>hidden</button> ||
+          To Subcontrators:
+              <button data-action='filter' data-collection='entriesCollection' data-scope='visable_to_job_subscontractor_client_status_scope'>visable</button> / 
+              <button data-action='filter' data-collection='entriesCollection' data-scope='hidden_from_job_subscontractor_client_status_scope'>hidden</button>
+    </div>
+
+  <table class="index index_table" id="entries-index">
+  <!-- <table class="index index_table" id="entries-index" cellspacing="0" width="90%"> -->
     <thead>
       <tr>
         <th>Entry</th>
         <th>Date</th>
-        <th colspan='3'>Attachments</th>
+        <th colspan='2'>Visable To </th>
+        <th>Attachment</th>
+      </tr>
+      <tr>
+        <th></th>
+        <th></th>
+        <th>Customer</th>
+        <th>Subcontractors</th>
+        <th>
       </tr>
     </thead>
 
@@ -17,17 +41,19 @@
       <tr>
         <th>Entry</th>
         <th>Date</th>
-        <th colspan='3'>Attachments</th>
+        <th colspan='2'>Visable To </th>
+        <th>Attachment</th>
       </tr>
     </tfoot>
 
-    <tbody class="index-table_body" id="entries-index-table_body">
+    <tbody class="index" id="entries-index-table_body">
         <!-- the following template will be rendered here -->
     </tbody>
-    
+
       <script type="text/template" id="entry-template">
         <td> <%%= id %> <%%= text_blob %></td>
-        <td> <%%= created_at %> </td>
+
+        <td> <%%= moment(created_at).format('YYYY-mm-DD') %> </td>
         <td data-action='toggleVisibleToClientStatus' class='entry-visible-to-client-status'> 
                             <%%= visable_to_job_client_status %> 
                             <input type=checkbox <%%= checkboxify(visable_to_job_client_status)  %> >
@@ -36,16 +62,55 @@
             <%%= visable_to_job_subcontractors_status %> 
             <input type=checkbox <%%= checkboxify(visable_to_job_subcontractors_status)  %> >
         </td>
-        <td>photo_icon, num</td>
-        <td>file_icon, num</td>
-        <td>file_icon, num</td>
-        <td>audio_icon, num</td>          
+
+        <td data-action='focusOnAttachments'><%= image_tag('jpeg_icon.png', width: '30px', class: 'attachment-icon-img') %> <span class='text-over-previous-image'><%%= attachments.length %></span></td>
+      
+
+        <td class="td-for-file-upload">
+          <form>
+            <input type="hidden" name="entry_id" value="<%%= id %>">
+            <input class="fileupload-btn" id="entry-<%%= id %>-file-upload" multiple="multiple" name="attachment[file]" type="file" value='xyz'/>
+            <div class="fileupload-btn-replacer">Attach yo filez</div>
+            
+          </form>
+        </td>
+        <td data-action='toggleAttachmentsVisability'> show attachments</td>
+      </script>
+      
+
+      <script type="text/template" id="attachments-row-template">
+        <p>I am an attachment</p>
+        <a href="<%%=file.url%>"> <img src="<%%= file.thumb.url%>"></a>
       </script>
 
-  </table>
+
+    </table>
+  </div> <!-- End of log tab div -->
+
+
+<div id="file_list">
+  <!-- INSERT CODE TO SHOW FILES LIST/GRID HERE -->
+</div>
 
 </div>
 
+
+<div class=hidden>
+ EXTRA STUFF
+<<<<<<< HEAD
+   <td class="fileupload-btn attachment-fileupload-btn"> click here to attach
+          <form>
+              <input type="hidden" name="entry_id" value="<%%= id %>">
+              <input class="fileupload-btn" id="entry-<%%= id %>-file-upload" multiple="multiple" name="attachment[file]" type="file" />
+          </form>
+        </td>
+=======
+>>>>>>> feature/jr_add_attachments_to_entries
+
+  <td data-action='focusOnPhotos'><%= image_tag('jpeg_icon.png', width: '30px', class: 'attachment-icon-img') %> <span class='text-over-previous-image'><%%= photos.length %></span></td>
+  <td data-action='focusOnDocs'><%= image_tag('docx_icon.png', width: '30px', class: 'attachment-icon-img') %> <span class='text-over-previous-image'><%%= docs.length %></span></td>
+  <td data-action='focusOnAudios'> [MIC_IMG] <span class='text-over-previous-image'> <%%= audios.length %></span></td>
+</div>
 
 
 

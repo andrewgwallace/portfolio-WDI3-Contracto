@@ -1,19 +1,40 @@
 <header>
   <div class="header-menu-item" id="main-logo">
-    Main Logo Here
+    <%= image_tag('contracto_logo.png', :class => "logo") %>
   </div>
 
-  <div class="header-menu-item" id="section-header">
+<!--   <div class="header-menu-item" id="section-header">
     Section Header
+  </div> -->
+
+  <h1 class="header-menu-item" id="application-name">
+    Contracto</h1>
+
+    <span class="notice"><%= notice %></span>
+    <span class="alert"><%= alert %></span>
+
+  <div id="menu">
+      <span class="header-menu-item item" id="header-jobs-link">Jobs</span>
+      <span class="header-menu-item item" id="header-customers-link">Customers</span>
+      <span class="header-menu-item item" id="header-sub-contractors-link">Sub-Contractors</span>
+      <span class="header-menu-item item" id="header-employees-link">Employees</span>
+      
+        <% if admin_signed_in? %>
+          <span class="header-menu-item item">
+            <%= link_to 'Settings', edit_admin_registration_path %></span>
+          <span class="header-menu-item item">
+            <%= link_to "Logout", destroy_admin_session_path, method: :delete %></span>
+        <% else %>
+          <span class="header-menu-item item">
+            <%= link_to "Sign up", new_admin_registration_path %></span>
+          <span class="header-menu-item item">
+            <%= link_to "Login", new_admin_session_path %></span>
+        <% end %>
   </div>
 
-  <div class="header-menu-item" id="application-name">
-    Contracto
-  </div>
+    
+</div>
 
-  <div class="ui button header-menu-item" id="hamburger" data-variation=".right">
-    ☰
-  </div>
 </header>
 
 

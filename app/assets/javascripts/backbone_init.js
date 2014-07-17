@@ -16,6 +16,16 @@ var app = app || { Models: {}, Collections: {}, Views: {} };
     return 'output from checkboxify';
   }
 
+  var conditionalInserter = function(conditionalBoolean, substitutionForTrue, substitutionForFalse ){
+    if(conditionalBoolean === true){
+      return substitutionForTrue;}
+    else if (conditionalBoolean == false){
+      return substitutionForFalse;}
+    else {
+      // return nothing
+    }
+  }
+
 
   var changeFocusTo = function(modelName, model){
     console.log('running changeFocusTo to '+modelName+" with "+ model.attributes.id);
@@ -26,7 +36,7 @@ var app = app || { Models: {}, Collections: {}, Views: {} };
     //Start Fetching New Data
       // collectionName = modelName+'Collection';
       entryCollection.url = '/company/jobs/'+model.id+'/entries';
-      console.log ("url is "+ entryCollection.url)
+      // console.log ("url is "+ entryCollection.url)
       entryCollection.fetch();
 
     //Helpers for new focus
@@ -42,6 +52,12 @@ var app = app || { Models: {}, Collections: {}, Views: {} };
 
   }
 
+  var dataActions = {
+    filter: function(event){
+      console.log('running dataAction.filter');
+      jobCollection.fetch({data: {scope: event.currentTarget.dataset.scope, reset: true} });
+    }
+  }
 
 
 
@@ -84,6 +100,25 @@ app.initialize = function(){
       //   $('.job').addClass('.hidden').
       //   $('.DATAPOINT').removeClass('.hidden').
       // });
+    
+    // $("[data-action='filterJobs']").addClass('hello') //sanity check
+    // $("[data-action='filterJobs']").on('click', function(event) {
+    //   console.log("processing data-action='filterJobs'");
+    //   event.currentTarget.dataset.action
+      
+    // });
+
+    $('[data-action]').on('click', function(event) {
+      console.log("processing data-action, action:");
+      console.log(event.currentTarget.dataset.action);
+      console.log(event.currentTarget.dataset.model);
+      console.log(event.currentTarget.dataset.collection);
+      console.log(event.currentTarget.dataset.filter);
+      dataActions[event.currentTarget.dataset.action](event);   
+    });
+    
+    
+
 }
 
 

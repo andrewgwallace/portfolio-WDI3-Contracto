@@ -4,6 +4,86 @@
 		"selected_items":
 		[
 			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"st",
+				"style"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"paused",
+				"paused_status"
+			],
+			[
+				"entry",
+				"entry_id"
+			],
+			[
+				"default",
+				"defaults"
+			],
+			[
+				"cur",
+				"currentTime"
+			],
+			[
+				"display",
+				"displayName"
+			],
+			[
+				"closed",
+				"closed"
+			],
+			[
+				"slide",
+				"slideToggle	.slideToggle()"
+			],
+			[
+				"border-ra",
+				"border-top-right-radius"
+			],
+			[
+				"board",
+				"border-bottom-left-radius"
+			],
+			[
+				"con",
+				"contract_price"
+			],
+			[
+				"end",
+				"end_date"
+			],
+			[
+				"start",
+				"start_date"
+			],
+			[
+				"debug",
+				"debuggable"
+			],
+			[
+				"current",
+				"current_admin"
+			],
+			[
+				"com",
+				"company"
+			],
+			[
 				"read",
 				"read_status"
 			],
@@ -152,10 +232,6 @@
 				"dayDuration"
 			],
 			[
-				"end",
-				"end_datetime"
-			],
-			[
 				"render",
 				"renderClockFromChild"
 			],
@@ -182,10 +258,6 @@
 			[
 				"param",
 				"params"
-			],
-			[
-				"current",
-				"current_user"
 			],
 			[
 				"fac",
@@ -252,10 +324,6 @@
 				"integer"
 			],
 			[
-				"start",
-				"start_datetime"
-			],
-			[
 				"len",
 				"length_in_minutes"
 			],
@@ -290,10 +358,6 @@
 			[
 				"obj",
 				"obj_string"
-			],
-			[
-				"con",
-				"contents	.contents()"
 			],
 			[
 				"update",
@@ -337,10 +401,6 @@
 			],
 			[
 				"curr",
-				"current_frame"
-			],
-			[
-				"cur",
 				"current_frame"
 			],
 			[
@@ -454,97 +514,45 @@
 			[
 				"lis",
 				"list-style-image"
-			],
-			[
-				"trips",
-				"trips_on_route"
-			],
-			[
-				"departu",
-				"departure_time"
-			],
-			[
-				"trip",
-				"trip_id"
-			],
-			[
-				"city",
-				"city_departure_times"
-			],
-			[
-				"stop",
-				"stop_time"
-			],
-			[
-				"route",
-				"route_id"
-			],
-			[
-				"user",
-				"user_routes"
-			],
-			[
-				"home",
-				"home_stop"
-			],
-			[
-				"Home",
-				"home_stop"
-			],
-			[
-				"agency",
-				"agency_id"
-			],
-			[
-				"Project",
-				"ProjectEntries"
-			],
-			[
-				"passwo",
-				"password_confirmation"
-			],
-			[
-				"rout",
-				"route_options"
-			],
-			[
-				"stoptimes",
-				"stop_times"
-			],
-			[
-				"stoptime",
-				"stop_times"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "/Users/johnrandall/code/wdi/projects/contracto/Gemfile",
-			"settings":
-			{
-				"buffer_size": 2716,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Packages/Ruby/Ruby.sublime-build",
 	"command_palette":
 	{
-		"height": 327.0,
+		"height": 392.0,
 		"selected_items":
 		[
 			[
-				"markdown",
-				"Strapdown.js Markdown: Preview in Sublime Text"
+				"renam",
+				"File: Rename"
 			],
 			[
 				"install",
 				"Package Control: Install Package"
 			],
 			[
+				"instap",
+				"Package Control: Install Package"
+			],
+			[
 				"packa",
 				"Package Control: Install Package"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"rena",
+				"File: Rename"
+			],
+			[
+				"markdown",
+				"Strapdown.js Markdown: Preview in Sublime Text"
 			],
 			[
 				"add fol",
@@ -572,14 +580,6 @@
 			],
 			[
 				"ren",
-				"File: Rename"
-			],
-			[
-				"renam",
-				"File: Rename"
-			],
-			[
-				"rena",
 				"File: Rename"
 			],
 			[
@@ -657,10 +657,6 @@
 			[
 				"packa:d",
 				"Package Control: Disable Package"
-			],
-			[
-				"move",
-				"File: Move"
 			],
 			[
 				"add ",
@@ -899,7 +895,7 @@
 				"Set Syntax: Ruby"
 			]
 		],
-		"width": 521.0
+		"width": 593.0
 	},
 	"console":
 	{
@@ -921,144 +917,147 @@
 	},
 	"file_history":
 	[
-		"/Users/johnrandall/code/wdi/projects/contracto/Guardfile",
-		"/Users/johnrandall/code/wdi/projects/contracto/app/models/company.rb",
-		"/Users/johnrandall/code/wdi/projects/contracto/app/models/job.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/assets/stylesheets/styles.css",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/views/entries/_new.html.erb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/assets/javascripts/backbone/views/job_view.js",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/views/jobs/_new.html.erb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/views/entries/_index.html.erb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/controllers/entries_controller.rb",
 		"/Users/johnrandall/code/wdi/projects/contracto/db/migrate/20140710194453_create_entries.rb",
-		"/Users/johnrandall/code/wdi/projects/contracto/app/models/entry.rb",
-		"/Users/johnrandall/code/wdi/projects/contracto/spec/models/entry_spec.rb",
-		"/Users/johnrandall/code/wdi/projects/contracto/config/locales/en.yml",
 		"/Users/johnrandall/code/wdi/projects/contracto/config/environment.rb",
-		"/Users/johnrandall/code/wdi/projects/contracto/config/application.rb",
-		"/Users/johnrandall/code/wdi/projects/contracto/db/migrate/20140710204453_create_jobs.rb",
-		"/Users/johnrandall/code/wdi/projects/contracto/app/views/layouts/application.html.erb",
-		"/Users/johnrandall/code/wdi/projects/contracto/app/controllers/application_controller.rb",
-		"/Users/johnrandall/code/wdi/projects/contracto/spec/models/job_spec.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/controllers/jobs_controller.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/views/jobs/_index.html.erb",
+		"/Users/johnrandall/code/wdi/projects/contracto/config/environments/test.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/assets/javascripts/backbone/views/entry_view.js",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/assets/javascripts/backbone/views/company_view.js",
+		"/Users/johnrandall/code/wdi/projects/contracto/vendor/assets/javascripts/vendor.js",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/assets/javascripts/backbone/collections/entry_collection.js",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/assets/javascripts/backbone/models/entry.js",
+		"/Users/johnrandall/code/wdi/projects/contracto/vendor/assets/javascripts/dataTables.jqueryui.js",
+		"/Users/johnrandall/code/wdi/projects/contracto/db/migrate/20140716185502_add_file_to_attachments.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/log/test.log",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/assets/javascripts/backbone/models/job.js",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/assets/javascripts/backbone/collections/job_collection.js",
+		"/Users/johnrandall/code/wdi/projects/contracto/db/seeds.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/controllers/attachments_controller.rb",
 		"/Users/johnrandall/code/wdi/projects/contracto/app/assets/javascripts/application.js",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/assets/javascripts/attachments.fileupload.js",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/models/attachment.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/spec/helpers/attachments_helper_spec.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/helpers/attachments_helper.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/views/layouts/application.html.erb",
+		"/Users/johnrandall/code/wdi/projects/contracto/spec/controllers/attachments_controller_spec.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/uploaders/file_uploader.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/config/routes.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/assets/javascripts/backbone/views/entry_list_view.js",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/assets/javascripts/attachments.js.coffee",
+		"/Users/johnrandall/code/wdi/projects/contracto/spec/models/attachments_spec.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/config/initializers/filter_parameter_logging.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/db/migrate/20140710220810_create_attachments.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/db/migrate/20140711213220_add_devise_to_persons.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/models/entry.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/views/entries/_index.html.erb.bak",
+		"/Users/johnrandall/code/wdi/projects/contracto/vendor/assets/javascripts/jQuery-File-Upload/jquery.fileupload.js",
+		"/Users/johnrandall/code/wdi/projects/contracto/vendor/assets/javascripts/jQuery-File-Upload/plugins/jquery.fileupload-jquery-ui.js",
+		"/Users/johnrandall/code/wdi/projects/contracto/vendor/assets/javascripts/jQuery-File-Upload/plugins/jquery.fileupload-ui.js",
+		"/Users/johnrandall/code/wdi/projects/contracto/Gemfile",
+		"/Users/johnrandall/code/wdi/projects/contracto/vendor/assets/stylesheets/jquery-ui.structure.css",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/assets/stylesheets/application.css",
+		"/Users/johnrandall/code/wdi/projects/contracto/vendor/assets/stylesheets/vendor.css",
+		"/Users/johnrandall/code/wdi/projects/contracto/vendor/assets/stylesheets/jquery-ui/dataTables.jqueryui.css",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/views/layouts/_header.html.erb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/assets/javascripts/jqueryui_initializer.js",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/assets/javascripts/sidebar_initializer.js",
+		"/Users/johnrandall/code/wdi/projects/contracto/vendor/assets/javascripts/jquery-ui.js",
+		"/Users/johnrandall/code/wdi/projects/contracto/vendor/assets/javascripts/sidebar.js",
+		"/Users/johnrandall/code/wdi/projects/contracto/vendor/assets/javascripts/jquery.dataTables.js",
+		"/Users/johnrandall/code/wdi/projects/contracto/vendor/assets/javascripts/backbone.js",
+		"/Users/johnrandall/code/wdi/projects/contracto/vendor/assets/javascripts/accounting.js",
+		"/Users/johnrandall/code/wdi/projects/contracto/vendor/assets/javascripts/jQuery-File-Upload/jquery.fileupload-ui.js",
+		"/Users/johnrandall/code/wdi/projects/contracto/vendor/assets/javascripts/jQuery-File-Upload/jquery.fileupload-jquery-ui.js",
+		"/Users/johnrandall/code/wdi/projects/contracto/vendor/assets/javascripts/underscore.js",
+		"/Users/johnrandall/code/wdi/projects/contracto/vendor/assets/javascripts/moment.js",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/assets/javascripts/backbone/views/job_list_view.js",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/views/companies/show.html.erb",
+		"/Users/johnrandall/code/wdi/projects/contracto/vendor/assets/stylesheets/styles.css",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/assets/javascripts/backbone_init.js",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/controllers/concerns/.keep",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/controllers/welcome_controller.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/controllers/companies_controller.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/controllers/authenticated_controller.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/controllers/application_controller.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/admin/aw_working_folder/contracto_v1.bmml",
+		"/Users/johnrandall/code/wdi/projects/contracto/config.ru",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/models/company.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/spec/models/entry_spec.rb",
+		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/controllers/entries_controller.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/public/robots.txt",
+		"/Users/johnrandall/code/wdi/projects/contracto/db/schema.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/vendor/assets/stylesheets/dataTables.jqueryui.css",
+		"/Users/johnrandall/code/wdi/projects/contracto/config/initializers/session_store.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/views/customers/_show.html.erb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/models/customer.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/spec/models/customer_spec.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/db/migrate/20140710204453_create_jobs.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/config/initializers/cookies_serializer.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/views/jobs/_show.html.erb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/views/subcontractors/_show.html.erb",
 		"/Users/johnrandall/code/wdi/projects/contracto/config/initializers/inflections.rb",
-		"/Users/johnrandall/code/wdi/projects/ourday old repos/our_day_featureA/app/assets/javascripts/family_show_scripts.js",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/assets/javascripts/backbone/views/appointments_list_view.js",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/assets/javascripts/backbone/views/appointment_view.js",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/assets/javascripts/backbone/models/appointment.js",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/assets/javascripts/backbone/collections/appointments_collection.js",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/helpers/application_helper.rb",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/controllers/calendar_entries_controller.rb",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/controllers/appointments_controller.rb",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/controllers/childcares_controller.rb",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/config/environments/development.rb",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/log/development.log",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/config/database.yml",
-		"/Users/johnrandall/code/wdi/WDI_NYC_Apr14_String/w11/d02/INSTRUCTORS/penguin_pals2/public/javascripts/backbone/views/penguins/PenguinView.js",
-		"/Users/johnrandall/code/wdi/WDI_NYC_Apr14_String/w11/d02/INSTRUCTORS/penguin_pals2/config/environment.rb",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/config/environment.rb",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/assets/javascripts/calendar_kid.js",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/assets/javascripts/backbone/views/childcare_view.js",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/controllers/kids_controller.rb",
-		"/Users/johnrandall/code/wdi/WDI_NYC_Apr14_String/w11/d02/INSTRUCTORS/penguin_pals2/public/javascripts/libraries/backbone.js",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/vendor/assets/javascripts/backbone.js",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/views/kids/calendar.html.erb",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/models/calendar_entry.rb",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/views/kids/_form_childcare_new.erb",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/test/controllers/kid_controller_test.rb",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/models/kid.rb",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/views/family/_persons_section.erb",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/views/family/show.html.erb",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/assets/javascripts/application.js",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/views/devise/shared/_links.erb",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/views/family/_person.erb",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/test/helpers/family_helper_test.rb",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/spec/models/family_member_calendar_associations_spec.rb",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/controllers/family_controller.rb",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/spec/spec_helper.rb",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/db/seeds.rb",
-		"/Users/johnrandall/code/wdi/WDI_NYC_Apr14_String/w11/d02/INSTRUCTORS/penguin_pals2/public/index.html",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/assets/javascripts/backbone/views/childcares_list_view.js",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/assets/javascripts/backbone/backbone_app.js",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/config/secrets.yml",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/db/schema.rb",
-		"/Users/johnrandall/code/wdi/WDI_NYC_Apr14_String/w11/d02/INSTRUCTORS/penguin_pals2/public/javascripts/backbone/views/penguins/PenguinListView.js",
-		"/Users/johnrandall/code/wdi/WDI_NYC_Apr14_String/w11/d02/INSTRUCTORS/penguin_pals2/config/initializers/filter_parameter_logging.rb",
-		"/Users/johnrandall/code/wdi/WDI_NYC_Apr14_String/w11/d02/INSTRUCTORS/penguin_pals2/app/helpers/penguins_helper.rb",
-		"/Users/johnrandall/code/wdi/WDI_NYC_Apr14_String/w11/d02/INSTRUCTORS/penguin_pals2/test/models/penguin_test.rb",
-		"/Users/johnrandall/code/wdi/WDI_NYC_Apr14_String/w11/d02/INSTRUCTORS/penguin_pals2/app/models/penguin.rb",
-		"/Users/johnrandall/code/wdi/WDI_NYC_Apr14_String/w11/d02/INSTRUCTORS/penguin_pals2/app/controllers/penguins_controller.rb",
-		"/Users/johnrandall/code/wdi/WDI_NYC_Apr14_String/w11/d02/INSTRUCTORS/penguin_pals2/test/fixtures/penguins.yml",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/models/person.rb",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/models/childcare.rb",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/assets/javascripts/backbone/collections/childcares_collection.js",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/views/welcome/index.html.erb",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/bin/spring",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/assets/stylesheets/childcares.css.scss",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sass/344b7692658b12f7d296d1272a6962f5c486f4ab/childcares.css.scssc",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/assets/javascripts/backbone/models/childcare.js",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/spec/helpers/appointments_helper_spec.rb",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/spec/controllers/appointments_controller_spec.rb",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/assets/stylesheets/appointments.css.scss",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/helpers/appointments_helper.rb",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/assets/javascripts/backbone/views/kid_view.js",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/assets/javascripts/backbone/models/kid.js",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/config/routes.rb",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/models/family.rb",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/models/family_member.rb",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/assets/stylesheets/family.css.scss",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/test/controllers/family_controller_test.rb",
-		"/Users/johnrandall/Desktop/markdowntest.md",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/config/initializers/mime_types.rb",
-		"/Users/johnrandall/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/README.md",
-		"/Users/johnrandall/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/Markdown (Standard).sublime-settings",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/app/views/layouts/application.html.erb",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/change_log.md",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/050a16c21d06f37eb7fbbb3636147f4d",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/0695bd665f1329b83f9d0c74526767b2",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/0a4adabe9d8742478ba1e9406a222ff9",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/0becb4e276ab831d15725c7a5ec8a2ac",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/11469e49fa7feecc2788ab6484adbdcd",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/11b21ea9d730bbd024083fe9c886ab75",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/1e1a6379c05050ebe2ee13907658d6d8",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/21ce83ae3b07ac8192cce9eeed5f05bb",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/246ffb08aa885429bae69874eaf57719",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/2a6ca8f90afc4b108e34f4faef181137",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/2d0960e0a522cb95b9f7c056fa65e441",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/2f5173deea6c795b8fdde723bb4b63af",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/33b646c548343ebb50c5b312aa7f45a3",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/39cd47b7e732f66c17a8459ed26b5c54",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/44167cb154da4fe6032b70185dcfa5a9",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/474b39c23a2eaa45b6bc805ec207673f",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/5796c1251120be122eb0a50682d2c6c9",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/59c9822bfaa54a4ae77ff9e5cbc69e71",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/6466f631ba6019789c39948706f71f7b",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/65a10fdd375bc376da69b6b9b1f6858c",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/67591917362e3700fb1f26628c1efdbf",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/6b224e087f76b691308c4741b14ce208",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/70d925ba6e228c18e7aa1b2a4ff21069",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/71f7882e42c3a596f03fd5ba1d78b635",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/75bee0ca6e7b0cfbda71f18663939eb4",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/7e5cc1576d217b9a60609a25659a43aa",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/871bd95b78e05f672cf9fff9c0b2d197",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/890744ecf966222b049c79f6c6f56e1e",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/89757cf790e8c4d318b1fbf9e8158d31",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/8dfb87410c29cd394eca2e13b501f80f",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/91746aca090039e901c946c323d988bf",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/92066add1e97f2c09c65730b537f1752",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/9582cb6f65229aefc57421139ed843a3",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/a5bdd084a16b6c0e5b4838d8c5368f6e",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/a6a72292b71e910ce2280addba473f4c",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/b3a6cacf5468d1d5f9e3cadc132c7f37",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/b61e51850087cef3ba5a152daf626b6a",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/b830b8372c84123f66dacda82e80649b",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/ba3b7bf407caeb361e0a59949622d5a1",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/bb5d6251888db5adec7dd96a257c559c",
-		"/Users/johnrandall/code/wdi/projects/ourday_take4/tmp/cache/assets/development/sprockets/bba43ed1cdf7c721e31c5a415084f295"
+		"/Users/johnrandall/code/wdi/projects/contracto/spec/models/job_spec.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/tmp/cache/assets/development/sprockets/01afb717807f31d680cc72a6a2552989",
+		"/Users/johnrandall/code/wdi/projects/contracto/tmp/cache/assets/development/sprockets/16be78d6df1855d53097b39e96284dde",
+		"/Users/johnrandall/code/wdi/projects/contracto/tmp/cache/assets/development/sprockets/2f5173deea6c795b8fdde723bb4b63af",
+		"/Users/johnrandall/code/wdi/projects/contracto/tmp/cache/assets/development/sprockets/8ddda15b603c761c6a30e1684554f454",
+		"/Users/johnrandall/code/wdi/projects/contracto/tmp/cache/assets/development/sprockets/a5fa9be7c5fbe5d32c162bf37dcb23d0",
+		"/Users/johnrandall/code/wdi/projects/contracto/tmp/cache/assets/development/sprockets/b2b135f3a8524a81a032a6763dc0f9f0",
+		"/Users/johnrandall/code/wdi/projects/contracto/tmp/cache/assets/development/sprockets/c8c376953ae162618884047e544ef37f",
+		"/Users/johnrandall/code/wdi/projects/contracto/tmp/cache/assets/development/sprockets/cffd775d018f68ce5dba1ee0d951a994",
+		"/Users/johnrandall/code/wdi/projects/contracto/tmp/cache/assets/development/sprockets/d39977f18866bae92a0ed21343d2dcef",
+		"/Users/johnrandall/code/wdi/projects/contracto/tmp/cache/assets/development/sprockets/ea9790022ff7ce8bad5b875ca8c1f7b4",
+		"/Users/johnrandall/code/wdi/projects/contracto/tmp/cache/assets/development/sprockets/faeae3aaec563261027bd7817bcac5c8",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/helpers/application_helper.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/assets/templates/entries/index.jst.eco",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/assets/javascripts/routers/entries_router.js.coffee",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/assets/javascripts/backbone/views/jobs_list_view.js",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/assets/javascripts/backbone/backbone_application_loader.js",
+		"/Users/johnrandall/code/wdi/projects/contracto/db/migrate/20140710194147_create_companies.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/models/job.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/config/environments/development.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/config/database.yml",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/models/sub_contractor_join.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/tmp/cache/assets/development/sass/8f061b86ed8d2b0d0306d7a9c727cbae6b1c47c4/jobs.css.scssc",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/assets/javascripts/backbone/collections/jobs_collection.js",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/models/.keep",
+		"/Users/johnrandall/code/wdi/projects/contracto/config/initializers/mime_types.rb",
+		"/Users/johnrandall/code/wdi/WDI_NYC_Apr14_String/.git/MERGE_MSG",
+		"/Users/johnrandall/code/wdi/projects/contracto/config/application.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/views/companies/_jobs_table.html.erb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/models/company_client_join.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/config/initializers/backtrace_silencers.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/bin/bundle",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/views/companies/_new_job_form.html.erb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/models/admin.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/models/person.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/spec/spec_helper.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/bin/rspec",
+		"/Users/johnrandall/code/wdi/projects/contracto/config/environments/production.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/config/secrets.yml",
+		"/Users/johnrandall/code/wdi/projects/contracto/config/boot.rb",
+		"/Users/johnrandall/code/wdi/projects/contracto/app/views/devise/shared/_links.erb",
+		"/Users/johnrandall/code/wdi/projects/contracto/README.md"
 	],
 	"find":
 	{
-		"height": 33.0
+		"height": 45.0
 	},
 	"find_in_files":
 	{
 		"height": 118.0,
 		"where_history":
 		[
+			"",
+			"<open files>",
+			"",
 			"<open folders>",
 			"",
 			"/Users/johnrandall/code/wdi/WDI_NYC_Apr14_String/w04/d01/John_Randall/superheroes_on_rails",
@@ -1068,9 +1067,67 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": false,
+		"case_sensitive": true,
 		"find_history":
 		[
+			"hover",
+			"delegateTarget",
+			"span",
+			"job-cell",
+			"ui-state-default",
+			"icon-td",
+			"td-contains-icon",
+			"ui-state-default ui-corner-all ui-icon",
+			"icon-in-cell",
+			"'cell",
+			"cell ",
+			"attachment_params",
+			"accept",
+			"entry",
+			"Entry",
+			"entries",
+			"        \n",
+			"Job",
+			"job",
+			"jobs",
+			"ACTIONHERE",
+			"has-data-action ",
+			"new",
+			"JobsCollection",
+			"EntrysCollection",
+			"Job",
+			"job",
+			"Job",
+			"job",
+			"Job",
+			"job",
+			"paused",
+			"html",
+			"header-menu-item",
+			"<li class=",
+			"id=\"",
+			"div",
+			"Appointment",
+			"appointment",
+			"live",
+			"protect",
+			"csrf",
+			"appointment",
+			"Appointment",
+			"appointment",
+			"Appointment",
+			"Kid",
+			"kid",
+			"=",
+			"Rand",
+			"Faker::phone\n",
+			"Faker::phone",
+			"Faker::PhoneNumber.cell_phone",
+			"Faker.",
+			"Faker.email",
+			"Company",
+			"Persons",
+			"index_admins_on_email",
 			"AND",
 			"active_status",
 			"irregular",
@@ -1140,65 +1197,7 @@
 			"Person",
 			"caregivers",
 			"user",
-			"User",
-			"user",
-			"be_an_instance_of",
-			"user",
-			"User",
-			"user",
-			"conflict",
-			"merge",
-			"conflict",
-			"Cargegiver",
-			"caregivings",
-			"caregivers",
-			"user",
-			"kid",
-			"Kid",
-			"appointments",
-			"childcares",
-			"caregiveings",
-			"it",
-			"to",
-			"SEED",
-			"seed",
-			"  ",
-			"RSpec.configure do |config|",
-			"RSpec.configure do |config|\n  config.include FactoryGirl::Syntax::Methods\nend",
-			"cashe",
-			"creating",
-			"puts \"seed: creating a childcare for kid #{kid.id} (family #{family.id})\"",
-			"deleting",
-			"puts",
-			"foreign_key",
-			"family_member_id",
-			"beginning_of_day",
-			"b",
-			"<% ",
-			"%>",
-			"<%",
-			"class_to_display",
-			"class_of_person_to_display",
-			"class_of_persons_to_display",
-			"# ",
-			"kid",
-			"child",
-			">\n",
-			"  ",
-			"    ",
-			"\",",
-			"luddite",
-			"luddites",
-			"caregiver",
-			"Caregiver",
-			"caregiver",
-			"Caregivers",
-			"caregivers",
-			"Caregivers",
-			"caregivers",
-			"kid",
-			"Kid",
-			"kid"
+			"User"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1206,6 +1205,22 @@
 		"regex": false,
 		"replace_history":
 		[
+			"Entry",
+			"JobCollection",
+			"EntryCollection",
+			"Entry",
+			"entry",
+			"Entry",
+			"entry",
+			"Entry",
+			"entry",
+			"Job",
+			"job",
+			"Job",
+			"job",
+			"Job",
+			"Company",
+			"company",
 			"app",
 			"Childcare",
 			"childcare",
@@ -1237,96 +1252,14 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/Users/johnrandall/code/wdi/projects/contracto/Gemfile",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2716,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close"
-							],
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1196.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 33.0
+		"height": 37.0
 	},
 	"input":
 	{
@@ -1361,7 +1294,7 @@
 	},
 	"output.find_results":
 	{
-		"height": 160.0
+		"height": 676.0
 	},
 	"output.git-checkout":
 	{
@@ -1386,7 +1319,7 @@
 	"project": "untitled.sublime-project",
 	"replace":
 	{
-		"height": 62.0
+		"height": 70.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1395,24 +1328,360 @@
 		"selected_items":
 		[
 			[
+				"entr/new",
+				"app/views/entries/_new.html.erb"
+			],
+			[
+				"jobnew",
+				"app/views/jobs/_new.html.erb"
+			],
+			[
+				"ent/new",
+				"app/views/entries/_new.html.erb"
+			],
+			[
+				"entr/in",
+				"app/views/entries/_index.html.erb"
+			],
+			[
+				"job/new",
+				"app/views/jobs/_new.html.erb"
+			],
+			[
+				"job/ind",
+				"app/views/jobs/_index.html.erb"
+			],
+			[
+				"view",
+				"app/assets/javascripts/backbone/views/job_view.js"
+			],
+			[
+				"job_viw",
+				"app/assets/javascripts/backbone/views/job_view.js"
+			],
+			[
+				"job.js",
+				"app/assets/javascripts/backbone/models/job.js"
+			],
+			[
+				"stey",
+				"app/assets/stylesheets/styles.css"
+			],
+			[
+				"jobin",
+				"app/views/jobs/_index.html.erb"
+			],
+			[
+				"seed",
+				"db/seeds.rb"
+			],
+			[
+				"attac",
+				"app/models/attachment.rb"
+			],
+			[
+				"entr",
+				"app/controllers/entries_controller.rb"
+			],
+			[
+				"atta",
+				"app/controllers/attachments_controller.rb"
+			],
+			[
+				"index",
+				"app/views/entries/_index.html.erb"
+			],
+			[
+				"entrei",
+				"app/views/entries/_index.html.erb"
+			],
+			[
+				"attach",
+				"app/controllers/attachments_controller.rb"
+			],
+			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"fileup",
+				"app/uploaders/file_uploader.rb"
+			],
+			[
+				"attachments",
+				"db/migrate/20140710220810_create_attachments.rb"
+			],
+			[
+				"appli",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"entrylist",
+				"app/assets/javascripts/backbone/views/entry_list_view.js"
+			],
+			[
+				"entry",
+				"app/assets/javascripts/backbone/models/entry.js"
+			],
+			[
+				"entrycol",
+				"app/assets/javascripts/backbone/collections/entry_collection.js"
+			],
+			[
+				"entries/new",
+				"app/views/entries/_new.html.erb"
+			],
+			[
+				"entreis/in",
+				"app/views/entries/_index.html.erb"
+			],
+			[
+				"ven",
+				"vendor/assets/javascripts/vendor.js"
+			],
+			[
 				"gem",
 				"Gemfile"
 			],
 			[
-				"en",
-				"db/migrate/20140710194453_create_entries.rb"
+				"style",
+				"app/assets/stylesheets/styles.css"
 			],
 			[
-				"compan",
-				"app/models/company.rb"
+				"layou",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"jquer",
+				"vendor/assets/javascripts/jquery-ui.js"
+			],
+			[
+				"app",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"entrie",
+				"app/controllers/entries_controller.rb"
+			],
+			[
+				"roo",
+				"public/robots.txt"
+			],
+			[
+				"jobs/in",
+				"app/views/jobs/_index.html.erb"
+			],
+			[
+				"sche",
+				"db/schema.rb"
+			],
+			[
+				"appliac",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"backbon",
+				"app/assets/javascripts/backbone/backbone_application_loader.js"
+			],
+			[
+				"layou/",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"styl",
+				"vendor/assets/stylesheets/styles.css"
 			],
 			[
 				"job",
+				"app/controllers/jobs_controller.rb"
+			],
+			[
+				"custom/sho",
+				"app/views/customers/_show.html.erb"
+			],
+			[
+				"comp/sho",
+				"app/views/companies/show.html.erb"
+			],
+			[
+				"inde",
+				"app/views/jobs/_index.html.erb"
+			],
+			[
+				"joblist",
+				"app/assets/javascripts/backbone/views/job_list_view.js"
+			],
+			[
+				"job_ve",
+				"app/assets/javascripts/backbone/views/job_view.js"
+			],
+			[
+				"stl",
+				"vendor/assets/stylesheets/styles.css"
+			],
+			[
+				"_index",
+				"app/views/jobs/_index.html.erb"
+			],
+			[
+				"job/in",
+				"app/views/jobs/_index.html.erb"
+			],
+			[
+				"show",
+				"app/views/companies/show.html.erb"
+			],
+			[
+				"job_col",
+				"app/assets/javascripts/backbone/collections/job_collection.js"
+			],
+			[
+				"createjob",
 				"db/migrate/20140710204453_create_jobs.rb"
 			],
 			[
 				"dev",
-				"ourday_take4/config/environments/development.rb"
+				"config/environments/development.rb"
+			],
+			[
+				"jobs",
+				"app/controllers/jobs_controller.rb"
+			],
+			[
+				"schem",
+				"db/schema.rb"
+			],
+			[
+				"jobs/",
+				"app/views/jobs/_new.html.erb"
+			],
+			[
+				"back",
+				"app/assets/javascripts/backbone/backbone_application_loader.js"
+			],
+			[
+				"appliaction",
+				"app/assets/stylesheets/application.css"
+			],
+			[
+				"job_li_",
+				"app/assets/javascripts/backbone/views/jobs_list_view.js"
+			],
+			[
+				"jobcoll",
+				"app/assets/javascripts/backbone/collections/jobs_collection.js"
+			],
+			[
+				"createc",
+				"db/migrate/20140710194147_create_companies.rb"
+			],
+			[
+				"spec_he",
+				"spec/spec_helper.rb"
+			],
+			[
+				"aut",
+				"app/controllers/authenticated_controller.rb"
+			],
+			[
+				"lay",
+				"app/views/layouts/_header.html.erb"
+			],
+			[
+				"applic",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"person",
+				"app/models/person.rb"
+			],
+			[
+				"compan",
+				"spec/models/company_spec.rb"
+			],
+			[
+				"comp",
+				"app/models/company.rb"
+			],
+			[
+				"",
+				"Gemfile.lock"
+			],
+			[
+				"creat",
+				"db/migrate/20140710194147_create_companies.rb"
+			],
+			[
+				"per",
+				"app/models/person.rb"
+			],
+			[
+				"ap",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"admi",
+				"app/models/admin.rb"
+			],
+			[
+				"welcome",
+				"app/views/welcome/splash.html.erb"
+			],
+			[
+				"devel",
+				"config/environments/development.rb"
+			],
+			[
+				"com",
+				"app/models/company.rb"
+			],
+			[
+				"layout",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"create",
+				"db/migrate/20140710194147_create_companies.rb"
+			],
+			[
+				"pers",
+				"app/models/person.rb"
+			],
+			[
+				"ro",
+				"config/routes.rb"
+			],
+			[
+				"admin",
+				"app/models/admin.rb"
+			],
+			[
+				"applica",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"splash",
+				"app/views/welcome/splash.html.erb"
+			],
+			[
+				"welcom",
+				"app/controllers/welcome_controller.rb"
+			],
+			[
+				"devise",
+				"db/migrate/20140711213220_add_devise_to_admins.rb"
+			],
+			[
+				"appvie",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"en",
+				"db/migrate/20140710194453_create_entries.rb"
 			],
 			[
 				"backbone",
@@ -1431,20 +1700,12 @@
 				"ourday_take4/app/views/family/show.html.erb"
 			],
 			[
-				"seed",
-				"ourday_take4/db/seeds.rb"
-			],
-			[
 				"appoin",
 				"ourday_take4/app/assets/javascripts/backbone/views/appointment_view.js"
 			],
 			[
 				"pengui_list",
 				"penguin_pals2/public/javascripts/backbone/views/penguins/PenguinListView.js"
-			],
-			[
-				"back",
-				"ourday_take4/vendor/assets/javascripts/backbone.js"
 			],
 			[
 				"childcare_list",
@@ -1457,14 +1718,6 @@
 			[
 				"chil_list",
 				"ourday_take4/app/assets/javascripts/backbone/views/childcares_list_view.js"
-			],
-			[
-				"sche",
-				"ourday_take4/db/schema.rb"
-			],
-			[
-				"schem",
-				"ourday_take4/db/schema.rb"
 			],
 			[
 				"calendar",
@@ -1483,20 +1736,8 @@
 				"ourday_take4/app/assets/javascripts/backbone/views/appointment_view.js"
 			],
 			[
-				"route",
-				"ourday_take4/config/routes.rb"
-			],
-			[
 				"familysho",
 				"ourday_take4/app/views/family/show.html.erb"
-			],
-			[
-				"app",
-				"ourday_take4/app/assets/javascripts/application.js"
-			],
-			[
-				"layou",
-				"ourday_take4/app/views/layouts/application.html.erb"
 			],
 			[
 				"appointment_li",
@@ -1513,10 +1754,6 @@
 			[
 				"childcares",
 				"ourday_take4/app/controllers/childcares_controller.rb"
-			],
-			[
-				"appli",
-				"ourday_take4/app/assets/javascripts/application.js"
 			],
 			[
 				"application.js",
@@ -1555,20 +1792,12 @@
 				"ourday_take4/config/initializers/mime_types.rb"
 			],
 			[
-				"rout",
-				"ourday_take4/config/routes.rb"
-			],
-			[
 				"tour",
 				"ourday_take4/config/routes.rb"
 			],
 			[
 				"deve",
 				"config/environments/development.rb"
-			],
-			[
-				"per",
-				"app/models/person.rb"
 			],
 			[
 				"view/kid",
@@ -1609,302 +1838,6 @@
 			[
 				"view/fami",
 				"app/views/family/show.html.erb"
-			],
-			[
-				"guar",
-				"Guardfile"
-			],
-			[
-				"viewfamil",
-				"app/views/family/show.html.erb"
-			],
-			[
-				"_form",
-				"app/views/kids/_form_childcare_new.erb"
-			],
-			[
-				"createca",
-				"db/migrate/20140613004422_create_calendar_entries.rb"
-			],
-			[
-				"createfa",
-				"db/migrate/20140612231324_create_families.rb"
-			],
-			[
-				"_chil",
-				"app/views/kids/_form_childcare_new.erb"
-			],
-			[
-				"calendhtml",
-				"app/views/kids/calendar.html.erb"
-			],
-			[
-				"familmem",
-				"app/models/family_member.rb"
-			],
-			[
-				"railsa",
-				"config/initializers/rails_assistant.rb"
-			],
-			[
-				"createper",
-				"db/migrate/20140612231713_create_persons.rb"
-			],
-			[
-				"createcale",
-				"db/migrate/20140613004422_create_calendar_entries.rb"
-			],
-			[
-				"adddevise",
-				"db/migrate/20140620144605_add_devise_to_persons.rb"
-			],
-			[
-				"_per",
-				"app/views/family/_person.erb"
-			],
-			[
-				"famil/sho",
-				"app/views/family/show_test.html.erb"
-			],
-			[
-				"family/show",
-				"app/views/family/show.html.erb"
-			],
-			[
-				"show",
-				"app/views/family/show.html.erb"
-			],
-			[
-				"showt",
-				"app/views/family/show_test.html.erb"
-			],
-			[
-				"applic",
-				"app/views/layouts/application.html.erb"
-			],
-			[
-				"user",
-				"app/models/user.rb"
-			],
-			[
-				"gemfil",
-				"Gemfile"
-			],
-			[
-				"spec",
-				"spec/spec_helper.rb"
-			],
-			[
-				"lappli",
-				"app/helpers/application_helper.rb"
-			],
-			[
-				"data",
-				"config/database.yml"
-			],
-			[
-				"fami",
-				"app/models/family_member.rb"
-			],
-			[
-				"rspec",
-				"bin/rspec"
-			],
-			[
-				"see",
-				"db/seeds.rb"
-			],
-			[
-				"se",
-				"db/seeds.rb"
-			],
-			[
-				"application_h",
-				"app/helpers/application_helper.rb"
-			],
-			[
-				"ass",
-				"spec/models/associations_spec.rb"
-			],
-			[
-				"family",
-				"app/models/family_member.rb"
-			],
-			[
-				"family/sho",
-				"app/views/family/show.html.erb"
-			],
-			[
-				"layout",
-				"app/views/layouts/application.html.erb"
-			],
-			[
-				"kidca",
-				"app/views/kids/calendar.html.erb"
-			],
-			[
-				"pro",
-				"config/environments/production.rb"
-			],
-			[
-				"pers",
-				"app/models/person.rb"
-			],
-			[
-				"lud",
-				"app/models/luddite.rb"
-			],
-			[
-				"asso",
-				"spec/models/associations_spec.rb"
-			],
-			[
-				"rspc",
-				"bin/rspec"
-			],
-			[
-				"as",
-				"spec/models/associations_spec.rb"
-			],
-			[
-				"fam",
-				"app/models/family_member.rb"
-			],
-			[
-				"rake",
-				"Rakefile"
-			],
-			[
-				"",
-				"app/views/family/show.html.erb"
-			],
-			[
-				"family/",
-				"app/views/family/show.html.erb"
-			],
-			[
-				"care",
-				"app/models/caregiver.rb"
-			],
-			[
-				"person",
-				"app/views/family/_person.erb"
-			],
-			[
-				"confi",
-				"config/application.rb"
-			],
-			[
-				"kids",
-				"app/controllers/kids_controller.rb"
-			],
-			[
-				"rou",
-				"config/routes.rb"
-			],
-			[
-				"application",
-				"app/views/layouts/application.html.erb"
-			],
-			[
-				"read",
-				"README.md"
-			],
-			[
-				"family_",
-				"test/controllers/family_controller_test.rb"
-			],
-			[
-				"welcom/in",
-				"app/views/welcome/index.html.erb"
-			],
-			[
-				"tod",
-				"admin/issue_tracker.TODO"
-			],
-			[
-				"to",
-				"admin/issue_tracker.TODO"
-			],
-			[
-				"rea",
-				"README.md"
-			],
-			[
-				"confi/en/d",
-				"config/environments/development.rb"
-			],
-			[
-				"child",
-				"app/helpers/children_helper.rb"
-			],
-			[
-				"dat",
-				"config/database.yml"
-			],
-			[
-				"children_",
-				"app/controllers/children_controller.rb"
-			],
-			[
-				"car",
-				"app/controllers/caregivers_controller.rb"
-			],
-			[
-				"envi",
-				"config/environments/development.rb"
-			],
-			[
-				"environ",
-				"config/environment.rb"
-			],
-			[
-				"personcon",
-				"app/controllers/persons_controller.rb"
-			],
-			[
-				"config/env",
-				"config/environments/development.rb"
-			],
-			[
-				"javascrip",
-				"app/assets/javascripts/application.js"
-			],
-			[
-				"entry",
-				"app/models/calendar_entry.rb"
-			],
-			[
-				"persons",
-				"db/migrate/20140612231713_create_persons.rb"
-			],
-			[
-				"js",
-				"app/assets/javascripts/child_scripts.js"
-			],
-			[
-				"exa",
-				"example.html"
-			],
-			[
-				"childre",
-				"app/controllers/children_controller.rb"
-			],
-			[
-				"div",
-				"config/initializers/devise.rb"
-			],
-			[
-				"devise",
-				"config/locales/devise.en.yml"
-			],
-			[
-				"confi/initializer/dev",
-				"config/initializers/devise.rb"
-			],
-			[
-				"chil",
-				"app/models/child.rb"
 			]
 		],
 		"width": 0.0
@@ -1931,7 +1864,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 261.0,
 	"status_bar_visible": true,
 	"template_settings":

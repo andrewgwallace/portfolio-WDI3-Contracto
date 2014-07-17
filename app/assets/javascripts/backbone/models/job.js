@@ -36,7 +36,7 @@ app.Models.Job = Backbone.Model.extend({
 
   //Navigation #FIX This should really be moved to a controller
     hello: function(){
-      console.log('hello')
+      console.log('hello from a job')
     },
     showJob: function(){
       console.log('running showJob');

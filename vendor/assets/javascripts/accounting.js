@@ -1,3 +1,4 @@
+console.log("reading accounting.js");
 /*!
  * accounting.js v0.4.1
  * Copyright 2014 Open Exchange Rates

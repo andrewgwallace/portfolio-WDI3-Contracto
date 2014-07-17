@@ -24,7 +24,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring',        group: :development
+# gem 'spring',        group: :development
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -49,11 +49,21 @@ gem 'devise'      #autentication
 # gem "simple_show"
 # gem "simple_form"
 
-# gem "rails-backbone" 
+# gem "rails-backbone"
 
 
 # bundle exec rake doc:rails generates the API under doc/api.
 # gem 'sdoc', '~> 0.4.0',          group: :doc
+
+
+
+
+
+gem 'carrierwave'
+# gem "rmagick"
+gem "mini_magick"
+
+
 
 
 
@@ -73,7 +83,7 @@ group :development, :test do
   # gem 'factory_girl_rails'
 
   gem "faker"
-  # gem 'debugger' 
+  # gem 'debugger'
 
 end
 
@@ -95,9 +105,9 @@ group :development do
   # gem 'guard-test'          #runs tests
   # gem 'guard-reloader'    #runs tests
 
-  gem "rack-livereload" 
+  gem "rack-livereload"
   gem 'guard-livereload'   #reloads views
-  
+
   # gem 'guard-bundler'
   # gem 'guard-rails'         #restarts rails
   # gem 'guard-migrate'
@@ -110,5 +120,7 @@ group :development do
   # gem 'guard-railstestdb'
   # # gem 'guard-readme-on-github'
   # gem 'guard-jasmine-rails'
+
+  # gem 'jquery-ui-rails'
 
 end

@@ -11,13 +11,14 @@
  * file per style scope.
  *
 
- *= require reset
- *= require jquery-ui
- *= require jquery-ui.structure
- *= require jquery-ui.theme
- *= require dataTables.jqueryui
- *= require sidebar
+
+
+  *= require vendor
+
+
  *= require styles
+
+
  * require_tree .
  * require_self
  */

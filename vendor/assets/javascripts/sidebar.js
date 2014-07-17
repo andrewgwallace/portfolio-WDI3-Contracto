@@ -1,3 +1,4 @@
+console.log("reading sidebar.js");
 /*
  * # Semantic - Sidebar
  * http://github.com/jlukic/semantic-ui/
