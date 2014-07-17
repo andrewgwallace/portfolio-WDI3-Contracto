@@ -7,14 +7,10 @@
     border: 1px solid blue;
   }*/
 a {
-  color: white;
   text-decoration: none;
 }
 
 a:active { outline: none }
-
-
-
 
 /*STRUCTURE OF THE PAGE*/
 
@@ -22,10 +18,14 @@ a:active { outline: none }
 /* ---- HEADER ---- */
 
   header {
-    color: white;
-    background-color: rgba(33, 33, 33, 1);
+    position: relative;
+    color: black;
+    background-color: #F8F8F8;
     width: 100%;
-
+    height: 75px;
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
   }
 
 .header-menu-item {
@@ -34,16 +34,20 @@ a:active { outline: none }
 }
 
   #main-logo {
-    height: 75px;
     width: 75px;
-    background-color: green;
+    height: 75px;
+    background-color: #F8F8F8;
+  }
+
+  .logo {
+    width: 75px;
+    heigh: 75px;
   }
 
   #section-header {
     height: 75px;
-    width: 250px;
+    width: auto;
     background-color: red;
-    color: white;
   }
 
   #application-name {
@@ -71,6 +75,7 @@ a:active { outline: none }
   }
   .tab{
     margin: auto;
+    margin-top: 0;
     width: 100px;
     text-decoration: none;
     outline: none;
@@ -86,6 +91,9 @@ a:active { outline: none }
     text-decoration: none;
     outline: none;
     border-style: none;
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
   }
 
   table{
@@ -104,6 +112,10 @@ a:active { outline: none }
   margin: auto;
   cellspacing: 0;
   width: 90%;
+}
+
+.index-container {
+  margin-top: 10px;
 }
 
 
@@ -141,13 +153,12 @@ a:active { outline: none }
 
 
 .new-container form{
-  border: 1px solid black;
   height: 150px;
   background-image: -webkit-gradient(
   linear,
   left top,
   left bottom,
-  color-stop(0, #FFFFFF),
+  color-stop(0, #F8F8F8),
   color-stop(0.89, #ABABAB)
 );
 background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #ABABAB 89%);
@@ -155,9 +166,11 @@ background-image: -moz-linear-gradient(bottom, #FFFFFF 0%, #ABABAB 89%);
 background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #ABABAB 89%);
 background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #ABABAB 89%);
 background-image: linear-gradient(to bottom, #FFFFFF 0%, #ABABAB 89%);
-/*border-bottom: solid black 1px;*/
-  width: 90%;
-  margin: auto;
+width: 90%;
+margin: auto;
+-webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+-moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -241,10 +254,6 @@ background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #08
   position:relative;
   top:1px;
 }
-
-
-
-/*---- TABLE ----*/
 
 /*JQUERY / BACKBONE STUFF*/
   .hidden{

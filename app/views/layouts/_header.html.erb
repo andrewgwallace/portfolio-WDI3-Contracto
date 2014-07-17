@@ -1,23 +1,20 @@
 <header>
   <div class="header-menu-item" id="main-logo">
-    Main Logo Here
+    <%= image_tag('contracto_logo.png', :class => "logo") %>
   </div>
 
   <div class="header-menu-item" id="section-header">
     Section Header
   </div>
 
-  <div class="header-menu-item" id="application-name">
-    Contracto
-  </div>
-
-  <div>
-    <a class="item" href="#">JOBS</a></br>
-    <a class="item" href="#">CLIENTS</a></br>
-    <a class="item" href="#">EMPLOYEES</a></br>
-    <a class="item" href="#">SUPPLIERS</a></br>
-  </div>
-  <div class="flash-messages header-menu-item item" id="devise-sidebar">
+  <h1 class="header-menu-item" id="application-name">
+    Contracto</h1>
+  <div id="Menu">
+      <a class=" header-menu-item item" href="#">JOBS</a>
+      <a class="header-menu-item item" href="#">CLIENTS</a>
+      <a class="header-menu-item item" href="#">EMPLOYEES</a>
+      <a class="header-menu-item item" href="#">SUPPLIERS</a>
+  <div class="header-menu-item flash-messages header-menu-item item" id="devise-sidebar">
     <% if admin_signed_in? %>
       <%= link_to 'Profile Settings', edit_admin_registration_path %> |
       <%= link_to "Logout", destroy_admin_session_path, method: :delete %>
@@ -29,6 +26,7 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
   </div>
+</div>
 
 </header>
 
