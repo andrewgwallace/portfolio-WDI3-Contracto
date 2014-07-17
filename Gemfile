@@ -85,6 +85,7 @@ group :development, :test do
   gem "faker"
   # gem 'debugger'
 
+  gem "image_suckr"
 end
 
 

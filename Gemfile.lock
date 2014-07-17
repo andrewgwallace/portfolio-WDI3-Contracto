@@ -92,6 +92,7 @@ GEM
     hike (1.2.3)
     http_parser.rb (0.6.0)
     i18n (0.6.11)
+    image_suckr (0.2.0)
     jbuilder (2.1.2)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
@@ -238,6 +239,7 @@ DEPENDENCIES
   guard-annotate
   guard-livereload
   guard-rspec
+  image_suckr
   jbuilder (~> 2.0)
   jquery-rails
   meta_request

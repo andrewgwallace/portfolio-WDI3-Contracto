@@ -37,15 +37,6 @@ admin1 = Admin.create({
 })
 
 admin2 = Admin.create({
-  email: "test1@test.com",
-  password: '12341234',
-  first_name: "test",
-  last_name: "Smith",
-  address: "108 Claremont Ave\n Montclair, NJ 07042",
-  mobile_phone: "973.454.1015"
-})
-
-admin3 = Admin.create({
   email: "andrew.g.wallace@gmail.com",
   password: 'password',
   first_name: 'Andrew',
@@ -54,16 +45,27 @@ admin3 = Admin.create({
   mobile_phone: "201.477.8256"
   })
 
-3.times do
-  admin = Admin.create({
-    email: Faker::Internet.email,
-    password: '12341234',
-    first_name: Faker::Name.first_name,
-    last_name: Faker::Name.last_name,
-    address: "#{Faker::Address.street_address}\n#{Faker::Address.city},#{Faker::Address.state} #{Faker::Address.zip}",
-    mobile_phone: Faker::PhoneNumber.cell_phone
-    })
-end
+admin3 = Admin.create({
+  email: "test1@test.com",
+  password: '12341234',
+  first_name: "test",
+  last_name: "Smith",
+  address: "108 Claremont Ave\n Montclair, NJ 07042",
+  mobile_phone: "973.454.1015"
+})
+
+
+
+# 3.times do
+#   admin = Admin.create({
+#     email: Faker::Internet.email,
+#     password: '12341234',
+#     first_name: Faker::Name.first_name,
+#     last_name: Faker::Name.last_name,
+#     address: "#{Faker::Address.street_address}\n#{Faker::Address.city},#{Faker::Address.state} #{Faker::Address.zip}",
+#     mobile_phone: Faker::PhoneNumber.cell_phone
+#     })
+# end
 
 5.times {puts ""}
 puts "fleshing out companies"
@@ -91,7 +93,7 @@ Company.all.each do |company|
 end
 
 5.times {puts ""}
-puts "adding 10 jobs to each company"
+puts "adding 5 jobs to each company"
 Company.all.each do |company|
   10.times do
     company.jobs.create({
@@ -108,7 +110,7 @@ Company.all.each do |company|
 end
 
 5.times {puts ""}
-puts "adding 10 entries jobs to each job"
+puts "adding 6 entries jobs to each job"
 Job.all.each do |job|
   10.times do
     job.entries.create({
@@ -123,15 +125,17 @@ end
 
 
 
-# 5.times {puts ""}
-# puts "adding 3 attachments to each entry"
-# Entry.all.each do |entry|
-#   [1,2,3].sample.times do
-#     entry.attachments.create({
-#       # entries stuff
-#       })
-#   end
-# end
+5.times {puts ""}
+puts "adding 1-5 attachments to each entry"
+Entry.all.each do |entry|
+  [0,0,0,0,0,0,0,1,1,1,2,3].sample.times do
+    url = ImageSuckr::GoogleSuckr.new.get_image_url({"q" => "renovation"})
+    puts url
+    entry.attachments.create({
+      remote_file_url: url
+      })
+  end
+end
 
 # 5.times {puts ""}
 # puts "adding 3 photos to each entry"
