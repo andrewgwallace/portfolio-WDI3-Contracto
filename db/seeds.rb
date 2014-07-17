@@ -126,14 +126,14 @@ end
 
 
 
-# 5.times {puts ""}
-# puts "adding 1-5 attachments to each entry"
-# Entry.all.each do |entry|
-#   [0,0,0,0,0,0,0,1,1,1,2,3].sample.times do
-#     url = ImageSuckr::GoogleSuckr.new.get_image_url({"q" => "renovation"})
-#     puts url
-#     entry.attachments.create({
-#       remote_file_url: url
-#       })
-#   end
-# end
+5.times {puts ""}
+puts "adding 1-5 attachments to each entry"
+Entry.all.each do |entry|
+  [0,0,0,0,0,0,0,1,1,1,2,3].sample.times do
+    url = ImageSuckr::GoogleSuckr.new.get_image_url({"q" => "renovation"})
+    puts url
+    entry.attachments.create({
+      remote_file_url: url
+      })
+  end
+end
