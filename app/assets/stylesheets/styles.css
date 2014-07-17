@@ -11,7 +11,13 @@
   .test-blue{
     background-color: blue;
   }*/
-
+html {
+  background: url('renovation.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 a {
   text-decoration: none;
@@ -28,16 +34,24 @@ h1#application-name {
   font-family: 'Passion One', cursive;
 }
 
+h2 {
+  font-size: 36px;
+  font-family: 'Passion One', cursive;
+}
+
 /*SANDBOX TESTING*/
 #splash-wrap {
  position: relative;
+ background-image:url();
 }
 
 #splash_container {
-  vertial-align: baseline;
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+  vertial-align: middle;
   margin: auto;
-  width: 500px;
-  height: 300px;
+  width: 700px;
   background-color: #F8F8F8;
 }
 
