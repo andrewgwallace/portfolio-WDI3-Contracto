@@ -1,16 +1,17 @@
 <div class="container new-container" id="new-entry-container">
 
   <div class="hidden slider new-slider new-job-slider" id="new-entry">
-    I am a new entry form.
-    <form>
+    <!-- I am a new entry form. -->
 
+    <form class="entry-form">
+      <p>To make a new entry, simply enter it in teh field below and add new or pre-existing files.</p>
       <input class='entry-text-field' type="textarea" id="text_blob" placeholder="Add an entry...">
 
-      <div class='entry-text-field-partner float_right'>
-        <button id="attach_file" type="submit">attach</button>
-        <button id="save_entry" type="submit">save</button>
-        <p class="timestamp">created: <span class='created-at'></span>
-        <p class="timestamp">modified: <span class='updated_at'></span>
+      <div class='entry-text-field-partner'>
+        <button id="attach_file" class='button attach_button' type="submit">attach</button>
+        <button id="save_entry" class='button save_button' type="submit">save</button>
+        <!-- <p class="timestamp">created: <span class='created-at'></span>
+        <p class="timestamp">modified: <span class='updated_at'></span> -->
           <!-- #FIX timestamps are hidden by default (maybe...?), spans should be updated with current record's account info updated with -->
       </div>
 

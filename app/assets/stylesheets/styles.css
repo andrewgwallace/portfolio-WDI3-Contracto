@@ -6,6 +6,13 @@
   td {
     border: 1px solid blue;
   }*/
+
+
+  .test-blue{
+    background-color: blue;
+  }
+
+
 a {
   color: white;
   text-decoration: none;
@@ -55,43 +62,15 @@ a:active { outline: none }
     display: inline;
   }
 
-/*  #hamburger {
-    font-size: 25px;
-    float: right;
-    right: 20px;
-    top: 25px;
-    position: relative;
-  }
-*/
-/*---- SIDEBAR MENU ----*/
-
-#sidebar-right {
-  background-color: rgba(33, 33, 33, 1);
-  color: white;
-}
-
-#sidebar-main-links {
-  position: absolute;
-  top: 100px;
-  left: 30px;
-  text-align: left;
-
-}
-
-#devise-sidebar {
-  position: absolute;
-  bottom: 20px;
-  text-align: center;
-  width: 100%;
-}
 
 
-/*---- INDEXS ---- */
 
-  #job_list {
+/*---- INDEX ---- */
+
+/*  #job_list {
     margin: auto;
     height: 80%;
-  }
+  }*/
 
   .btn {
     background-color: gray;
@@ -120,10 +99,8 @@ a:active { outline: none }
 
   table{
     background-color: #fff;
-  }
-
- tbody tr:hover {
-    background-color: rgba(0, 118, 255, 0.4);
+    /*cellspacing: 0px;*/
+    /*width:90px*/
   }
 
   thead, tfoot{
@@ -131,26 +108,93 @@ a:active { outline: none }
   }
 
 
+.index_table {
+  margin: auto;
+  /*cellspacing: 20px;*/
+  /*width: 90%;*/
+}
+
+
+  tr{
+    /*paddingmargin-top: */
+
+  }
+
+  tbody tr:hover {
+    background-color: rgba(0, 118, 255, 0.4);
+    font-weight: bold;
+    /*border: 2px solid red;*/
+  }
+
+  
+  tbody tr.paused{
+    background-color: #B1B464;
+    /*background-color: red;*/
+    /*color: gray;*/
+    /*font-style: italic;*/
+  }
+  tbody tr.closed{
+    /*closed must come AFTER paused*/
+    background-color: rgba(131, 148, 148, 0.4);
+    color: gray;
+    font-style: italic;
+  }
+
+  td{
+    white-space: nowrap;
+    padding: 5px;
+  }
+  tbody td:hover {
+    /*background-color: rgba(0, 118, 255, 0.4);*/
+  }
+
+  /*#FIX THIS ISN'T WORKING - WE NEED TO MAKE THE ICON COLUMNS SKINNY
+  .td-contains-icon{
+    margin:0px;
+    padding:0px;
+    width:5px;
+    background-color: blue;
+  }
+  .icon-in-cell{
+    margin:0px;
+    padding:0px;
+  }*/
+  
+
+
+
+  .new-slider {
+    border-bottom: solid black 1px;
+  }
+  .new-tab-plus{
+    margin: auto;
+  }
+
+
 /*---- ENTRY PAGE ----*/
 
 
-  /*attachement icons*/
-    .attachment-icon-img{
-      position:relative;
-    }
+/*attachement icons*/
+.attachment-icon-img {
+  position:relative;
+}
 
-    .text-over-previous-image{
-      z-index:100;
-      position:relative;
-      /*color:green;*/
-      font-size:16px;
-      font-weight:bold;
-      left:-12px;
-      top:3px;
-      border:solid red 1px;
-    }
+.text-over-previous-image {
+  z-index:100;
+  position:relative;
+  /*color:green;*/
+  font-size:16px;
+  font-weight:bold;
+  left:-12px;
+  top:3px;
+  border:solid red 1px;
+}
 
 #text_blob {
+  vertical-align: center;
+  font-size: 14px;
+  margin: 20px, 0, 20px, 15px;
+  float: left;
   height: 100px;
   width: 80%;
 }
@@ -161,6 +205,7 @@ a:active { outline: none }
 
 
 .new-container form{
+  border: 1px solid black;
   height: 150px;
   background-image: -webkit-gradient(
   linear,
@@ -179,15 +224,10 @@ background-image: linear-gradient(to bottom, #FFFFFF 0%, #ABABAB 89%);
   margin: auto;
 }
 
-input {
-  width: 50px;
-  padding: 5px;
-  font-size: 12px;
-}
 
 /*---- BUTTONS -----*/
-.save_button {
-background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #20b025), color-stop(1, #20b025) );
+.button {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #20b025), color-stop(1, #20b025) );
   background:-moz-linear-gradient( center top, #20b025 5%, #20b025 100% );
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#20b025', endColorstr='#20b025');
   background-color:#20b025;
@@ -216,28 +256,63 @@ background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #20
   text-decoration:none;
   text-align:center;
 }
-.classname:hover {
+
+.button:hover {
   background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #20b025), color-stop(1, #20b025) );
   background:-moz-linear-gradient( center top, #20b025 5%, #20b025 100% );
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#20b025', endColorstr='#20b025');
   background-color:#20b025;
-}.classname:active {
+}
+
+.button:active {
   position:relative;
   top:1px;
 }
 
+.save_button {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #20b025), color-stop(1, #20b025) );
+  background:-moz-linear-gradient( center top, #20b025 5%, #20b025 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#20b025', endColorstr='#20b025');
+  background-color:#20b025;
+  
+  color:#ffffff;
 
-input[type="submit"] {
-  background: red;
-  color: white;
+}
+.save_button:hover {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #20b025), color-stop(1, #20b025) );
+  background:-moz-linear-gradient( center top, #20b025 5%, #20b025 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#20b025', endColorstr='#20b025');
+  background-color:#20b025;
 }
 
+.attach_button {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #085394), color-stop(1, #085394) );
+  background:-moz-linear-gradient( center top, #085394 5%, #085394 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#085394', endColorstr='#085394');
+  background-color:#085394;
+}
+
+.attach_button:hover {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #20b025), color-stop(1, #20b025) );
+  background:-moz-linear-gradient( center top, #085394 5%, #085394 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#085394', endColorstr='#085394');
+  background-color:#085394;
+}
+
+
+
+/*---- TABLE ----*/
 
 /*JQUERY / BACKBONE STUFF*/
   .hidden{
     display: none;
   }
 
-  .hasHighlight:hover {
+/*  .hasHighlight:hover {
     color: #2ecc71;
+  }*/
+
+
+  .temp-border{
+    border:blue 2px solid;
   }

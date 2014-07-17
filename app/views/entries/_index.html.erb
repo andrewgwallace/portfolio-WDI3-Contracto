@@ -1,15 +1,29 @@
-<div class="container index-container" id="entries-index-container">
+<div class="entries-content-window container index-container" id="entries-index-container">
 
   <div class="utility_bar index-utility_bar" id="entries-index-utility">
-    I am entries-Index-utility_bar
+    <!-- I am entries-Index-utility_bar -->
   </div>
 
-  <table class="index index_table" id="entries-index" cellspacing="0" width="90%">
+<ul>
+  <li><a href="#log_list">LOGS</a></li>
+  <li><a href="#file_list">FILES</a></li>
+</ul>
+<div id="log_list">
+  <table class="index index_table" id="entries-index">
+  <!-- <table class="index index_table" id="entries-index" cellspacing="0" width="90%"> -->
     <thead>
       <tr>
         <th>Entry</th>
         <th>Date</th>
-        <th colspan='3'>Attachments</th>
+        <th colspan='2'>Visable To </th>
+        <th>Attachment</th>
+      </tr>
+      <tr>
+        <th></th>
+        <th></th>
+        <th>Customer</th>
+        <th>Subcontractors</th>
+        <th>
       </tr>
     </thead>
 
@@ -17,45 +31,50 @@
       <tr>
         <th>Entry</th>
         <th>Date</th>
-        <th colspan='3'>Attachments</th>
+        <th colspan='2'>Visable To </th>
+        <th>Attachment</th>
       </tr>
     </tfoot>
 
-    <tbody class="index-table_body" id="entries-index-table_body">
+    <tbody class="index" id="entries-index-table_body">
         <!-- the following template will be rendered here -->
     </tbody>
-    
+
       <script type="text/template" id="entry-template">
         <td> <%%= id %> <%%= text_blob %></td>
         <td> <%%= created_at %> </td>
-        <td data-action='toggleVisibleToClientStatus' class='entry-visible-to-client-status'> 
-                            <%%= visable_to_job_client_status %> 
-                            <input type=checkbox <%%= checkboxify(visable_to_job_client_status)  %> >
+
+        <td data-action='toggleVisibleToJobClientStatus' class='entry-visible_to_job_client_status'>
+            <%%= conditionalInserter( visable_to_job_client_status , "<span class='icon-in-cell ui-state-default ui-corner-all ui-icon ui-icon-check'></span>", "<span class='icon-in-cell ui-state-default ui-corner-all ui-icon ui-icon-closethick'></span>") %>
+            <%%= visable_to_job_client_status %>
+            <input type=checkbox <%%= checkboxify(visable_to_job_client_status)  %> >
         </td>
-        <td data-action='toggleVisibleToSubcontractorsStatus' class='entry-visible-to-subcontractors-status'> 
-            <%%= visable_to_job_subcontractors_status %> 
-            <input type=checkbox <%%= checkboxify(visable_to_job_subcontractors_status)  %> >
-        </td>
-        
+
         <td data-action='focusOnAttachments'><%= image_tag('jpeg_icon.png', width: '30px', class: 'attachment-icon-img') %> <span class='text-over-previous-image'><%%= attachments.length %></span></td>
-        <td class="fileupload-btn attachment-fileupload-btn"> click here to attach 
-          <form>
-              <input type="hidden" name="entry_id" value="<%%= id %>">
-              <input class="fileupload-btn" id="entry-<%%= id %>-file-upload" multiple="multiple" name="attachment[file]" type="file" />
-          </form>
-        </td>
+      
 
 
 
       </script>
 
   </table>
+</div> <!-- End of log tab div -->
+<div id="file_list">
+  <!-- INSERT CODE TO SHOW FILES LIST/GRID HERE -->
+</div>
 
 </div>
 
 
 <div class=hidden>
  EXTRA STUFF
+   <td class="fileupload-btn attachment-fileupload-btn"> click here to attach
+          <form>
+              <input type="hidden" name="entry_id" value="<%%= id %>">
+              <input class="fileupload-btn" id="entry-<%%= id %>-file-upload" multiple="multiple" name="attachment[file]" type="file" />
+          </form>
+        </td>
+
   <td data-action='focusOnPhotos'><%= image_tag('jpeg_icon.png', width: '30px', class: 'attachment-icon-img') %> <span class='text-over-previous-image'><%%= photos.length %></span></td>
   <td data-action='focusOnDocs'><%= image_tag('docx_icon.png', width: '30px', class: 'attachment-icon-img') %> <span class='text-over-previous-image'><%%= docs.length %></span></td>
   <td data-action='focusOnAudios'> [MIC_IMG] <span class='text-over-previous-image'> <%%= audios.length %></span></td>
