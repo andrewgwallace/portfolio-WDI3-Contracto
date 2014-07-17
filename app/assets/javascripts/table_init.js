@@ -1,3 +1,3 @@
 $(function(){
-  $('#jobs-index').DataTable();
+  $('.index_table').DataTable();
 });
