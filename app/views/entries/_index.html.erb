@@ -38,14 +38,15 @@
         </td>
         
         <td data-action='focusOnAttachments'><%= image_tag('jpeg_icon.png', width: '30px', class: 'attachment-icon-img') %> <span class='text-over-previous-image'><%%= attachments.length %></span></td>
-        <td class="fileupload-btn attachment-fileupload-btn"> click here to attach 
+      
+        <td class="td-for-file-upload">
           <form>
-              <input type="hidden" name="entry_id" value="<%%= id %>">
-              <input class="fileupload-btn" id="entry-<%%= id %>-file-upload" multiple="multiple" name="attachment[file]" type="file" />
+            <input type="hidden" name="entry_id" value="<%%= id %>">
+            <input class="fileupload-btn" id="entry-<%%= id %>-file-upload" multiple="multiple" name="attachment[file]" type="file" value='xyz'/>
+            <div class="fileupload-btn-replacer">Attach yo filez</div>
+            
           </form>
         </td>
-
-
 
       </script>
 
@@ -56,6 +57,7 @@
 
 <div class=hidden>
  EXTRA STUFF
+
   <td data-action='focusOnPhotos'><%= image_tag('jpeg_icon.png', width: '30px', class: 'attachment-icon-img') %> <span class='text-over-previous-image'><%%= photos.length %></span></td>
   <td data-action='focusOnDocs'><%= image_tag('docx_icon.png', width: '30px', class: 'attachment-icon-img') %> <span class='text-over-previous-image'><%%= docs.length %></span></td>
   <td data-action='focusOnAudios'> [MIC_IMG] <span class='text-over-previous-image'> <%%= audios.length %></span></td>
