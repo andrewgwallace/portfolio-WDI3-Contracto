@@ -9,7 +9,6 @@ app.Models.Entry = Backbone.Model.extend({
 
   singularName:'entry',
   pluralName:'entries',
-
   defaults:{
     // closedCheckbox: checkboxify()
     // title: "Enter Entry Title",
@@ -34,7 +33,11 @@ app.Models.Entry = Backbone.Model.extend({
     }else{
       this.save({visible_to_subcontractors_status: true}, {patch: true});
     }
+  },
+  toggleAttachmentsVisability: function(){
+    // this does nothing, is picked up by the view
   }
+
 });
 
 // How to call this variable within the app name space

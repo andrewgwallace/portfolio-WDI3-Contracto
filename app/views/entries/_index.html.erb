@@ -27,7 +27,7 @@
     
       <script type="text/template" id="entry-template">
         <td> <%%= id %> <%%= text_blob %></td>
-        <td> <%%= created_at %> </td>
+        <td> <%%= moment(created_at).format('YYYY-mm-DD') %> </td>
         <td data-action='toggleVisibleToClientStatus' class='entry-visible-to-client-status'> 
                             <%%= visable_to_job_client_status %> 
                             <input type=checkbox <%%= checkboxify(visable_to_job_client_status)  %> >
@@ -47,7 +47,12 @@
             
           </form>
         </td>
-
+        <td data-action='toggleAttachmentsVisability'> show attachments</td>
+      </script>
+      
+      <script type="text/template" id="attachments-row-template">
+        <p>I am an attachment</p>
+        <a href="<%%=file.url%>"> <img src="<%%= file.thumb.url%>"></a>
       </script>
 
   </table>
