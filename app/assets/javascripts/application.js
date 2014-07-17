@@ -27,15 +27,15 @@
 
 
 // APPLICATION
+
+  // HELPERS
+    //= require attachments.fileupload
+
   // CUSTOM INITIALIZERS
     //= require backbone_init
     //= require jqueryui_initializer
     //= require sidebar_initializer
-
-  // HELPERS
-    //= require attachments.fileupload
-    
-
+    //= require navigation_init
 
   // BACKBONE APP
     //= require_tree ./backbone/models/.
