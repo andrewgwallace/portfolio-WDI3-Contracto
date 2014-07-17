@@ -6,21 +6,26 @@
 #  general_contractor_id :integer
 #  client_id             :integer
 #  client_type           :string(255)
-#  open                  :boolean
-#  paused                :boolean
+#  name                  :string(255)
 #  contract_price        :integer
-#  start_date            :string(255)
-#  end_date              :string(255)
+#  start_date            :date
+#  end_date              :date
+#  closed_status         :boolean
+#  paused_status         :boolean
 #  created_at            :datetime
 #  updated_at            :datetime
 #
 
 class Job < ActiveRecord::Base
 
-  # scope :open, -> { where(open: 'true') }
-  #   scope :active, -> { where(open: 'true') && (paused: 'false' }
-  #   scope :inactive, -> { where(open: 'true') && (paused: 'true')}
-  # scope :closed, -> { where(open: 'false') }
+  scope :open_scope, -> { where(closed_status: false) }    #'open is a reserved word'
+  scope :closed_scope, -> { where(closed_status: true) }
+
+  scope :active_scope, -> { where(paused_status: false) }
+  scope :paused_scope, -> { where(paused_status: true) }
+
+  
+  
 
   # scope :past_completion_date#, -> where current date > completion date
 

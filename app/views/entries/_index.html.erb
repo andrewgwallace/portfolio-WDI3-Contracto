@@ -1,14 +1,24 @@
 <div class="entries-content-window container index-container" id="entries-index-container">
 
-  <div class="utility_bar index-utility_bar" id="entries-index-utility">
-    <!-- I am entries-Index-utility_bar -->
-  </div>
+  <ul>
+    <li><a href="#log_list">LOGS</a></li>
+    <li><a href="#file_list">FILES</a></li>
+  </ul>
 
-<ul>
-  <li><a href="#log_list">LOGS</a></li>
-  <li><a href="#file_list">FILES</a></li>
-</ul>
-<div id="log_list">
+
+  <div id="log_list">
+
+    <div class="utility_bar index-utility_bar" id="entries-index-utility">
+        Filters:
+          <button data-action='filter' data-collection='entriesCollection' data-scope='all'>clear filters</button> ||
+          To Client:
+              <button data-action='filter' data-collection='entriesCollection' data-scope='visable_to_job_client_status_scope'>visable</button> / 
+              <button data-action='filter' data-collection='entriesCollection' data-scope='hidden_from_job_client_status_scope'>hidden</button> ||
+          To Subcontrators:
+              <button data-action='filter' data-collection='entriesCollection' data-scope='visable_to_job_subscontractor_client_status_scope'>visable</button> / 
+              <button data-action='filter' data-collection='entriesCollection' data-scope='hidden_from_job_subscontractor_client_status_scope'>hidden</button>
+    </div>
+
   <table class="index index_table" id="entries-index">
   <!-- <table class="index index_table" id="entries-index" cellspacing="0" width="90%"> -->
     <thead>
@@ -57,8 +67,10 @@
 
       </script>
 
-  </table>
-</div> <!-- End of log tab div -->
+    </table>
+  </div> <!-- End of log tab div -->
+
+
 <div id="file_list">
   <!-- INSERT CODE TO SHOW FILES LIST/GRID HERE -->
 </div>

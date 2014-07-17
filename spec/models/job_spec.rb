@@ -5,12 +5,13 @@
 #  id                    :integer          not null, primary key
 #  general_contractor_id :integer
 #  client_id             :integer
-#  client_type           :integer
-#  open                  :boolean
-#  paused                :boolean
-#  contract_price        :string(255)
-#  start_date            :string(255)
-#  end_date              :string(255)
+#  client_type           :string(255)
+#  name                  :string(255)
+#  contract_price        :integer
+#  start_date            :date
+#  end_date              :date
+#  closed_status         :boolean
+#  paused_status         :boolean
 #  created_at            :datetime
 #  updated_at            :datetime
 #
