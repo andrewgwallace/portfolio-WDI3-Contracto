@@ -27,6 +27,7 @@
 
 
 // APPLICATION
+
   // CUSTOM INITIALIZERS
     //= require backbone_init
     //= require jqueryui_initializer
@@ -36,6 +37,10 @@
     //= require attachments.fileupload
 
 
+  // CUSTOM INITIALIZERS
+    //= require backbone_init
+    //= require jqueryui_initializer
+    //= require navigation_init
 
   // BACKBONE APP
     //= require_tree ./backbone/models/.

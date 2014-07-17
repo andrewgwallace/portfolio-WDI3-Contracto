@@ -1,0 +1,40 @@
+<div class="notice"><%= notice %></div>
+  <div class="alert"><%= alert %></div>
+
+<header>
+
+
+  <div class="header-menu-item main-logo">
+    <%= image_tag('contracto_logo.png', :class => "logo") %>
+  </div>
+
+<!--   <div class="header-menu-item" id="section-header">
+    Section Header
+  </div> -->
+
+  <div class='contracto'>
+    <h1 class="header-menu-item">Contracto</h1>
+  </div>
+  
+  <div class="menu">
+    <div class="header-menu-item item" id="header-jobs-link">Jobs</div>
+    <div class="header-menu-item item" id="header-customers-link">Customers</div>
+    <div class="header-menu-item item" id="header-sub-contractors-link">Sub-Contractors</div>
+    <div class="header-menu-item item" id="header-employees-link" href="#">Employees</div>
+    
+    <!-- <div class="header-menu-item flash-messages"> -->
+      <% if admin_signed_in? %>
+        <div><%= link_to 'Settings', edit_admin_registration_path %></div>
+        <div><%= link_to "Logout", destroy_admin_session_path, method: :delete %></div>
+      <% else %>
+        <div><%= link_to "Sign up", new_admin_registration_path %></div>
+        <div><%= link_to "Login", new_admin_session_path %></div>
+      <% end %>
+    <!-- </div> -->
+
+    
+  </div>
+
+</header>
+
+

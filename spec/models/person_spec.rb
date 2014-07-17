@@ -5,7 +5,9 @@
 #  id                     :integer          not null, primary key
 #  company_id             :integer
 #  type                   :string(255)
-#  name                   :string(255)
+#  first_name             :string(255)
+#  last_name              :string(255)
+#  middle_name            :string(255)
 #  address                :string(255)
 #  email_1                :string(255)
 #  email_2                :string(255)
