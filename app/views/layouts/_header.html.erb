@@ -3,29 +3,30 @@
     <%= image_tag('contracto_logo.png', :class => "logo") %>
   </div>
 
-  <div class="header-menu-item" id="section-header">
+<!--   <div class="header-menu-item" id="section-header">
     Section Header
-  </div>
+  </div> -->
 
   <h1 class="header-menu-item" id="application-name">
     Contracto</h1>
-  <div id="Menu">
-      <a class=" header-menu-item item" href="#">JOBS</a>
-      <a class="header-menu-item item" href="#">CLIENTS</a>
-      <a class="header-menu-item item" href="#">EMPLOYEES</a>
-      <a class="header-menu-item item" href="#">SUPPLIERS</a>
-  <div class="header-menu-item flash-messages header-menu-item item" id="devise-sidebar">
-    <% if admin_signed_in? %>
-      <%= link_to 'Profile Settings', edit_admin_registration_path %> |
-      <%= link_to "Logout", destroy_admin_session_path, method: :delete %>
-    <% else %>
-      <%= link_to "Sign up", new_admin_registration_path %> |
-      <%= link_to "Login", new_admin_session_path %>
-    <% end %>
 
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+  <div id="menu">
+      <%= link_to "Jobs", company_path, class: 'header-menu-item' %>
+      <a class="header-menu-item item" id="header-customers-link" href="#">Customers</a>
+      <a class="header-menu-item item" id="header-sub-contractors-link" href="#">Sub-Contractors</a>
+      <a class="header-menu-item item" id="header-employees-link" href="#">Employees</a>
+      <a class="header-menu-item flash-messages">
+        <% if admin_signed_in? %>
+          <%= link_to 'Settings', edit_admin_registration_path %>
+          <%= link_to "Logout", destroy_admin_session_path, method: :delete %>
+        <% else %>
+          <%= link_to "Sign up", new_admin_registration_path %>
+          <%= link_to "Login", new_admin_session_path %>
+        <% end %>
   </div>
+
+<!--     <p class="notice"><#%= notice %></p>
+    <p class="alert"><#%= alert %></p> -->
 </div>
 
 </header>

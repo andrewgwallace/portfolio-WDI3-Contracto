@@ -12,8 +12,23 @@ a {
 
 a:active { outline: none }
 
+/*SANDBOX TESTING*/
+
+h1#application-name {
+  font-size: 48px;
+  font-family: 'Passion One', cursive;
+}
+
+/*END OF SANDBOX TESTING*/
+
+
 /*STRUCTURE OF THE PAGE*/
 
+#menu {
+  vertical-align: center;
+  float: right;
+  width: auto;
+}
 
 /* ---- HEADER ---- */
 
