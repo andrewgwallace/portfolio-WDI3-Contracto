@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 require 'faker'
-
+require "image_suckr"
 
 5.times {puts ""}
 
