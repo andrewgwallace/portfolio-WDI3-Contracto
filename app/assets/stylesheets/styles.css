@@ -19,6 +19,10 @@ a {
 
 a:active { outline: none }
 
+tr, td, p {
+  font-family: arial;
+}
+
 /*SANDBOX TESTING*/
 
 h1#application-name {
@@ -137,9 +141,6 @@ width: 5%;
 /*    cellspacing: 0px;*/
   }
 
-thead, tfoot{
-  background-color: orange;
-}
 
 
 .index_table {
@@ -161,9 +162,7 @@ thead, tfoot{
 }
 
   tbody tr:hover {
-    background-color: rgba(0, 118, 255, 0.4);
-    font-weight: bold;
-    /*border: 2px solid red;*/
+    color: #0073EA;
   }
 
 
@@ -184,9 +183,11 @@ thead, tfoot{
     white-space: nowrap;
     padding: 5px;
   }
+
   tbody td:hover {
     /*background-color: rgba(0, 118, 255, 0.4);*/
   }
+
 
   /*#FIX THIS ISN'T WORKING - WE NEED TO MAKE THE ICON COLUMNS SKINNY
   .td-contains-icon{
@@ -199,9 +200,6 @@ thead, tfoot{
     margin:0px;
     padding:0px;
   }*/
-
-
-
 
   .new-slider {
     border-bottom: solid black 1px;

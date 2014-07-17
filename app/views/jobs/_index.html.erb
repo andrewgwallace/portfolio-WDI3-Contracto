@@ -19,7 +19,7 @@
                     <th>Contract Price</th>
                     <th>Closed</th>
                     <th>Paused</th>
-                    <th>!Delete!</th>
+                    <th>Delete</th>
                 </tr>
             </thead>
 
@@ -32,7 +32,7 @@
                     <th>Contract Price</th>
                     <th>Closed</th>
                     <th>Paused</th>
-                    <th>!Delete!</th>
+                    <th>Delete</th>
                 </tr>
             </tfoot>
 
@@ -40,7 +40,7 @@
                 <!-- the template will be rendered here -->
             </tbody>
                 <script type="text/template" id="job-template">
-                        <td data-action='showCustomerDisplay' class='job-customer'> [customer name here] (id:<%%= id %>)</td>
+                        <td data-action='showCustomerDisplay' class='job-customer'>(id:<%%= id %>)</td>
                         <td data-action='showJob' class='job-name'> <%%= name %> </td>
                         <td data-action='' class='job-start_date'> <%%= start_date %> </td>
                         <td data-action='' class='job-end_date'> <%%= end_date %> </td>

@@ -9,13 +9,12 @@
   <div id="log_list">
 
     <div class="utility_bar index-utility_bar" id="entries-index-utility">
-        Filters:
-          <button data-action='filter' data-collection='entriesCollection' data-scope='all'>clear filters</button> ||
-          To Client:
-              <button data-action='filter' data-collection='entriesCollection' data-scope='visable_to_job_client_status_scope'>visable</button> / 
-              <button data-action='filter' data-collection='entriesCollection' data-scope='hidden_from_job_client_status_scope'>hidden</button> ||
-          To Subcontrators:
-              <button data-action='filter' data-collection='entriesCollection' data-scope='visable_to_job_subscontractor_client_status_scope'>visable</button> / 
+          <button data-action='filter' data-collection='entriesCollection' data-scope='all'>ALL</button> |
+          Customers:
+              <button data-action='filter' data-collection='entriesCollection' data-scope='visable_to_job_client_status_scope'>Visible</button>
+              <button data-action='filter' data-collection='entriesCollection' data-scope='hidden_from_job_client_status_scope'>Hidden</button> |
+          Subcontractors:
+              <button data-action='filter' data-collection='entriesCollection' data-scope='visable_to_job_subscontractor_client_status_scope'>visable</button>
               <button data-action='filter' data-collection='entriesCollection' data-scope='hidden_from_job_subscontractor_client_status_scope'>hidden</button>
     </div>
 
@@ -54,29 +53,29 @@
         <td> <%%= id %> <%%= text_blob %></td>
 
         <td> <%%= moment(created_at).format('YYYY-mm-DD') %> </td>
-        <td data-action='toggleVisibleToClientStatus' class='entry-visible-to-client-status'> 
-                            <%%= visable_to_job_client_status %> 
+        <td data-action='toggleVisibleToClientStatus' class='entry-visible-to-client-status'>
+                            <%%= visable_to_job_client_status %>
                             <input type=checkbox <%%= checkboxify(visable_to_job_client_status)  %> >
         </td>
-        <td data-action='toggleVisibleToSubcontractorsStatus' class='entry-visible-to-subcontractors-status'> 
-            <%%= visable_to_job_subcontractors_status %> 
+        <td data-action='toggleVisibleToSubcontractorsStatus' class='entry-visible-to-subcontractors-status'>
+            <%%= visable_to_job_subcontractors_status %>
             <input type=checkbox <%%= checkboxify(visable_to_job_subcontractors_status)  %> >
         </td>
 
         <td data-action='focusOnAttachments'><%= image_tag('jpeg_icon.png', width: '30px', class: 'attachment-icon-img') %> <span class='text-over-previous-image'><%%= attachments.length %></span></td>
-      
+
 
         <td class="td-for-file-upload">
           <form>
             <input type="hidden" name="entry_id" value="<%%= id %>">
             <input class="fileupload-btn" id="entry-<%%= id %>-file-upload" multiple="multiple" name="attachment[file]" type="file" value='xyz'/>
-            <div class="fileupload-btn-replacer">Attach yo filez</div>
-            
+            <div class="fileupload-btn-replacer">ATTACH</div>
+
           </form>
         </td>
-        <td data-action='toggleAttachmentsVisability'> show attachments</td>
+        <td data-action='toggleAttachmentsVisability'>SHOW</td>
       </script>
-      
+
 
       <script type="text/template" id="attachments-row-template">
         <p>I am an attachment</p>
