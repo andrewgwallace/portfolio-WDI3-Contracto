@@ -63,7 +63,7 @@ gem 'carrierwave'
 # gem "rmagick"
 gem "mini_magick"
 
-
+gem "faker"
 
 
 
@@ -82,7 +82,7 @@ group :development, :test do
   # gem 'shoulda-context'
   # gem 'factory_girl_rails'
 
-  gem "faker"
+  # gem "faker"
   # gem 'debugger'
 
   gem "image_suckr"
