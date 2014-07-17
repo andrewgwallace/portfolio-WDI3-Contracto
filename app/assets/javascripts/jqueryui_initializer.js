@@ -9,8 +9,7 @@ console.log('DOM ready from jquery_initializer.js')
   $('ui-icon')
     $( ".job-closed-status" ).button();
 
-  $(function() {
-    $( ".entries-content-window" ).tabs();
-  });
+  $('ui-menu')
+    $( "#menu").menu();
 
 });
