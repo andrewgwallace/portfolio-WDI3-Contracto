@@ -1,7 +1,7 @@
-console.log("reading jqueryui_init.js");
+console.log("reading jqueryUI_init.js");
 
 $(function(){
-console.log('DOM ready from jquery_initializer.js')
+console.log('DOM ready from jqueryUI_initializer.js')
 
   $('.ui-datepicker')
     $( ".datepicker" ).datepicker();
