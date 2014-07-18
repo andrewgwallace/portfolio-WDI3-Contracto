@@ -9,74 +9,35 @@ CONTRACTO README
 * [Heroku Production](http://contraco.herokuapp.com/)
 
 
-#Goals
+#Summary
 ===
 
+Contracto is a log and asset managment tool that allows contractors and other professionals to communicate and share job assets amongst their employees, subcontractors, and clients as well as log entries and receive messages.
 
-
-
-#Changelog
+#Gems
 ===
-## 2014-07-09
-* Brainstormed initial design
-* Whiteboarded critical path
-* ANDREW NEEDS TO UPLOAD AND LINK PICTURES
+* Faker
+* mini_magick
+* carrierwave
+* image_suckr
 
-####JR:
-* Created Garret AI Diagram to reflect conversations
+#APIs
+===
+* dataTables
+* Inbox/GMail (not yet implemented)
 
-####AW:**
+#Mockups
+===
 
-
-
-
-## 2014-07-10
-####JR:
-* Setup Git-Flow Framework
-* Setup rails
-* Created ERD and UML Diagrams
-
-####AW:**
+![image](https://raw.githubusercontent.com/johntrandall/contracto/dev/admin/aw_working_folder/entry_form_v1.png)
 
 
 
+#Credits
+===
 
-## 2014-07-11 
-####JR:**
+Wrench designed by Josh Deane from the Noun Project
 
-####AW:**
-
-
-
-
-## 2014-07-12 
-####JR:**
-
-####AW:**
-
-
-
-
-## 2014-07-14 
-####JR:**
-
-####AW:**
-
-
-
-
-## 2014-07-09 
-####JR:**
-
-####AW:**
-
-
-
-
-## 2014-07-09 
-####JR:**
-
-####AW:**
 
 
 
