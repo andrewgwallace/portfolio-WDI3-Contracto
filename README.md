@@ -31,6 +31,8 @@ Contracto is a log and asset managment tool that allows contractors and other pr
 
 ![image](https://raw.githubusercontent.com/johntrandall/contracto/dev/admin/aw_working_folder/entry_form_v1.png)
 
+![image](https://raw.githubusercontent.com/johntrandall/contracto/dev/admin/aw_working_folder/contracto_v1.png)
+
 
 
 #Credits
