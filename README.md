@@ -1,6 +1,12 @@
 CONTRACTO v0.0.2
 =========
 
+for now, use:
+
+* user: test1@test.com
+* pass: 12341234
+
+
 ##Links
 ===
 * [Github](https://github.com/johntrandall/contracto)
