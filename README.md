@@ -32,18 +32,18 @@ Contracto is a log and asset managment tool that allows contractors and other pr
 
 ##Planning
 ===
+### UX Flow (GarrettAI)
+![image](/admin/14-07-09_garrett_AI.png)
+
+### ERD
+![image](/admin/14-07-10_UML_and_ERDb.png)
+
 ### Wireframes
 ![image](https://raw.githubusercontent.com/johntrandall/contracto/dev/admin/aw_working_folder/entry_form_v1.png)
 
 ![image](https://raw.githubusercontent.com/johntrandall/contracto/dev/admin/aw_working_folder/contracto_v1.png)
 
-### UX Flow (GarrettAI)
-![image](/admin/14-07-09_garrett_AI.svg)
 
-![image](/admin/14-07-09_garrett_AI.png)
-
-### ERD
-![image](/admin/14-07-10_UML_and_ERDb.svg)
 
 
 
