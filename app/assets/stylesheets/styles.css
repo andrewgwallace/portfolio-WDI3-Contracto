@@ -11,7 +11,13 @@
   .test-blue{
     background-color: blue;
   }*/
-
+html {
+  background: url('renovation.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 a {
   text-decoration: none;
@@ -19,12 +25,36 @@ a {
 
 a:active { outline: none }
 
-/*SANDBOX TESTING*/
+tr, td, p {
+  font-family: arial;
+}
 
 h1#application-name {
   font-size: 48px;
   font-family: 'Passion One', cursive;
 }
+
+h2 {
+  font-size: 36px;
+  font-family: 'Passion One', cursive;
+}
+
+/*SANDBOX TESTING*/
+#splash-wrap {
+ position: relative;
+ background-image:url();
+}
+
+#splash_container {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+  vertial-align: middle;
+  margin: auto;
+  width: 700px;
+  background-color: #F8F8F8;
+}
+
 
 /*END OF SANDBOX TESTING*/
 
@@ -132,16 +162,10 @@ width: 5%;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
   }
 
-table{
-  background-color: #fff;
-  /*cellspacing: 0px;*/
-  /*width:90px*/
-}
-
-thead, tfoot{
-  background-color: orange;
-}
-
+  table{
+    background-color: #fff;
+/*    cellspacing: 0px;*/
+  }
 
 .index_table {
   margin: auto;
@@ -150,15 +174,19 @@ thead, tfoot{
   /*width: 90%;*/
 }
 
-.index-container {
-  margin-top: 10px;
+#jobs-index-wrapper {
+  margin: auto;
+  width: 90%;
 }
 
+.index-container{
+  margin-top: 10px;
+  margin: auto;
+  width: 90%;
+}
 
   tbody tr:hover {
-    background-color: rgba(0, 118, 255, 0.4);
-    font-weight: bold;
-    /*border: 2px solid red;*/
+    color: #0073EA;
   }
 
 
@@ -179,8 +207,17 @@ thead, tfoot{
     white-space: nowrap;
     padding: 5px;
   }
+
   tbody td:hover {
     /*background-color: rgba(0, 118, 255, 0.4);*/
+  }
+
+  .td-contains-icon {
+    text-align: center;
+  }
+
+  .ui-icon {
+    margin: auto;
   }
 
   /*#FIX THIS ISN'T WORKING - WE NEED TO MAKE THE ICON COLUMNS SKINNY
@@ -194,9 +231,6 @@ thead, tfoot{
     margin:0px;
     padding:0px;
   }*/
-
-
-
 
   .new-slider {
     border-bottom: solid black 1px;
@@ -310,7 +344,6 @@ box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
   background:-moz-linear-gradient( center top, #20b025 5%, #20b025 100% );
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#20b025', endColorstr='#20b025');
   background-color:#20b025;
-
   color:#ffffff;
 
 }
@@ -355,82 +388,6 @@ margin: auto;
 -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
-
-
-/*---- BUTTONS -----*/
-.button {
-  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #20b025), color-stop(1, #20b025) );
-  background:-moz-linear-gradient( center top, #20b025 5%, #20b025 100% );
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#20b025', endColorstr='#20b025');
-  background-color:#20b025;
-  -webkit-border-top-left-radius:4px;
-  -moz-border-radius-topleft:4px;
-  border-top-left-radius:4px;
-  -webkit-border-top-right-radius:4px;
-  -moz-border-radius-topright:4px;
-  border-top-right-radius:4px;
-  -webkit-border-bottom-right-radius:4px;
-  -moz-border-radius-bottomright:4px;
-  border-bottom-right-radius:4px;
-  -webkit-border-bottom-left-radius:4px;
-  -moz-border-radius-bottomleft:4px;
-  border-bottom-left-radius:4px;
-  text-indent:0;
-  display:inline-block;
-  color:#ffffff;
-  font-family:Arial;
-  font-size:15px;
-  font-weight:bold;
-  font-style:normal;
-  height:36px;
-  line-height:36px;
-  width:100px;
-  text-decoration:none;
-  text-align:center;
-}
-
-.button:hover {
-  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #20b025), color-stop(1, #20b025) );
-  background:-moz-linear-gradient( center top, #20b025 5%, #20b025 100% );
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#20b025', endColorstr='#20b025');
-  background-color:#20b025;
-}
-
-.button:active {
-  position:relative;
-  top:1px;
-}
-
-.save_button {
-  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #20b025), color-stop(1, #20b025) );
-  background:-moz-linear-gradient( center top, #20b025 5%, #20b025 100% );
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#20b025', endColorstr='#20b025');
-  background-color:#20b025;
-  
-  color:#ffffff;
-
-}
-.save_button:hover {
-  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #20b025), color-stop(1, #20b025) );
-  background:-moz-linear-gradient( center top, #20b025 5%, #20b025 100% );
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#20b025', endColorstr='#20b025');
-  background-color:#20b025;
-}
-
-.attach_button {
-  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #085394), color-stop(1, #085394) );
-  background:-moz-linear-gradient( center top, #085394 5%, #085394 100% );
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#085394', endColorstr='#085394');
-  background-color:#085394;
-}
-
-.attach_button:hover {
-  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #20b025), color-stop(1, #20b025) );
-  background:-moz-linear-gradient( center top, #085394 5%, #085394 100% );
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#085394', endColorstr='#085394');
-  background-color:#085394;
-}
-
 
 /*File Uploading Hack*/
 .td-for-file-upload{

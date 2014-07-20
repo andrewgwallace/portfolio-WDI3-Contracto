@@ -28,13 +28,18 @@
 
 // APPLICATION
 
+  // CUSTOM INITIALIZERS
+    //= require backbone_init
+    //= require jqueryui_initializer
+    //= require table_init
+
   // HELPERS
     //= require attachments.fileupload
+
 
   // CUSTOM INITIALIZERS
     //= require backbone_init
     //= require jqueryui_initializer
-    //= require sidebar_initializer
     //= require navigation_init
 
   // BACKBONE APP
