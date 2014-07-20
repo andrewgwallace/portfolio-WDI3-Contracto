@@ -6,7 +6,7 @@ CONTRACTO v0.0.2
 * [Github](https://github.com/johntrandall/contracto)
 * [Trello](https://trello.com/b/xqzJDFU1/contracto)
 * [Heroku Dev](http://contraco-dev.herokuapp.com/)
-* [Heroku Production](http://contraco.herokuapp.com/)
+* [Heroku Production](http://contraco.herokuapp.com/) (not yet deployed)
 
 
 ##Summary
