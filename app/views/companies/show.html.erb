@@ -1,0 +1,28 @@
+<!-- This is the guts of the 1 page app -->
+
+<div class="content-box" id="company-show">
+
+  <div class="focus-area" id="jobs-focus">   <!-- visable by default. -->
+    <%= render "jobs/new" %>                <!-- visable by default. -->
+    <%= render "jobs/index" %>              <!-- visible by default. -->
+  </div>
+
+  <div class="focus-area hidden" id="entries-focus"> <!-- hidden by default -->
+    <%= render "entries/new" %>                      <!-- hidden by default -->
+    <%= render "entries/index" %>                     <!-- hidden by default -->
+  </div>
+
+  <div class="focus-area hidden" id="customers-focus"> <!-- hidden by default -->
+    Blah blah blah customers
+  </div>
+
+  <div class="focus-area hidden" id="subcontractors-focus"> <!-- hidden by default -->
+    Blah blah blah subcontractors
+  </div>
+
+    <div class="focus-area hidden" id="employees-focus"> <!-- hidden by default -->
+    Blah blah blah employees
+  </div>
+
+</div>
+

@@ -10,7 +10,37 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+
+
+// RAILS
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+
+
+
+// FRAMEWORKS
+//= require vendor.js
+
+
+
+
+
+// APPLICATION
+
+  // HELPERS
+    //= require attachments.fileupload
+
+  // CUSTOM INITIALIZERS
+    //= require backbone_init
+    //= require jqueryui_initializer
+    //= require sidebar_initializer
+    //= require navigation_init
+
+  // BACKBONE APP
+    //= require_tree ./backbone/models/.
+    //= require_tree ./backbone/collections/.
+    //= require_tree ./backbone/views/.
+
+// require_tree .
+// require_self .

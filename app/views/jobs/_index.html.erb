@@ -1,0 +1,62 @@
+<div class="container index-container" id="jobs-index-container">
+
+    <div class="utility_bar index-utility_bar" id="jobs-index-utility">
+        <button data-action='filter' data-collection='jobCollection' data-scope='all'>ALL</button> |
+        <button data-action='filter' data-collection='jobCollection' data-scope='open_scope'>Open</button>
+        <button data-action='filter' data-collection='app.jobCollection' data-scope='closed_scope'>Closed</button>  |
+
+        <button data-action='filter' data-collection='jobCollection' data-scope='active_scope'>Active</button>
+        <button data-action='filter' data-collection='app.jobCollection' data-scope='paused_scope'>Paused</button>
+    </div>
+        <table class="index index_table" id="jobs-index">
+        <!-- <table class="jobs-index" cellspacing="0" width="90%"> -->
+            <thead>
+                <tr>
+                    <th>Customer</th>
+                    <th>Job</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Contract Price</th>
+                    <th>Closed</th>
+                    <th>Paused</th>
+                    <th>!Delete!</th>
+                </tr>
+            </thead>
+
+            <tfoot>
+                <tr>
+                    <th>Customer</th>
+                    <th>Job</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Contract Price</th>
+                    <th>Closed</th>
+                    <th>Paused</th>
+                    <th>!Delete!</th>
+                </tr>
+            </tfoot>
+
+            <tbody class="index" id="jobs-index-table_body">
+                <!-- the template will be rendered here -->
+            </tbody>
+                <script type="text/template" id="job-template">
+                        <td data-action='showCustomerDisplay' class='job-customer'> [customer name here] (id:<%%= id %>)</td>
+                        <td data-action='showJob' class='job-name'> <%%= name %> </td>
+                        <td data-action='' class='job-start_date'> <%%= start_date %> </td>
+                        <td data-action='' class='job-end_date'> <%%= end_date %> </td>
+                        <td data-action='' class='job-contract_price'> <%%= accounting.formatMoney(contract_price, {precision: 0}) %> </td>
+
+                        <td data-action='toggleClosedStatus' class='job-closed_status td-contains-icon'>
+                            <%%= conditionalInserter( closed_status , "<span class='icon-in-cell ui-state-default ui-corner-all ui-icon ui-icon-folder-collapsed'></span>", "<span class='icon-in-cell ui-state-default ui-corner-all ui-icon ui-icon-folder-open'></span>") %> </td>
+
+                        <td data-action='togglePausedStatus' class='job-paused_status td-contains-icon'>
+                            <%%= conditionalInserter(paused_status,  "<span class='icon-in-cell ui-state-default ui-corner-all ui-icon ui-icon-pause'></span>", "<span class='icon-in-cell ui-state-default ui-corner-all ui-icon ui-icon-circle-arrow-e'></span>") %> </td>
+
+                        <td data-action='destroy'           class='job-delete td-contains-icon'>
+                                                                    <span class='icon-in-cell ui-state-default ui-corner-all ui-icon ui-icon-trash'></span></td>
+                </script>
+        </table>
+</div>
+
+
+
